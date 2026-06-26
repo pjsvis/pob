@@ -3,7 +3,7 @@
 ## ADR-001: Four Representation Modes for Tensor Concepts
 
 **Date:** 2026-06-26  
-**Status:** Accepted  
+**Status:** Partially superseded — equation, explanation, and commentary modes remain Accepted. **Diagram mode superseded by [ADR-002](./002-hybrid-svg-approach.md)** (hybrid ASCII→SVG).  
 **Deciders:** Peter Smith
 
 ---
@@ -29,7 +29,7 @@ The question: should we build tooling or use existing simple approaches?
 Adopt four representation modes for each concept:
 
 1. **Equation** — KaTeX (existing, working)
-2. **Diagram** — ASCII `<pre>` blocks + `figure.full-width` for wide content
+2. **Diagram** — ~~ASCII `<pre>` blocks + `figure.full-width` for wide content~~ **Superseded by ADR-002**: hybrid ASCII→SVG pipeline (`src/agents/diagrams.ts`). `<pre>` fallback retained for verbatim code, not diagrams.
 3. **Explanation** — Plain English prose blocks
 4. **Commentary** — Sidenotes with optional titles
 
