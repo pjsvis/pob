@@ -199,6 +199,15 @@
       text-align: left;
     }
     
+    .sidenote-title {
+      display: block;
+      font-variant: small-caps;
+      font-size: 0.9em;
+      color: var(--text-color);
+      margin-bottom: 0.25em;
+      letter-spacing: 0.05em;
+    }
+    
     /* Sidenote number in text */
     .sidenote-number {
       font-size: 0.7em;
@@ -259,6 +268,34 @@
     
     .katex-display > .katex {
       text-align: center;
+    }
+    
+    /* ============================================
+       EXPLANATION BLOCKS
+       ============================================ */
+    
+    .explanation {
+      background: linear-gradient(to right, #f0f4f8, #f8fafc);
+      border-left: 3px solid #2c5282;
+      padding: 1em 1.5em;
+      margin: 1.5em 0;
+      font-style: normal;
+      color: #2d3748;
+    }
+    
+    .explanation-label {
+      font-weight: 600;
+      color: #2c5282;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75em !important;
+      text-indent: 0 !important;
+    }
+    
+    .explanation p {
+      margin: 0.5em 0;
+      text-indent: 0;
     }
     
     /* Wide equation wrapper for horizontal scroll */
@@ -342,6 +379,149 @@
       background: #fee;
       color: #c00;
       padding: 0.1em 0.3em;
+    }
+    
+    /* ============================================
+       FRONT MATTER
+       ============================================ */
+    
+    /* Half-title page: just the title, centered */
+    body.half-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 0;
+    }
+    
+    body.half-title h1 {
+      font-size: 2.5em;
+      font-variant: small-caps;
+      letter-spacing: 0.2em;
+      text-align: center;
+      margin: 0;
+    }
+    
+    /* Title page: full publication details */
+    body.title-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-right: 0;
+      text-align: center;
+    }
+    
+    body.title-page h1 {
+      font-size: 3em;
+      font-variant: small-caps;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.5em;
+    }
+    
+    body.title-page h2 {
+      font-size: 1.25em;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 3em;
+      border: none;
+    }
+    
+    body.title-page hr {
+      width: 60%;
+      margin: 2em auto;
+    }
+    
+    body.title-page p {
+      text-indent: 0;
+    }
+    
+    /* Copyright page */
+    body.copyright {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+    }
+    
+    body.copyright h1 {
+      font-size: 1.5em;
+      font-variant: small-caps;
+      letter-spacing: 0.15em;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    
+    body.copyright p {
+      text-indent: 0;
+      text-align: center;
+      color: var(--muted);
+    }
+    
+    body.copyright hr {
+      width: 30%;
+    }
+    
+    /* ============================================
+       TABLE OF CONTENTS
+       ============================================ */
+    
+    body.contents-page {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    
+    .toc {
+      max-width: 8in;
+      margin: 0 auto;
+    }
+    
+    .toc-title {
+      font-size: 1.5em;
+      font-variant: small-caps;
+      letter-spacing: 0.15em;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .toc-list ol {
+      list-style: none;
+      padding-left: 2em;
+    }
+    
+    .toc-level-1 {
+      margin: 1.5em 0;
+      font-size: 1.1em;
+    }
+    
+    .toc-level-1 > a {
+      font-variant: small-caps;
+      letter-spacing: 0.05em;
+    }
+    
+    .toc-level-2 {
+      margin: 0.75em 0;
+      font-style: italic;
+    }
+    
+    .toc-level-3 {
+      margin: 0.5em 0;
+      font-size: 0.95em;
+      padding-left: 1em;
+    }
+    
+    .toc a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    
+    .toc a:hover {
+      text-decoration: underline;
     }
     
     /* ============================================

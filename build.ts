@@ -43,7 +43,11 @@ function extractFrontmatter(text: string): { text: string; meta: Record<string, 
 
 // Process custom block syntax: :::sidenote, :::newthought, :::figure
 function processCustomBlocks(text: string): string {
-  // sidenote blocks: :::sidenote ... :::
+  // sidenote blocks: :::sidenote ... ::: or :::sidenote:Title ... :::
+  text = text.replace(/:::sidenote:([^\n]+)\n([\s\S]*?):::/g, (_, title, content) => {
+    return `<aside class="sidenote"><span class="sidenote-title">${title.trim()}</span>${content.trim()}</aside>`;
+  });
+  
   text = text.replace(/:::sidenote\n([\s\S]*?):::/g, (_, content) => {
     return `<aside class="sidenote">${content.trim()}</aside>`;
   });
@@ -51,6 +55,11 @@ function processCustomBlocks(text: string): string {
   // newthought blocks: :::newthought ... :::
   text = text.replace(/:::newthought\n?([\s\S]*?):::/g, (_, content) => {
     return `<div class="newthought">${content.trim()}</div>`;
+  });
+  
+  // explanation blocks: :::explanation ... :::
+  text = text.replace(/:::explanation\n?([\s\S]*?):::/g, (_, content) => {
+    return `<div class="explanation"><p class="explanation-label">What this means:</p>${content.trim()}</div>`;
   });
   
   // margin-figure blocks: :::margin-figure:caption... :::
@@ -66,16 +75,18 @@ function processCustomBlocks(text: string): string {
   return text;
 }
 
-// Post-process HTML: add classes based on heading content
+// Post-process HTML: add classes and ids based on heading content
 function postProcessHTML(html: string): string {
   // Section headings with § prefix: <h2>§1.1 Title</h2>
   html = html.replace(/<h2>(§\d+\.\d+(?:\.\d+)?)\s+([^<]+)<\/h2>/g, (_, number, title) => {
-    return `<h2 class="section"><span class="section-number">${number}</span>${title.trim()}</h2>`;
+    const id = number.replace(/§/g, "section-").replace(/\./g, "-");
+    return `<h2 class="section" id="${id}"><span class="section-number">${number}</span>${title.trim()}</h2>`;
   });
   
   // Subsection headings with § prefix
   html = html.replace(/<h3>(§\d+\.\d+\.\d+)\s+([^<]+)<\/h3>/g, (_, number, title) => {
-    return `<h3 class="subsection"><span class="subsection-number">${number}</span>${title.trim()}</h3>`;
+    const id = number.replace(/§/g, "section-").replace(/\./g, "-");
+    return `<h3 class="subsection" id="${id}"><span class="subsection-number">${number}</span>${title.trim()}</h3>`;
   });
   
   // Chapter headings (standalone numbers or "Chapter X" style)
@@ -109,6 +120,124 @@ function renderKaTeX(text: string): string {
   return text;
 }
 
+// === Table of Contents Generation ===
+
+interface TocEntry {
+  level: number;
+  title: string;
+  anchor: string;
+  file: string;
+}
+
+function generateTOC(files: string[], detailed: boolean = false): string {
+  const entries: TocEntry[] = [];
+  
+  // Sort files by name to get consistent ordering
+  const sortedFiles = [...files].sort((a, b) => {
+    // Front matter files (00-*) come first
+    if (a.startsWith("00-") && !b.startsWith("00-")) return -1;
+    if (!a.startsWith("00-") && b.startsWith("00-")) return 1;
+    return a.localeCompare(b);
+  });
+  
+  for (const file of sortedFiles) {
+    // Skip front matter files (they don't have chapter headings we want in TOC)
+    if (file.startsWith("00-")) continue;
+    
+    const inputPath = join(CONTENT_DIR, file);
+    const stat = statSync(inputPath);
+    if (!stat.isFile()) continue;
+    
+    const markdown = readFileSync(inputPath, "utf-8");
+    const { text: content } = extractFrontmatter(markdown);
+    
+    // Extract h1 (chapters)
+    const h1Match = content.match(/^#\s+(.+)$/m);
+    if (h1Match) {
+      const title = h1Match[1].trim();
+      const anchor = file.replace(".md", ".html");
+      entries.push({ level: 1, title, anchor, file });
+    }
+    
+    // Extract h2 (sections) if detailed
+    if (detailed) {
+      const h2Matches = content.matchAll(/^##\s+(§\d+\.\d+(?:\.\d+)?)\s+(.+)$/gm);
+      for (const match of h2Matches) {
+        const number = match[1];
+        const title = match[2].trim();
+        // Convert §1.1 to section-1-1 for URL-safe anchors
+        const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
+        const anchor = `${file.replace(".md", ".html")}#${anchorId}`;
+        entries.push({ level: 2, title: `${number} ${title}`, anchor, file });
+      }
+      
+      // Extract h3 (subsections) if detailed
+      const h3Matches = content.matchAll(/^###\s+(§\d+\.\d+\.\d+)\s+(.+)$/gm);
+      for (const match of h3Matches) {
+        const number = match[1];
+        const title = match[2].trim();
+        const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
+        const anchor = `${file.replace(".md", ".html")}#${anchorId}`;
+        entries.push({ level: 3, title: `${number} ${title}`, anchor, file });
+      }
+    }
+  }
+  
+  // Generate HTML
+  let html = '<nav class="toc" id="contents">\n';
+  html += '<h1 class="toc-title">Contents</h1>\n';
+  html += '<ol class="toc-list">\n';
+  
+  let currentFile = "";
+  let openChapter = false;
+  
+  for (const entry of entries) {
+    // Close previous chapter's section list when we hit a new chapter
+    if (entry.file !== currentFile) {
+      if (openChapter) {
+        html += '    </ol>\n  </li>\n';
+        openChapter = false;
+      }
+      currentFile = entry.file;
+    }
+    
+    if (entry.level === 1) {
+      if (openChapter) {
+        html += '    </ol>\n  </li>\n';
+      }
+      html += `  <li class="toc-level-1"><a href="${entry.anchor}">${entry.title}</a>\n`;
+      html += '    <ol class="toc-sections">\n';
+      openChapter = true;
+    } else if (entry.level === 2) {
+      html += `    <li class="toc-level-2"><a href="${entry.anchor}">${entry.title}</a></li>\n`;
+    } else if (entry.level === 3) {
+      html += `      <li class="toc-level-3"><a href="${entry.anchor}">${entry.title}</a></li>\n`;
+    }
+  }
+  
+  // Close any open chapter
+  if (openChapter) {
+    html += '    </ol>\n  </li>\n';
+  }
+  
+  html += '</ol>\n</nav>';
+  
+  return html;
+}
+
+function buildContentsPage(detailed: boolean = false): string {
+  const template = readFileSync(TEMPLATE_PATH, "utf-8");
+  const files = readdirSync(CONTENT_DIR).filter(f => f.endsWith(".md"));
+  
+  const tocHtml = generateTOC(files, detailed);
+  
+  let output = template.replace("{{content}}", tocHtml);
+  output = output.replace("<body>", `<body class="contents-page">`);
+  output = output.replace("<title>", "<title>Contents — ");
+  
+  return output;
+}
+
 // === Build Pipeline ===
 function build() {
   console.log("🧹 Clearing dist/...");
@@ -133,7 +262,7 @@ function build() {
     const markdown = readFileSync(inputPath, "utf-8");
     
     // 1. Extract and strip frontmatter
-    const { text: content } = extractFrontmatter(markdown);
+    const { text: content, meta } = extractFrontmatter(markdown);
     
     // 2. Process custom blocks (sidenote, newthought, figure, etc.)
     const step1 = processCustomBlocks(content);
@@ -147,12 +276,23 @@ function build() {
     // 5. Post-process HTML: add classes to headings based on §X.Y pattern
     body = postProcessHTML(body);
 
-    const output = template.replace("{{content}}", body);
+    let output = template.replace("{{content}}", body);
+    
+    // Apply body class from frontmatter style
+    if (meta.style) {
+      output = output.replace("<body>", `<body class="${meta.style}">`);
+    }
+    
     const outputName = file.replace(".md", ".html");
     writeFileSync(join(DIST_DIR, outputName), output);
   }
+  
+  // Generate contents page
+  console.log("  → contents.html");
+  const contentsHtml = buildContentsPage(true); // Detailed TOC
+  writeFileSync(join(DIST_DIR, "contents.html"), contentsHtml);
 
-  console.log(`\n✅ Built ${files.length} pages to dist/\n`);
+  console.log(`\n✅ Built ${files.length} pages + contents to dist/\n`);
 }
 
 // === CLI ===
