@@ -39,6 +39,7 @@ The preferred method for Penrose‑style diagrams is the **Hybrid ASCII‑→‑
 
 - **Bounding‑box policy** – The SVG is given a fixed `viewBox` (e.g., `0 0 600 200`). If the diagram exceeds this box, the surrounding `<div class="ascii-diagram">` has `overflow:auto`, providing scrollbars for the reviewer.
 - **No pre‑visualisation** – The generator does not attempt to shrink or crop the diagram; reviewers decide whether to split or simplify oversized diagrams after the fact.
+- **Vertical ordering (mandatory)** – The half‑space (`---`) is the **floor**: the boundary of the bounded continuum (the Euclidean plane). It is drawn at the *bottom* of the diagram. The 1‑g field (`↓`) lives in the sky above it, pointing **down into** the material. A bio‑tensegrity unit sits between: `↓` (sky) → nodes/stamps (continuum) → `---` (floor). Never invert this.
 - **Primitive Symbol Set** – See the **Penrose Symbol Set** section in the Playbook for the exact mapping.
 
 ---
@@ -51,8 +52,8 @@ The preferred method for Penrose‑style diagrams is the **Hybrid ASCII‑→‑
 
 | Symbol | Meaning | SVG Primitive |
 |--------|---------|---------------|
-| `---`  | Half‑space (ground plane) | `<line>` spanning the canvas |
-| `↓`   | Orthogonal 1‑g vector field arrow | `<line>` with arrow marker, repeated on a grid |
+| `---`  | Half‑space (Euclidean plane / ground floor — the boundary of the bounded continuum) | `<line>` spanning the full canvas width, drawn at the **bottom** of the diagram |
+| `↓`   | Orthogonal 1‑g vector field arrow (gravity, pointing **down into** the material from above) | `<line>` with arrow marker, repeated on a grid |
 | `o`   | Tensor node – circle | `<circle>` |
 | `□`   | Tensor node – square | `<rect>` |
 | `△`   | Tensor node – triangle | `<polygon>` (triangle) |

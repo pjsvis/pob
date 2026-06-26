@@ -7,8 +7,8 @@ This page demonstrates the **Hybrid ASCII → SVG** pipeline with the colour
 ## 1. Half‑space and orthogonal field
 
 ``` 
----
 ↓ ↓ ↓ ↓ ↓
+---
 ```
 
 :::caption:Half‑space (gray) with orthogonal 1‑g field arrows (blue).
@@ -18,13 +18,13 @@ This page demonstrates the **Hybrid ASCII → SVG** pipeline with the colour
 ## 2. Bio‑tensegrity unit with matrix stamps
 
 ``` 
----
 ↓ ↓ ↓
   o   ◇
   |   |
   □ — Δ
   |   |
   △   ⊚
+---
 ```
 
 :::caption:Bio‑tensegrity cell – nodes (orange), legs (blue), and three matrix stamps (elastic = diamond, thixotropic = triangle, plastic = double‑outlined circle).
@@ -34,8 +34,9 @@ This page demonstrates the **Hybrid ASCII → SVG** pipeline with the colour
 ## 3. Full‑width example (overflow test)
 
 ``` 
----
 ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+---
+```
 ```
 
 :::caption:An intentionally oversized diagram to illustrate the overflow scrollbar.

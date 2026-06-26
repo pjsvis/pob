@@ -1,7 +1,7 @@
 import { marked } from "marked";
 import katex from "katex";
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, rmSync, existsSync } from "node:fs";
-import { processDiagrams } from "./src/agents/diagrams";
+import { processDiagrams, injectDiagrams } from "./src/agents/diagrams";
 import { resolve, join } from "node:path";
 
 // === Configuration ===
@@ -287,7 +287,7 @@ export async function build(opts: { clean?: boolean } = {}) {
     // 2. Process custom blocks (sidenote, newthought, figure, etc.)
     const step1 = processCustomBlocks(content);
     // Process diagrams (ASCII art, Mermaid) before markdown parsing
-    const { content: diagramContent } = await processDiagrams(step1);
+    const { content: diagramContent, diagrams } = await processDiagrams(step1);
     
     // 3. Render KaTeX math (before markdown parsing so $...$ patterns exist)
     const step2 = renderKaTeX(diagramContent);
@@ -295,7 +295,10 @@ export async function build(opts: { clean?: boolean } = {}) {
     // 4. Parse markdown to HTML
     let body = marked.parse(step2) as string;
     
-    // 5. Post-process HTML: add classes to headings based on §X.Y pattern
+    // 5. Inject diagram SVGs (placeholders were emitted before parsing)
+    body = injectDiagrams(body, diagrams);
+    
+    // 6. Post-process HTML: add classes to headings based on §X.Y pattern
     body = postProcessHTML(body);
 
     let output = template.replace("{{title}}", meta.title || "Poverty of Biomechanics");

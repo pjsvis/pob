@@ -21,13 +21,13 @@ $$
 ## 2. Penrose Diagram (bio‑tensegrity unit)
 
 ``` 
----
 ↓ ↓ ↓
   o   ◇
   |   |
   □ — Δ
   |   |
   △   ⊚
+---
 ```
 
 :::caption:Bio‑tensegrity unit with matrix stamps (elastic = diamond, thixotropic = triangle, plastic = double‑outlined circle).
