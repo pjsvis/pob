@@ -128,6 +128,30 @@ figure.full-width {
 }
 ```
 
+### Grad / Div / Curl Narratives
+
+We often need to explain vector‑calculus concepts (gradient, divergence, curl) alongside Penrose‑style diagrams. Use the custom block syntax `:::grad`, `:::div`, or `:::curl` to embed a short LaTeX‑rendered explanation.
+
+```markdown
+:::grad
+The gradient of a scalar field $f$ is the vector field $\nabla f$ pointing in the direction of greatest increase.
+:::
+```
+
+```markdown
+:::div
+The divergence of a vector field $\mathbf{F}$ is $\nabla\cdot\mathbf{F}$, measuring the net outflow per unit volume.
+:::
+```
+
+```markdown
+:::curl
+The curl of a vector field $\mathbf{F}$ is $\nabla\times\mathbf{F}$, representing the local rotation.
+:::
+```
+
+These blocks render as `<section class="vector-explanation">` with appropriate styling (see CSS). They are optional; the same content can be written inline if colour is disabled.
+
 ### Margin Figures
 
 For smaller figures in the margin:

@@ -11,6 +11,13 @@ bun install
 bun run build.ts
 ```
 
+## Development workflow
+
+- **Consistent preview port** – The preview server runs on **port 3000** by default. This is the canonical port referenced throughout the documentation, scripts, and examples. If you need to use a different port (e.g., when 3000 is already occupied), you can pass `--port <port>` to `pob preview`, but keep the default for team consistency.
+- **Automatic index page** – The build pipeline always creates a root `index.html` (by copying `index-page.html` to `index.html`). This page contains a list of links to all generated pages, so after adding a new Markdown file you only need to run `bun run build.ts` and the navigation updates automatically.
+- **No extra steps** – With the above conventions, creating a page and reviewing it becomes a single command: `bun run build.ts && bun run src/cli.ts preview`.
+
+
 ## Project Structure
 
 ```
@@ -49,3 +56,10 @@ just deps       # Show dependencies
 
 - [dependencies.md](./dependencies.md) — Full dependency list
 - [playbooks/](./playbooks/) — Workflow documentation
+
+## Deprecated content
+
+- `content/penrose-diagrams.md` – moved to `content/deprecated/penrose-diagrams.md`. The old file now contains a deprecation notice.
+
+- [grad‑div‑curl‑demo.md](./content/grad-div-curl-demo.md) – showcases an equation, a Penrose diagram, and Grad/Div/Curl narrative blocks
+- [dalembertian‑demo.md](./content/dalembertian-demo.md) – demonstrates the D’Alembertian symbol and its use in a diagram

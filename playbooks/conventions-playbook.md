@@ -58,6 +58,19 @@ agent an hour.
 
 ## Known Failure Modes
 
+---
+
+## Preview Server & Index Page
+
+- **Default preview port** – The preview server runs on **port 3000** by default. This is the canonical port referenced in the `README.md`, `docs/preview.md`, and all CI scripts. It can be overridden with `--port <port>` only when absolutely necessary, but the default should be used for all regular development.
+- **Automatic root `index.html`** – After every `bun run build.ts`, the build pipeline copies `dist/index-page.html` to `dist/index.html`. The `index-page.md` file contains a **Site Index** section with a curated list of links to all generated pages. This guarantees that visiting `http://localhost:3000/` always resolves to a navigation page without extra steps.
+- **One‑command workflow** – Creating a new page and reviewing it is a single command:
+  ```bash
+  bun run build.ts && bun run src/cli.ts preview
+  ```
+  The build updates the index automatically, and the preview server serves it on the known port.
+- **Documentation location** – See `README.md` (Development workflow) and `docs/preview.md` for the full details.
+
 ### KaTeX in JSX text — DO NOT USE escapes
 **Rule:** Never use `\uXXXX` JS string escapes in raw JSX text. Use actual Unicode characters directly.
 
