@@ -130,18 +130,18 @@ interface TocEntry {
 }
 
 function generateTOC(files: string[], detailed: boolean = false): string {
-  const entries: TocEntry[] = [];
+  // Group entries by file
+  const chapters: { file: string; title: string; anchor: string; sections: TocEntry[] }[] = [];
   
   // Sort files by name to get consistent ordering
   const sortedFiles = [...files].sort((a, b) => {
-    // Front matter files (00-*) come first
     if (a.startsWith("00-") && !b.startsWith("00-")) return -1;
     if (!a.startsWith("00-") && b.startsWith("00-")) return 1;
     return a.localeCompare(b);
   });
   
   for (const file of sortedFiles) {
-    // Skip front matter files (they don't have chapter headings we want in TOC)
+    // Skip front matter files
     if (file.startsWith("00-")) continue;
     
     const inputPath = join(CONTENT_DIR, file);
@@ -154,32 +154,44 @@ function generateTOC(files: string[], detailed: boolean = false): string {
     // Extract h1 (chapters)
     const h1Match = content.match(/^#\s+(.+)$/m);
     if (h1Match) {
-      const title = h1Match[1].trim();
-      const anchor = file.replace(".md", ".html");
-      entries.push({ level: 1, title, anchor, file });
-    }
-    
-    // Extract h2 (sections) if detailed
-    if (detailed) {
-      const h2Matches = content.matchAll(/^##\s+(§\d+\.\d+(?:\.\d+)?)\s+(.+)$/gm);
-      for (const match of h2Matches) {
-        const number = match[1];
-        const title = match[2].trim();
-        // Convert §1.1 to section-1-1 for URL-safe anchors
-        const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
-        const anchor = `${file.replace(".md", ".html")}#${anchorId}`;
-        entries.push({ level: 2, title: `${number} ${title}`, anchor, file });
+      const chapter = {
+        file,
+        title: h1Match[1].trim(),
+        anchor: file.replace(".md", ".html"),
+        sections: [] as TocEntry[]
+      };
+      
+      if (detailed) {
+        // Extract h2 (sections)
+        const h2Matches = content.matchAll(/^##\s+(§\d+\.\d+(?:\.\d+)?)\s+(.+)$/gm);
+        for (const match of h2Matches) {
+          const number = match[1];
+          const sectionTitle = match[2].trim();
+          const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
+          chapter.sections.push({
+            level: 2,
+            title: `${number} ${sectionTitle}`,
+            anchor: `${file.replace(".md", ".html")}#${anchorId}`,
+            file
+          });
+        }
+        
+        // Extract h3 (subsections)
+        const h3Matches = content.matchAll(/^###\s+(§\d+\.\d+\.\d+)\s+(.+)$/gm);
+        for (const match of h3Matches) {
+          const number = match[1];
+          const sectionTitle = match[2].trim();
+          const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
+          chapter.sections.push({
+            level: 3,
+            title: `${number} ${sectionTitle}`,
+            anchor: `${file.replace(".md", ".html")}#${anchorId}`,
+            file
+          });
+        }
       }
       
-      // Extract h3 (subsections) if detailed
-      const h3Matches = content.matchAll(/^###\s+(§\d+\.\d+\.\d+)\s+(.+)$/gm);
-      for (const match of h3Matches) {
-        const number = match[1];
-        const title = match[2].trim();
-        const anchorId = number.replace(/§/g, "section-").replace(/\./g, "-");
-        const anchor = `${file.replace(".md", ".html")}#${anchorId}`;
-        entries.push({ level: 3, title: `${number} ${title}`, anchor, file });
-      }
+      chapters.push(chapter);
     }
   }
   
@@ -188,36 +200,19 @@ function generateTOC(files: string[], detailed: boolean = false): string {
   html += '<h1 class="toc-title">Contents</h1>\n';
   html += '<ol class="toc-list">\n';
   
-  let currentFile = "";
-  let openChapter = false;
-  
-  for (const entry of entries) {
-    // Close previous chapter's section list when we hit a new chapter
-    if (entry.file !== currentFile) {
-      if (openChapter) {
-        html += '    </ol>\n  </li>\n';
-        openChapter = false;
-      }
-      currentFile = entry.file;
-    }
+  for (const chapter of chapters) {
+    html += `  <li class="toc-level-1"><a href="${chapter.anchor}">${chapter.title}</a>`;
     
-    if (entry.level === 1) {
-      if (openChapter) {
-        html += '    </ol>\n  </li>\n';
+    if (chapter.sections.length > 0) {
+      html += '\n    <ol class="toc-sections">\n';
+      for (const section of chapter.sections) {
+        const indent = section.level === 3 ? '      ' : '    ';
+        html += `${indent}<li class="toc-level-${section.level}"><a href="${section.anchor}">${section.title}</a></li>\n`;
       }
-      html += `  <li class="toc-level-1"><a href="${entry.anchor}">${entry.title}</a>\n`;
-      html += '    <ol class="toc-sections">\n';
-      openChapter = true;
-    } else if (entry.level === 2) {
-      html += `    <li class="toc-level-2"><a href="${entry.anchor}">${entry.title}</a></li>\n`;
-    } else if (entry.level === 3) {
-      html += `      <li class="toc-level-3"><a href="${entry.anchor}">${entry.title}</a></li>\n`;
+      html += '    </ol>\n  </li>\n';
+    } else {
+      html += '</li>\n';
     }
-  }
-  
-  // Close any open chapter
-  if (openChapter) {
-    html += '    </ol>\n  </li>\n';
   }
   
   html += '</ol>\n</nav>';
