@@ -151,7 +151,7 @@ export async function processDiagrams(
  */
 function looksLikeDiagram(text: string): boolean {
   const diagramPatterns = [
-    /─►|→|<-|<─/,  // arrows
+    /─►|→|<-|<─|─▶/,  // arrows (including the half‑arrow used in geometry diagrams)
     /\[.+?\]/,      // boxes
     /┌|└|│|─/,     // box drawing
     /graph|flowchart|state/, // mermaid hint
@@ -200,7 +200,7 @@ export const DIAGRAM_CSS = `
 /* Diagram container */
 .diagram {
   margin: 1.5em 0;
-  padding: 1em;
+  padding: 1.5em;
   overflow-x: auto;
 }
 
@@ -218,6 +218,9 @@ export const DIAGRAM_CSS = `
   height: auto;
   border: 1px solid #ddd;
   background: #fafafa;
+}
+.ascii-diagram svg text {
+  font-size: 0.85rem; /* Reduce font size for ASCII diagrams */
 }
 
 /* Error state */

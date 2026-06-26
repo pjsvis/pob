@@ -33,6 +33,45 @@ Build output:
 
 ## Diagram Types
 
+### Hybrid ASCII‑→‑SVG (new)
+
+The preferred method for Penrose‑style diagrams is the **Hybrid ASCII‑→‑SVG** pipeline. Authors write a fenced code block containing a limited set of ASCII symbols (see the Primitive Symbol Set below). The build step parses this block, converts each symbol into an SVG primitive (line, arrow, shape, or matrix stamp), and emits a deterministic SVG with a fixed `viewBox`.
+
+- **Bounding‑box policy** – The SVG is given a fixed `viewBox` (e.g., `0 0 600 200`). If the diagram exceeds this box, the surrounding `<div class="ascii-diagram">` has `overflow:auto`, providing scrollbars for the reviewer.
+- **No pre‑visualisation** – The generator does not attempt to shrink or crop the diagram; reviewers decide whether to split or simplify oversized diagrams after the fact.
+- **Primitive Symbol Set** – See the **Penrose Symbol Set** section in the Playbook for the exact mapping.
+
+---
+
+## Diagram Types
+
+---
+
+## Penrose Symbol Set (ASCII → SVG)
+
+| Symbol | Meaning | SVG Primitive |
+|--------|---------|---------------|
+| `---`  | Half‑space (ground plane) | `<line>` spanning the canvas |
+| `↓`   | Orthogonal 1‑g vector field arrow | `<line>` with arrow marker, repeated on a grid |
+| `o`   | Tensor node – circle | `<circle>` |
+| `□`   | Tensor node – square | `<rect>` |
+| `△`   | Tensor node – triangle | `<polygon>` (triangle) |
+| `-`, `|`, `↗`, `↘`, `↖`, `↙` | Leg / tensor rank (direction) | `<line>` (optional arrow marker) |
+| `⟲`  | Contraction / loop | `<path>` forming a small loop |
+| `=`   | Identity (straight‑through) | `<line>` without marker |
+| `▱`   | D’Alembertian (□ = ∂²/∂t² − ∇²) | `<rect class="dalembertian">` (double‑lined box) |
+| `◇`   | Elastic‑change matrix (ΔE) | `<polygon>` (diamond) placed on a leg |
+| `Δ`   | Thixotropic‑change matrix (Mₜₕᵢₓ) | `<polygon>` (triangle) placed on a leg |
+| `⊚`   | Plastic‑remodeling matrix (Rₚₗₐₛₜᵢ𝚌) | `<circle>` with double‑stroke placed on a leg |
+| `:::caption:…` | Caption for the diagram | `<text>` below the SVG |
+| `:::error:…` | Error / warning marker | `<text>` in red inside a `<g class="diagram-error">` |
+
+These symbols are the only ones the parser recognises. Any other character is ignored (or triggers an error if the `error` block is used). The mapping is deterministic, making the SVG output repeatable and easy to review.
+
+---
+
+## Diagram Types
+
 ### 1. ASCII Art Diagrams
 
 Converted to SVG at build time with proper typography.
