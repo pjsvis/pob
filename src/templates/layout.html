@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Poverty of Biomechanics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+  <style>
+    :root {
+      /* Penrose-style layout: narrow text + wide right margin */
+      --font-main: "Times New Roman", Georgia, serif;
+      --font-math: "Latin Modern Math", "Times New Roman", serif;
+      --font-sc: "Times New Roman", Georgia, serif;
+      
+      /* Layout dimensions (Letter paper) */
+      --page-width: 8.5in;
+      --text-width: 6in;
+      --margin-width: 2in;
+      --gutter: 0.375in;
+      --top-margin: 1in;
+      --bottom-margin: 1in;
+      
+      /* Typography */
+      --body-size: 1.0625rem;     /* 17px ~ 12.5pt */
+      --line-height: 1.7;
+      --text-color: #1a1a1a;
+      --muted: #555;
+      
+      /* Spacing */
+      --spacing: 1.5rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      font-size: var(--body-size);
+      line-height: var(--line-height);
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--text-color);
+      width: calc(var(--text-width) + var(--margin-width));
+      margin: var(--top-margin) auto var(--bottom-margin);
+      padding-right: var(--margin-width);
+      position: relative;
+    }
+
+    /* ============================================
+       CHAPTER & SECTION HEADINGS
+       ============================================ */
+    
+    /* Chapter: small caps, centered, on own page */
+    .chapter {
+      font-variant: small-caps;
+      text-align: center;
+      font-size: 1.8em;
+      letter-spacing: 0.15em;
+      margin-top: 4em;
+      margin-bottom: 1em;
+      font-weight: normal;
+    }
+    
+    /* Chapter on empty page (for new chapters) */
+    .chapter-page {
+      page-break-before: always;
+      padding-top: 40vh;
+    }
+    
+    /* Section: italic, left-aligned, §X.Y format */
+    .section {
+      font-style: italic;
+      font-size: 1.25em;
+      margin-top: 2em;
+      margin-bottom: 0.75em;
+      font-weight: normal;
+    }
+    
+    /* Section number prefix */
+    .section-number {
+      font-style: normal;
+      font-weight: normal;
+      margin-right: 0.5em;
+    }
+    
+    /* Subsection */
+    .subsection {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    /* First paragraph after chapter/section: no indent */
+    .newthought {
+      text-indent: 0;
+    }
+    
+    .newthought::first-letter {
+      font-variant: small-caps;
+    }
+    
+    /* Paragraphs */
+    p {
+      margin: 1em 0;
+      text-indent: 1.5em;
+    }
+    
+    p:first-of-type,
+    .newthought,
+    h1 + p, h2 + p, h3 + p {
+      text-indent: 0;
+    }
+    
+    /* Standard headings */
+    h1, h2, h3, h4 {
+      font-weight: normal;
+      line-height: 1.2;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; border-bottom: 1px solid #eee; }
+    h3 { font-size: 1.25rem; }
+    h4 { font-size: 1.1rem; }
+
+    /* Math */
+    .katex { font-family: var(--font-math); }
+    .katex-display { margin: 1.5em 0; overflow-x: auto; }
+
+    /* Code */
+    code {
+      background: #f5f5f5;
+      padding: 0.1em 0.3em;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #f5f5f5;
+      padding: var(--spacing);
+      overflow-x: auto;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+    }
+
+    /* Links */
+    a { color: #1a1a1a; }
+    a:hover { text-decoration: none; }
+
+    /* Blockquote */
+    blockquote {
+      border-left: 2px solid #999;
+      padding-left: var(--spacing);
+      margin-left: 0;
+      color: var(--muted);
+    }
+
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5em 0;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    th { background: #f5f5f5; }
+
+    /* Lists */
+    ul, ol { padding-left: 1.5em; }
+    li { margin: 0.5em 0; }
+
+    /* Horizontal rule */
+    hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
+
+    /* ============================================
+       SIDENOTES (Penrose-style margin notes)
+       ============================================ */
+    
+    .sidenote {
+      float: right;
+      clear: right;
+      position: relative;
+      right: calc(-1 * var(--margin-width) + 0.25in);
+      width: calc(var(--margin-width) - 0.5in);
+      font-size: 0.85em;
+      line-height: 1.4;
+      color: var(--muted);
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      text-align: left;
+    }
+    
+    /* Sidenote number in text */
+    .sidenote-number {
+      font-size: 0.7em;
+      vertical-align: super;
+      margin-left: 0.1em;
+    }
+    
+    /* ============================================
+       FULL-WIDTH FIGURES
+       ============================================ */
+    
+    figure {
+      margin: 1.5em 0;
+    }
+    
+    figure.full-width {
+      width: calc(var(--text-width) + var(--margin-width) - 0.5in);
+      margin-left: calc(-1 * var(--margin-width) / 2 + 0.25in);
+    }
+    
+    figure.margin-figure {
+      float: right;
+      clear: right;
+      right: calc(-1 * var(--margin-width) + 0.25in);
+      width: calc(var(--margin-width) - 0.5in);
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    
+    figcaption {
+      font-size: 0.85em;
+      font-style: italic;
+      color: var(--muted);
+      text-align: left;
+      margin-top: 0.5em;
+    }
+    
+    figure.margin-figure figcaption {
+      font-size: 0.8em;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* ============================================
+       MATH DISPLAY
+       ============================================ */
+    
+    .katex { font-family: var(--font-math); }
+    .katex-display {
+      margin: 1.5em 0;
+      padding: 0.5em 0;
+      overflow-x: auto;
+      text-align: center;
+    }
+    
+    .katex-display > .katex {
+      text-align: center;
+    }
+    
+    /* Wide equation wrapper for horizontal scroll */
+    .equation-wide {
+      overflow-x: auto;
+      margin: 1.5em -1em;
+      padding: 0.5em 1em;
+    }
+    
+    /* ============================================
+       CODE BLOCKS
+       ============================================ */
+    
+    code {
+      background: #f5f5f5;
+      padding: 0.1em 0.3em;
+      font-size: 0.9em;
+      font-family: "SF Mono", Monaco, "Courier New", monospace;
+    }
+    
+    pre {
+      background: #f5f5f5;
+      padding: var(--spacing);
+      overflow-x: auto;
+      border-radius: 4px;
+      margin: 1.5em 0;
+    }
+    
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.85em;
+    }
+    
+    /* ============================================
+       LINKS & MISC
+       ============================================ */
+    
+    a { color: var(--text-color); text-decoration: underline; text-decoration-color: #999; }
+    a:hover { text-decoration: none; }
+    
+    /* Blockquote */
+    blockquote {
+      border-left: 2px solid #999;
+      padding-left: var(--spacing);
+      margin: 1.5em 0;
+      margin-left: 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+    
+    /* Tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5em 0;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5em;
+      text-align: left;
+    }
+    
+    th { background: #f5f5f5; font-weight: normal; }
+    
+    /* Lists */
+    ul, ol { padding-left: 1.5em; }
+    li { margin: 0.5em 0; }
+    
+    /* Horizontal rule */
+    hr { 
+      border: none; 
+      border-top: 1px solid #ddd; 
+      margin: 3em auto;
+      width: 50%;
+    }
+    
+    /* KaTeX errors */
+    .katex-error {
+      background: #fee;
+      color: #c00;
+      padding: 0.1em 0.3em;
+    }
+    
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    
+    @media (max-width: 9in) {
+      body {
+        width: 100%;
+        padding-right: 1rem;
+      }
+      
+      .sidenote,
+      figure.margin-figure {
+        float: none;
+        position: relative;
+        right: auto;
+        width: 100%;
+        margin: 1em 0;
+        border-left: 2px solid #ddd;
+        padding-left: 1em;
+      }
+      
+      figure.full-width {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+{{content}}
+</body>
+</html>

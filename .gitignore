@@ -1,0 +1,40 @@
+# Build output
+dist/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scratchpad (personal notes, experiments)
+scratchpad/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Cache
+.cache/
+.turbo/
+
+# bun.lockb is intentional (no bun.lock)
+# If using yarn: yarn.lock
+# If using npm: package-lock.json
+pnpm-lock.yaml
+.todos/

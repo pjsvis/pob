@@ -1,0 +1,28 @@
+{
+  "name": "pob",
+  "version": "0.1.0",
+  "description": "The Poverty of Biomechanics — Minimalist SSG for math-heavy Markdown",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "pob": "./src/cli.ts"
+  },
+  "scripts": {
+    "build": "bun run build.ts",
+    "dev": "bun run build.ts --watch",
+    "preview": "bun run src/cli.ts preview",
+    "tree": "bun run src/cli.ts tree",
+    "cli": "bun run src/cli.ts"
+  },
+  "dependencies": {
+    "citty": "^0.2.2",
+    "katex": "^0.17.0",
+    "marked": "^18.0.0",
+    "mermaid": "^11.16.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/katex": "^0.16.0",
+    "typescript": "^5.7.0"
+  }
+}
