@@ -3,556 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Poverty of Biomechanics</title>
+  <title>{{title}}</title>
+  
+  <!-- KaTeX for math rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+  
+  <!-- Base styles (readable without layout) -->
+  <!-- Content styles -->
+  <link rel="stylesheet" href="/pob.css">
+  
+  <!-- Toggle button for layout switching -->
+  <script>
+    function toggleLayout() {
+      const container = document.getElementById('pob-content');
+      const btn = document.getElementById('layout-toggle');
+      
+      if (container.classList.contains('use-layout')) {
+        container.classList.remove('use-layout');
+        btn.textContent = '📚 Show Layout';
+        localStorage.setItem('pob-layout', 'off');
+      } else {
+        container.classList.add('use-layout');
+        btn.textContent = '📄 Show Naked';
+        localStorage.setItem('pob-layout', 'on');
+      }
+    }
+    
+    // Restore layout preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const pref = localStorage.getItem('pob-layout');
+      const btn = document.getElementById('layout-toggle');
+      const container = document.getElementById('pob-content');
+      
+      if (pref === 'off' && container) {
+        container.classList.remove('use-layout');
+        if (btn) btn.textContent = '📚 Show Layout';
+      }
+    });
+  </script>
+  
+  <!-- Minimal inline styles for the toggle button -->
   <style>
-    :root {
-      /* Penrose-style layout: narrow text + wide right margin */
-      --font-main: "Times New Roman", Georgia, serif;
-      --font-math: "Latin Modern Math", "Times New Roman", serif;
-      --font-sc: "Times New Roman", Georgia, serif;
-      
-      /* Layout dimensions (Letter paper) */
-      --page-width: 8.5in;
-      --text-width: 6in;
-      --margin-width: 2in;
-      --gutter: 0.375in;
-      --top-margin: 1in;
-      --bottom-margin: 1in;
-      
-      /* Typography */
-      --body-size: 1.0625rem;     /* 17px ~ 12.5pt */
-      --line-height: 1.7;
-      --text-color: #1a1a1a;
-      --muted: #555;
-      
-      /* Spacing */
-      --spacing: 1.5rem;
-    }
-
-    * { box-sizing: border-box; }
-
-    html {
-      font-size: var(--body-size);
-      line-height: var(--line-height);
-    }
-
-    body {
-      font-family: var(--font-main);
-      color: var(--text-color);
-      width: calc(var(--text-width) + var(--margin-width));
-      margin: var(--top-margin) auto var(--bottom-margin);
-      padding-right: var(--margin-width);
-      position: relative;
-    }
-
-    /* ============================================
-       CHAPTER & SECTION HEADINGS
-       ============================================ */
-    
-    /* Chapter: small caps, centered, on own page */
-    .chapter {
-      font-variant: small-caps;
-      text-align: center;
-      font-size: 1.8em;
-      letter-spacing: 0.15em;
-      margin-top: 4em;
-      margin-bottom: 1em;
-      font-weight: normal;
-    }
-    
-    /* Chapter on empty page (for new chapters) */
-    .chapter-page {
-      page-break-before: always;
-      padding-top: 40vh;
-    }
-    
-    /* Section: italic, left-aligned, §X.Y format */
-    .section {
-      font-style: italic;
-      font-size: 1.25em;
-      margin-top: 2em;
-      margin-bottom: 0.75em;
-      font-weight: normal;
-    }
-    
-    /* Section number prefix */
-    .section-number {
-      font-style: normal;
-      font-weight: normal;
-      margin-right: 0.5em;
-    }
-    
-    /* Subsection */
-    .subsection {
-      font-style: italic;
-      font-size: 1.1em;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    
-    /* First paragraph after chapter/section: no indent */
-    .newthought {
-      text-indent: 0;
-    }
-    
-    .newthought::first-letter {
-      font-variant: small-caps;
-    }
-    
-    /* Paragraphs */
-    p {
-      margin: 1em 0;
-      text-indent: 1.5em;
-    }
-    
-    p:first-of-type,
-    .newthought,
-    h1 + p, h2 + p, h3 + p {
-      text-indent: 0;
-    }
-    
-    /* Standard headings */
-    h1, h2, h3, h4 {
-      font-weight: normal;
-      line-height: 1.2;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-    }
-    
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; border-bottom: 1px solid #eee; }
-    h3 { font-size: 1.25rem; }
-    h4 { font-size: 1.1rem; }
-
-    /* Math */
-    .katex { font-family: var(--font-math); }
-    .katex-display { margin: 1.5em 0; overflow-x: auto; }
-
-    /* Code */
-    code {
-      background: #f5f5f5;
-      padding: 0.1em 0.3em;
-      font-size: 0.9em;
-    }
-
-    pre {
-      background: #f5f5f5;
-      padding: var(--spacing);
-      overflow-x: auto;
-    }
-
-    pre code {
-      background: none;
-      padding: 0;
-    }
-
-    /* Links */
-    a { color: #1a1a1a; }
-    a:hover { text-decoration: none; }
-
-    /* Blockquote */
-    blockquote {
-      border-left: 2px solid #999;
-      padding-left: var(--spacing);
-      margin-left: 0;
-      color: var(--muted);
-    }
-
-    /* Tables */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 1.5em 0;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 0.5em;
-      text-align: left;
-    }
-
-    th { background: #f5f5f5; }
-
-    /* Lists */
-    ul, ol { padding-left: 1.5em; }
-    li { margin: 0.5em 0; }
-
-    /* Horizontal rule */
-    hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
-
-    /* ============================================
-       SIDENOTES (Penrose-style margin notes)
-       ============================================ */
-    
-    .sidenote {
-      float: right;
-      clear: right;
-      position: relative;
-      right: calc(-1 * var(--margin-width) + 0.25in);
-      width: calc(var(--margin-width) - 0.5in);
-      font-size: 0.85em;
-      line-height: 1.4;
-      color: var(--muted);
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-      text-align: left;
-    }
-    
-    .sidenote-title {
-      display: block;
-      font-variant: small-caps;
-      font-size: 0.9em;
-      color: var(--text-color);
-      margin-bottom: 0.25em;
-      letter-spacing: 0.05em;
-    }
-    
-    /* Sidenote number in text */
-    .sidenote-number {
-      font-size: 0.7em;
-      vertical-align: super;
-      margin-left: 0.1em;
-    }
-    
-    /* ============================================
-       FULL-WIDTH FIGURES
-       ============================================ */
-    
-    figure {
-      margin: 1.5em 0;
-    }
-    
-    figure.full-width {
-      width: calc(var(--text-width) + var(--margin-width) - 0.5in);
-      margin-left: calc(-1 * var(--margin-width) / 2 + 0.25in);
-    }
-    
-    figure.margin-figure {
-      float: right;
-      clear: right;
-      right: calc(-1 * var(--margin-width) + 0.25in);
-      width: calc(var(--margin-width) - 0.5in);
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    
-    figcaption {
-      font-size: 0.85em;
-      font-style: italic;
-      color: var(--muted);
-      text-align: left;
-      margin-top: 0.5em;
-    }
-    
-    figure.margin-figure figcaption {
-      font-size: 0.8em;
-    }
-    
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* ============================================
-       MATH DISPLAY
-       ============================================ */
-    
-    .katex { font-family: var(--font-math); }
-    .katex-display {
-      margin: 1.5em 0;
-      padding: 0.5em 0;
-      overflow-x: auto;
-      text-align: center;
-    }
-    
-    .katex-display > .katex {
-      text-align: center;
-    }
-    
-    /* ============================================
-       EXPLANATION BLOCKS
-       ============================================ */
-    
-    .explanation {
-      background: linear-gradient(to right, #f0f4f8, #f8fafc);
-      border-left: 3px solid #2c5282;
-      padding: 1em 1.5em;
-      margin: 1.5em 0;
-      font-style: normal;
-      color: #2d3748;
-    }
-    
-    .explanation-label {
-      font-weight: 600;
-      color: #2c5282;
-      text-transform: uppercase;
-      font-size: 0.75em;
-      letter-spacing: 0.1em;
-      margin-bottom: 0.75em !important;
-      text-indent: 0 !important;
-    }
-    
-    .explanation p {
-      margin: 0.5em 0;
-      text-indent: 0;
-    }
-    
-    /* Wide equation wrapper for horizontal scroll */
-    .equation-wide {
-      overflow-x: auto;
-      margin: 1.5em -1em;
-      padding: 0.5em 1em;
-    }
-    
-    /* ============================================
-       CODE BLOCKS
-       ============================================ */
-    
-    code {
-      background: #f5f5f5;
-      padding: 0.1em 0.3em;
-      font-size: 0.9em;
-      font-family: "SF Mono", Monaco, "Courier New", monospace;
-    }
-    
-    pre {
-      background: #f5f5f5;
-      padding: var(--spacing);
-      overflow-x: auto;
-      border-radius: 4px;
-      margin: 1.5em 0;
-    }
-    
-    pre code {
-      background: none;
-      padding: 0;
-      font-size: 0.85em;
-    }
-    
-    /* ============================================
-       LINKS & MISC
-       ============================================ */
-    
-    a { color: var(--text-color); text-decoration: underline; text-decoration-color: #999; }
-    a:hover { text-decoration: none; }
-    
-    /* Blockquote */
-    blockquote {
-      border-left: 2px solid #999;
-      padding-left: var(--spacing);
-      margin: 1.5em 0;
-      margin-left: 0;
-      color: var(--muted);
-      font-style: italic;
-    }
-    
-    /* Tables */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 1.5em 0;
-    }
-    
-    th, td {
-      border: 1px solid #ddd;
-      padding: 0.5em;
-      text-align: left;
-    }
-    
-    th { background: #f5f5f5; font-weight: normal; }
-    
-    /* Lists */
-    ul, ol { padding-left: 1.5em; }
-    li { margin: 0.5em 0; }
-    
-    /* Horizontal rule */
-    hr { 
-      border: none; 
-      border-top: 1px solid #ddd; 
-      margin: 3em auto;
-      width: 50%;
-    }
-    
-    /* KaTeX errors */
-    .katex-error {
-      background: #fee;
-      color: #c00;
-      padding: 0.1em 0.3em;
-    }
-    
-    /* ============================================
-       FRONT MATTER
-       ============================================ */
-    
-    /* Half-title page: just the title, centered */
-    body.half-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-right: 0;
-    }
-    
-    body.half-title h1 {
-      font-size: 2.5em;
-      font-variant: small-caps;
-      letter-spacing: 0.2em;
-      text-align: center;
-      margin: 0;
-    }
-    
-    /* Title page: full publication details */
-    body.title-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-right: 0;
-      text-align: center;
-    }
-    
-    body.title-page h1 {
-      font-size: 3em;
-      font-variant: small-caps;
-      letter-spacing: 0.15em;
-      margin-bottom: 0.5em;
-    }
-    
-    body.title-page h2 {
-      font-size: 1.25em;
-      font-weight: normal;
-      font-style: italic;
-      margin-bottom: 3em;
+    #layout-toggle {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: #333;
+      color: #fff;
       border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     
-    body.title-page hr {
-      width: 60%;
-      margin: 2em auto;
-    }
-    
-    body.title-page p {
-      text-indent: 0;
-    }
-    
-    /* Copyright page */
-    body.copyright {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-right: 0;
-    }
-    
-    body.copyright h1 {
-      font-size: 1.5em;
-      font-variant: small-caps;
-      letter-spacing: 0.15em;
-      text-align: center;
-      margin-bottom: 2em;
-    }
-    
-    body.copyright p {
-      text-indent: 0;
-      text-align: center;
-      color: var(--muted);
-    }
-    
-    body.copyright hr {
-      width: 30%;
-    }
-    
-    /* ============================================
-       TABLE OF CONTENTS
-       ============================================ */
-    
-    body.contents-page {
-      max-width: 100%;
-      padding-right: 0;
-    }
-    
-    .toc {
-      max-width: 8in;
-      margin: 0 auto;
-    }
-    
-    .toc-title {
-      font-size: 1.5em;
-      font-variant: small-caps;
-      letter-spacing: 0.15em;
-      text-align: center;
-      margin-bottom: 2em;
-    }
-    
-    .toc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    .toc-list ol {
-      list-style: none;
-      padding-left: 2em;
-    }
-    
-    .toc-level-1 {
-      margin: 1.5em 0;
-      font-size: 1.1em;
-    }
-    
-    .toc-level-1 > a {
-      font-variant: small-caps;
-      letter-spacing: 0.05em;
-    }
-    
-    .toc-level-2 {
-      margin: 0.75em 0;
-      font-style: italic;
-    }
-    
-    .toc-level-3 {
-      margin: 0.5em 0;
-      font-size: 0.95em;
-      padding-left: 1em;
-    }
-    
-    .toc a {
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    
-    .toc a:hover {
-      text-decoration: underline;
-    }
-    
-    /* ============================================
-       RESPONSIVE
-       ============================================ */
-    
-    @media (max-width: 9in) {
-      body {
-        width: 100%;
-        padding-right: 1rem;
-      }
-      
-      .sidenote,
-      figure.margin-figure {
-        float: none;
-        position: relative;
-        right: auto;
-        width: 100%;
-        margin: 1em 0;
-        border-left: 2px solid #ddd;
-        padding-left: 1em;
-      }
-      
-      figure.full-width {
-        width: 100%;
-        margin-left: 0;
-      }
+    #layout-toggle:hover {
+      background: #555;
     }
   </style>
 </head>
 <body>
-{{content}}
+  <!-- Layout toggle button -->
+  <button id="layout-toggle" onclick="toggleLayout()">📄 Show Naked</button>
+  
+  <!-- Content container - isolates from host page -->
+  <div id="pob-content" class="pob-content">
+    {{content}}
+  </div>
 </body>
 </html>

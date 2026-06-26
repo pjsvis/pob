@@ -1,0 +1,333 @@
+/**
+ * layout.css — Penrose-style layout layer
+ * 
+ * This file provides the book-like layout with:
+ * - Narrow text column + wide margin
+ * - Sidenotes in the margin
+ * - Full-width figures
+ * - Chapter/section formatting
+ * 
+ * Include AFTER base.css.
+ * Only active when body has .use-layout class.
+ */
+
+@layer layout {
+  /**
+   * Enable layout only when .use-layout class is present on body.
+   * This allows toggling between "naked" and "styled" views.
+   */
+  body.use-layout {
+    /* Override body defaults for layout mode */
+    max-width: none;
+    width: calc(var(--text-width) + var(--margin-width));
+    margin: var(--top-margin, 1in) var(--gutter, 0.5in) var(--bottom-margin, 1in) 0;
+    padding: 0 var(--margin-width, 1.5in) 0 0;
+  }
+
+  body.use-layout .article {
+    max-width: var(--text-width, 6in);
+  }
+
+  /* ============================================
+     LAYOUT VARIABLES
+     ============================================ */
+  
+  body.use-layout {
+    --text-width: 6.5in;
+    --margin-width: 1.5in;
+    --gutter: 0.5in;
+    --top-margin: 1in;
+    --bottom-margin: 1in;
+  }
+
+  /* ============================================
+     CHAPTER & SECTION HEADINGS
+     ============================================ */
+  
+  body.use-layout .section {
+    font-style: italic;
+    font-size: 1.35em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  /* ============================================
+     PARAGRAPHS
+     ============================================ */
+  
+  body.use-layout p {
+    text-indent: 1.5em;
+    margin: 0.75em 0;
+  }
+
+  body.use-layout p:first-child,
+  body.use-layout h1 + p,
+  body.use-layout h2 + p,
+  body.use-layout h3 + p,
+  body.use-layout .newthought {
+    text-indent: 0;
+  }
+
+  /* ============================================
+     SIDENOTES (in the margin)
+     ============================================ */
+  
+  body.use-layout .sidenote {
+    float: right;
+    clear: right;
+    position: relative;
+    right: calc(-1 * var(--margin-width) + 0.5in);
+    width: calc(var(--margin-width) - 0.75in);
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: var(--muted);
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    padding-left: 0;
+    border-left: none;
+    text-align: left;
+  }
+
+  body.use-layout .sidenote-title {
+    display: block;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 0.25em;
+    letter-spacing: 0.05em;
+  }
+
+  body.use-layout .sidenote-number {
+    font-size: 0.65em;
+    vertical-align: super;
+    margin-left: 0.1em;
+  }
+
+  /* ============================================
+     FIGURES
+     ============================================ */
+  
+  body.use-layout figure {
+    margin: 1.5em 0;
+  }
+
+  /* Full-width figures extend into margin */
+  body.use-layout figure.full-width {
+    width: calc(var(--text-width) + var(--margin-width) * 0.8);
+    margin-left: calc(-1 * var(--margin-width) * 0.35);
+  }
+
+  /* Margin figures (small, in margin) */
+  body.use-layout figure.margin-figure {
+    float: right;
+    clear: right;
+    position: relative;
+    right: calc(-1 * var(--margin-width) + 0.5in);
+    width: calc(var(--margin-width) - 0.75in);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  body.use-layout figure.margin-figure figcaption {
+    font-size: 0.75em;
+  }
+
+  /* ============================================
+     CODE BLOCKS
+     ============================================ */
+  
+  body.use-layout pre {
+    margin: 1.5em -0.5em;
+    padding: 1em 0.75em;
+    border-radius: 4px;
+  }
+
+  /* ============================================
+     BLOCKQUOTE
+     ============================================ */
+  
+  body.use-layout blockquote {
+    border-left: 2px solid #999;
+    padding-left: 1.5em;
+    margin: 1.5em 0;
+    margin-left: 0;
+    font-style: italic;
+  }
+
+  /* ============================================
+     EXPLANATION BLOCKS
+     ============================================ */
+  
+  body.use-layout .explanation {
+    background: linear-gradient(to right, #f0f4f8, #f8fafc);
+    border-left: 3px solid #2c5282;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+  }
+
+  /* ============================================
+     FRONT MATTER PAGES
+     ============================================ */
+  
+  body.use-layout.half-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  body.use-layout.half-title h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+  }
+
+  body.use-layout.title-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  body.use-layout.title-page h1 {
+    font-size: 3em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+  }
+
+  body.use-layout.title-page h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 3em;
+    border: none;
+  }
+
+  body.use-layout.title-page hr {
+    width: 60%;
+    margin: 2em auto;
+  }
+
+  body.use-layout.title-page p {
+    text-indent: 0;
+  }
+
+  body.use-layout.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  body.use-layout.copyright h1 {
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  body.use-layout.copyright p {
+    text-align: center;
+  }
+
+  /* ============================================
+     TABLE OF CONTENTS
+     ============================================ */
+  
+  body.use-layout.contents-page {
+    max-width: none;
+    padding-right: 0;
+  }
+
+  body.use-layout .toc {
+    max-width: 8in;
+    margin: 0 auto;
+  }
+
+  body.use-layout .toc-title {
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  body.use-layout .toc-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  body.use-layout .toc-list ol {
+    padding-left: 2em;
+  }
+
+  body.use-layout .toc-level-1 {
+    margin: 1.5em 0;
+    font-size: 1.1em;
+  }
+
+  body.use-layout .toc-level-1 > a {
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+  }
+
+  body.use-layout .toc-level-2 {
+    margin: 0.75em 0;
+    font-style: italic;
+  }
+
+  body.use-layout .toc-level-3 {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+    padding-left: 1em;
+  }
+
+  /* ============================================
+     RESPONSIVE (collapse layout on small screens)
+     ============================================ */
+  
+  @media (max-width: 9in) {
+    body.use-layout {
+      width: 100%;
+      padding-right: 1rem;
+    }
+
+    body.use-layout .sidenote,
+    body.use-layout figure.margin-figure {
+      float: none;
+      position: relative;
+      right: auto;
+      width: 100%;
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 2px solid #ddd;
+    }
+
+    body.use-layout figure.full-width {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  /* ============================================
+     PRINT STYLES
+     ============================================ */
+  
+  @media print {
+    body.use-layout {
+      --margin-width: 0.75in;
+    }
+
+    body.use-layout .sidenote {
+      font-size: 0.75em;
+    }
+  }
+}

@@ -1,0 +1,656 @@
+/**
+ * pob.css — Penrose-on-Bilbo Content Styles
+ * 
+ * A minimalist CSS architecture for embedded content:
+ * 1. Containment: all: initial isolates content from host page
+ * 2. Presentation: layered styles for naked vs layout modes
+ * 3. Simplicity: single file, clear organization, no magic
+ * 
+ * Layers:
+ *   base    — readable content without layout
+ *   layout  — Penrose-style margins & sidenotes (optional)
+ */
+
+@layer base, layout;
+
+/* ============================================
+   CONTAINMENT & VARIABLES
+   ============================================ */
+
+@layer base {
+  :root {
+    /* Design tokens */
+    --pob-font-main: "Times New Roman", Georgia, serif;
+    --pob-font-math: "Latin Modern Math", "Times New Roman", serif;
+    --pob-font-mono: "SF Mono", Monaco, "Courier New", monospace;
+    
+    --pob-size: 1rem;
+    --pob-line-height: 1.7;
+    --pob-text-color: #1a1a1a;
+    --pob-muted: #666;
+    --pob-link-color: #1a1a1a;
+    
+    --pob-spacing: 1.5em;
+    --pob-paragraph: 1em;
+  }
+
+  /* Content container — makes a hole in the host page */
+  .pob-content {
+    all: initial;                           /* Break inheritance */
+    font-family: var(--pob-font-main);
+    font-size: var(--pob-size);
+    line-height: var(--pob-line-height);
+    color: var(--pob-text-color);
+    /* Two-mode responsive: fill available, but stay readable */
+    /* Never narrower than 45ch, never wider than 65ch */
+    max-width: clamp(45ch, 100%, 65ch);
+    margin-left: 0;                         /* Left-align by default */
+    padding: 1rem;
+  }
+
+  /* Re-establish box model inside container */
+  .pob-content *,
+  .pob-content *::before,
+  .pob-content *::after {
+    box-sizing: border-box;
+  }
+
+  /* ============================================
+     HEADINGS
+     ============================================ */
+  
+  .pob-content h1,
+  .pob-content h2,
+  .pob-content h3,
+  .pob-content h4,
+  .pob-content h5,
+  .pob-content h6 {
+    font-weight: normal;
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content h1 {
+    font-size: 2rem;
+    text-wrap: balance;
+  }
+
+  /* Chapter title styling (when container has class chapter) */
+  .pob-content.chapter h1 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .pob-content h2 { font-size: 1.5rem; }
+  .pob-content h3 { font-size: 1.25rem; }
+  .pob-content h4 { font-size: 1.1rem; }
+
+  .pob-content .chapter {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .pob-content .section {
+    font-style: italic;
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content .section-number {
+    font-style: normal;
+    margin-right: 0.5em;
+  }
+
+  /* ============================================
+     PARAGRAPHS & TEXT
+     ============================================ */
+  
+  .pob-content p {
+    margin: var(--pob-paragraph) 0;
+  }
+
+  .pob-content p:first-child,
+  .pob-content h1 + p,
+  .pob-content h2 + p,
+  .pob-content h3 + p,
+  .pob-content .newthought {
+    text-indent: 0;
+  }
+
+  .pob-content .newthought::first-letter {
+    font-variant: small-caps;
+  }
+
+  .pob-content strong { font-weight: bold; }
+  .pob-content em { font-style: italic; }
+
+  /* ============================================
+     LINKS
+     ============================================ */
+  
+  .pob-content a {
+    color: var(--pob-link-color);
+    text-decoration: underline;
+    text-decoration-color: #999;
+  }
+
+  .pob-content a:hover {
+    text-decoration: none;
+  }
+
+  /* ============================================
+     BLOCK QUOTES
+     ============================================ */
+  
+  .pob-content blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: var(--pob-spacing);
+    margin: var(--pob-spacing) 0;
+    margin-left: 0;
+    color: var(--pob-muted);
+    font-style: italic;
+  }
+
+  .pob-content blockquote p {
+    margin: 0.5em 0;
+  }
+
+  /* ============================================
+     CODE
+     ============================================ */
+  
+  .pob-content code {
+    font-family: var(--pob-font-mono);
+    font-size: 0.9em;
+    background: #f5f5f5;
+    padding: 0.15em 0.35em;
+    border-radius: 3px;
+  }
+
+  .pob-content pre {
+    font-family: var(--pob-font-mono);
+    font-size: 0.85em;
+    background: #f5f5f5;
+    padding: var(--pob-spacing);
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: var(--pob-spacing) 0;
+  }
+
+  .pob-content pre code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  /* ============================================
+     MATH (KaTeX)
+     ============================================ */
+  
+  .pob-content .katex {
+    font-family: var(--pob-font-math);
+  }
+
+  .pob-content .katex-display {
+    margin: var(--pob-spacing) 0;
+    overflow-x: auto;
+    text-align: center;
+  }
+
+  .pob-content .katex-error {
+    background: #fee;
+    color: #c00;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+}
+
+/* Vector‑calculus explanation block */
+.vector-explanation {
+    margin: var(--pob-spacing) 0;
+    padding: 0.75em;
+    background: #f0f8ff;
+    border-left: 4px solid #0066CC;
+    font-style: italic;
+}
+    background: #fee;
+    color: #c00;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+  }
+
+  /* ============================================
+     LISTS
+     ============================================ */
+  
+  .pob-content ul,
+  .pob-content ol {
+    padding-left: 1.5em;
+    margin: var(--pob-paragraph) 0;
+  }
+
+  .pob-content li {
+    margin: 0.5em 0;
+  }
+
+  .pob-content li > ul,
+  .pob-content li > ol {
+    margin: 0.25em 0;
+  }
+
+  /* ============================================
+     TABLES
+     ============================================ */
+  
+  .pob-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: var(--pob-spacing) 0;
+    font-size: 0.95em;
+  }
+
+  .pob-content th,
+  .pob-content td {
+    border: 1px solid #ddd;
+    padding: 0.5em 0.75em;
+    text-align: left;
+  }
+
+  .pob-content th {
+    background: #f5f5f5;
+    font-weight: normal;
+  }
+
+  /* ============================================
+     FIGURES & IMAGES
+     ============================================ */
+  
+  .pob-content figure {
+    margin: var(--pob-spacing) 0;
+  }
+
+  .pob-content figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--pob-muted);
+    margin-top: 0.5em;
+    text-align: left;
+  }
+
+  .pob-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ============================================
+     HORIZONTAL RULES
+     ============================================ */
+  
+  .pob-content hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em auto;
+  }
+
+  /* ============================================
+     SPECIAL BLOCKS
+     ============================================ */
+  
+  .pob-content .sidenote {
+    font-size: 0.85em;
+    color: var(--pob-muted);
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 2px solid #ddd;
+  }
+
+  .pob-content .sidenote-title {
+    display: block;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: var(--pob-text-color);
+    margin-bottom: 0.25em;
+  }
+
+  .pob-content .explanation {
+    background: #f8fafc;
+    border-left: 3px solid #2c5282;
+    padding: 1em var(--pob-spacing);
+    margin: var(--pob-spacing) 0;
+    color: #2d3748;
+  }
+
+  .pob-content .explanation-label {
+    font-weight: 600;
+    color: #2c5282;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content .explanation p {
+    margin: 0.5em 0;
+  }
+
+  /* ============================================
+     TABLE OF CONTENTS (minimal)
+     ============================================ */
+  
+  .pob-content .toc-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .pob-content .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pob-content .toc-list ol {
+    list-style: none;
+    padding-left: 1.5em;
+  }
+
+  .pob-content .toc-list li {
+    margin: 0.75em 0;
+  }
+
+  .pob-content .toc-list a {
+    text-decoration: none;
+  }
+
+  .pob-content .toc-list a:hover {
+    text-decoration: underline;
+  }
+
+  /* ============================================
+     FRONT MATTER (title pages - base styles)
+     ============================================ */
+  
+  .pob-content.half-title,
+  .pob-content.title-page,
+  .pob-content.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+
+  .pob-content.half-title h1 {
+    font-size: 2em;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+  }
+
+  .pob-content.title-page h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content.copyright {
+    font-size: 0.9em;
+  }
+
+  .pob-content.copyright h1 {
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    margin-bottom: 2em;
+  }
+}
+
+/* ============================================
+   LAYOUT LAYER (optional Penrose-style presentation)
+   ============================================ */
+
+@layer layout {
+  /* Layout mode — extend presentation */
+  .pob-content.use-layout {
+    --pob-text-width: 6.5in;
+    --pob-margin-width: 1.5in;
+    --pob-gutter: 0.5in;
+    --pob-top: 1in;
+    --pob-bottom: 1in;
+    
+    max-width: calc(var(--pob-text-width) + var(--pob-margin-width));
+    margin: var(--pob-top) var(--pob-gutter) var(--pob-bottom) 0;
+    padding: 0 var(--pob-margin-width) 0 0;
+  }
+
+  /* Section headings in layout mode */
+  .pob-content.use-layout .section {
+    font-style: italic;
+    font-size: 1.35em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  /* Paragraphs in layout mode */
+  .pob-content.use-layout p {
+    text-indent: 1.5em;
+    margin: 0.75em 0;
+  }
+
+  .pob-content.use-layout p:first-child,
+  .pob-content.use-layout h1 + p,
+  .pob-content.use-layout h2 + p,
+  .pob-content.use-layout h3 + p,
+  .pob-content.use-layout .newthought {
+    text-indent: 0;
+  }
+
+  /* Sidenotes float into margin */
+  .pob-content.use-layout .sidenote {
+    float: right;
+    clear: right;
+    position: relative;
+    right: calc(-1 * var(--pob-margin-width) + 0.5in);
+    width: calc(var(--pob-margin-width) - 0.75in);
+    font-size: 0.8em;
+    line-height: 1.4;
+    color: var(--pob-muted);
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+    padding-left: 0;
+    border-left: none;
+    text-align: left;
+  }
+
+  .pob-content.use-layout .sidenote-title {
+    display: block;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: var(--pob-text-color);
+    margin-bottom: 0.25em;
+    letter-spacing: 0.05em;
+  }
+
+  .pob-content.use-layout .sidenote-number {
+    font-size: 0.65em;
+    vertical-align: super;
+    margin-left: 0.1em;
+  }
+
+  /* Figures */
+  .pob-content.use-layout figure {
+    margin: 1.5em 0;
+  }
+
+  .pob-content.use-layout figure.full-width {
+    width: calc(var(--pob-text-width) + var(--pob-margin-width) * 0.8);
+    margin-left: calc(-1 * var(--pob-margin-width) * 0.35);
+  }
+
+  .pob-content.use-layout figure.margin-figure {
+    float: right;
+    clear: right;
+    position: relative;
+    right: calc(-1 * var(--pob-margin-width) + 0.5in);
+    width: calc(var(--pob-margin-width) - 0.75in);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content.use-layout figure.margin-figure figcaption {
+    font-size: 0.75em;
+  }
+
+  /* Code blocks */
+  .pob-content.use-layout pre {
+    margin: 1.5em -0.5em;
+    padding: 1em 0.75em;
+    border-radius: 4px;
+  }
+
+  /* Blockquote */
+  .pob-content.use-layout blockquote {
+    border-left: 2px solid #999;
+    padding-left: 1.5em;
+    margin: 1.5em 0;
+    margin-left: 0;
+  }
+
+  /* Explanation blocks */
+  .pob-content.use-layout .explanation {
+    background: linear-gradient(to right, #f0f4f8, #f8fafc);
+    border-left: 3px solid #2c5282;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+  }
+
+  /* ============================================
+     FRONT MATTER (title pages)
+     ============================================ */
+  
+  .pob-content.use-layout.half-title,
+  .pob-content.use-layout.title-page,
+  .pob-content.use-layout.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .pob-content.use-layout.half-title h1 {
+    font-size: 2.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.25em;
+  }
+
+  .pob-content.use-layout.title-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pob-content.use-layout.title-page h1 {
+    font-size: 3em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+  }
+
+  .pob-content.use-layout.title-page h2 {
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 3em;
+    border: none;
+  }
+
+  .pob-content.use-layout.title-page hr {
+    width: 60%;
+    margin: 2em auto;
+  }
+
+  .pob-content.use-layout.copyright h1 {
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.15em;
+  }
+
+  .pob-content.use-layout.copyright p {
+    text-align: center;
+  }
+
+  /* ============================================
+     RESPONSIVE (collapse layout on small screens)
+     ============================================ */
+  
+  @media (max-width: 9in) {
+    .pob-content.use-layout {
+      width: 100%;
+      padding-right: 1rem;
+    }
+
+    .pob-content.use-layout .sidenote,
+    .pob-content.use-layout figure.margin-figure {
+      float: none;
+      position: relative;
+      right: auto;
+      width: 100%;
+      margin: 1em 0;
+      padding-left: 1em;
+      border-left: 2px solid #ddd;
+    }
+
+    .pob-content.use-layout figure.full-width {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  /* ============================================
+     PRINT STYLES
+     ============================================ */
+  
+  @media print {
+    /* Colour classes – keep them inside the print media query so they survive printing (they will be rendered in grayscale automatically if the printer is monochrome) */
+    .half-space   { stroke:#444; stroke-width:2; }
+    .field-arrow  { stroke:#0066CC; stroke-width:1.5; }
+    .bio-unit     { fill:#FF6600; stroke:#FF6600; }
+    .stamp-elastic    { fill:#009688; }
+    .stamp-thixotropic{ fill:#9C27B0; }
+    .stamp-plastic    { fill:#E65100; }
+    .diagram-error { fill:#C00; }
+  .ascii-diagram svg text {
+    font-size: 0.85rem; /* Reduce font size for ASCII diagrams */
+    text-rendering: geometricPrecision;
+    font-family: "SF Mono", "DejaVu Sans Mono", Monaco, "Courier New", monospace;
+    stroke: #1a1a1a;
+  }
+    .ascii-diagram {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .dalembertian { fill:none; stroke:#000; stroke-width:2; stroke-dasharray:4 2; }
+    /* End colour classes */
+    .pob-content.use-layout {
+      --pob-margin-width: 0.75in;
+    }
+
+    .pob-content.use-layout .sidenote {
+      font-size: 0.75em;
+    }
+  }
+}

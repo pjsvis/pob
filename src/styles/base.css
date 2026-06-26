@@ -1,0 +1,371 @@
+/**
+ * base.css — Minimal styles for readable content
+ * 
+ * This file contains ONLY the styles needed for content to be readable.
+ * It should work WITHOUT any layout.css, serving as a "naked" view.
+ * 
+ * Include FIRST, before layout.css (if used).
+ */
+
+@layer base {
+  :root {
+    /* Typography */
+    --font-main: "Times New Roman", Georgia, serif;
+    --font-math: "Latin Modern Math", "Times New Roman", serif;
+    --font-mono: "SF Mono", Monaco, "Courier New", monospace;
+    
+    /* Base values */
+    --body-size: 1rem;
+    --line-height: 1.7;
+    --text-color: #1a1a1a;
+    --muted: #666;
+    --link-color: #1a1a1a;
+    
+    /* Spacing */
+    --spacing: 1.5em;
+    --paragraph-space: 1em;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: var(--body-size);
+    line-height: var(--line-height);
+  }
+
+  body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    max-width: 65ch;          /* Optimal reading width */
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* ============================================
+     HEADINGS
+     ============================================ */
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.25;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-wrap: balance;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Chapter/section headings */
+  .chapter {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .section {
+    font-style: italic;
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .section-number {
+    font-style: normal;
+    margin-right: 0.5em;
+  }
+
+  .subsection {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  /* ============================================
+     PARAGRAPHS & TEXT
+     ============================================ */
+  
+  p {
+    margin: var(--paragraph-space) 0;
+    /* No indent on first paragraph or new sections */
+  }
+
+  p:first-child,
+  h1 + p, h2 + p, h3 + p,
+  .newthought {
+    text-indent: 0;
+  }
+
+  /* Drop cap for newthought */
+  .newthought::first-letter {
+    font-variant: small-caps;
+  }
+
+  strong { font-weight: bold; }
+  em { font-style: italic; }
+
+  /* ============================================
+     LINKS
+     ============================================ */
+  
+  a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-decoration-color: #999;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /* ============================================
+     BLOCK QUOTES
+     ============================================ */
+  
+  blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: var(--spacing);
+    margin: var(--spacing) 0;
+    margin-left: 0;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  blockquote p {
+    margin: 0.5em 0;
+  }
+
+  /* ============================================
+     CODE
+     ============================================ */
+  
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: #f5f5f5;
+    padding: 0.15em 0.35em;
+    border-radius: 3px;
+  }
+
+  pre {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    background: #f5f5f5;
+    padding: var(--spacing);
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: var(--spacing) 0;
+  }
+
+  pre code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  /* ============================================
+     MATH (KaTeX)
+     ============================================ */
+  
+  .katex {
+    font-family: var(--font-math);
+  }
+
+  .katex-display {
+    margin: var(--spacing) 0;
+    overflow-x: auto;
+    text-align: center;
+  }
+
+  .katex-error {
+    background: #fee;
+    color: #c00;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+  }
+
+  /* ============================================
+     LISTS
+     ============================================ */
+  
+  ul, ol {
+    padding-left: 1.5em;
+    margin: var(--paragraph-space) 0;
+  }
+
+  li {
+    margin: 0.5em 0;
+  }
+
+  li > ul, li > ol {
+    margin: 0.25em 0;
+  }
+
+  /* ============================================
+     TABLES
+     ============================================ */
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: var(--spacing) 0;
+    font-size: 0.95em;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em 0.75em;
+    text-align: left;
+  }
+
+  th {
+    background: #f5f5f5;
+    font-weight: normal;
+  }
+
+  /* ============================================
+     FIGURES & IMAGES
+     ============================================ */
+  
+  figure {
+    margin: var(--spacing) 0;
+  }
+
+  figcaption {
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--muted);
+    margin-top: 0.5em;
+    text-align: left;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ============================================
+     HORIZONTAL RULES
+     ============================================ */
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2em auto;
+  }
+
+  /* ============================================
+     SPECIAL BLOCKS
+     ============================================ */
+  
+  /* Sidenotes — minimal fallback (no positioning) */
+  .sidenote {
+    font-size: 0.85em;
+    color: var(--muted);
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 2px solid #ddd;
+  }
+
+  .sidenote-title {
+    display: block;
+    font-variant: small-caps;
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 0.25em;
+  }
+
+  /* Explanation blocks */
+  .explanation {
+    background: #f8fafc;
+    border-left: 3px solid #2c5282;
+    padding: 1em var(--spacing);
+    margin: var(--spacing) 0;
+    color: #2d3748;
+  }
+
+  .explanation-label {
+    font-weight: 600;
+    color: #2c5282;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5em;
+  }
+
+  .explanation p {
+    margin: 0.5em 0;
+  }
+
+  /* ============================================
+     FRONT MATTER (minimal)
+     ============================================ */
+  
+  body.half-title,
+  body.title-page,
+  body.copyright {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  body.title-page h1 {
+    font-size: 2em;
+  }
+
+  body.half-title h1 {
+    font-size: 1.8em;
+  }
+
+  /* ============================================
+     TABLE OF CONTENTS (minimal)
+     ============================================ */
+  
+  .toc-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .toc-list ol {
+    list-style: none;
+    padding-left: 1.5em;
+  }
+
+  .toc-list li {
+    margin: 0.75em 0;
+  }
+
+  .toc-list a {
+    text-decoration: none;
+  }
+
+  .toc-list a:hover {
+    text-decoration: underline;
+  }
+}
