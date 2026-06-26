@@ -57,9 +57,5 @@ just deps       # Show dependencies
 - [dependencies.md](./dependencies.md) — Full dependency list
 - [playbooks/](./playbooks/) — Workflow documentation
 
-## Deprecated content
-
-- `content/penrose-diagrams.md` – moved to `content/deprecated/penrose-diagrams.md`. The old file now contains a deprecation notice.
-
 - [grad‑div‑curl‑demo.md](./content/grad-div-curl-demo.md) – showcases an equation, a Penrose diagram, and Grad/Div/Curl narrative blocks
 - [dalembertian‑demo.md](./content/dalembertian-demo.md) – demonstrates the D’Alembertian symbol and its use in a diagram
