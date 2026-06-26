@@ -69,7 +69,13 @@ function processCustomBlocks(text: string): string {
   
   // figure blocks with caption: :::figure:num:caption... :::
   text = text.replace(/:::figure:(\d+\.\d+):([^\n]+)\n([\s\S]*?):::/g, (_, num, caption, content) => {
-    return `<figure class="full-width">\n${content}\n<figcaption>Figure ${num}: ${caption}</figcaption>\n</figure>`;
+    // Check if content has code fences and wrap in pre, or clean up fences
+    let innerContent = content.trim();
+    // Strip outer triple backticks if present
+    innerContent = innerContent.replace(/^```\n?/, '').replace(/\n?```$/, '');
+    // Wrap in pre tags for proper monospace rendering
+    innerContent = `<pre><code>${innerContent}</code></pre>`;
+    return `<figure class="full-width">\n${innerContent}\n<figcaption>Figure ${num}: ${caption}</figcaption>\n</figure>`;
   });
   
   return text;
