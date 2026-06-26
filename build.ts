@@ -1,12 +1,14 @@
 import { marked } from "marked";
 import katex from "katex";
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, rmSync, existsSync } from "node:fs";
+import { processDiagrams } from "./src/agents/diagrams";
 import { resolve, join } from "node:path";
 
 // === Configuration ===
 const CONTENT_DIR = resolve("./content");
 const DIST_DIR = resolve("./dist");
 const TEMPLATE_PATH = resolve("./src/templates/layout.html");
+const STYLES_DIR = resolve("./src/styles");
 
 // === Pre-processors ===
 
@@ -233,19 +235,36 @@ function buildContentsPage(detailed: boolean = false): string {
   const tocHtml = generateTOC(files, detailed);
   
   let output = template.replace("{{content}}", tocHtml);
-  output = output.replace("<body>", `<body class="contents-page">`);
-  output = output.replace("<title>", "<title>Contents — ");
+  output = output.replace(
+    '<div id="pob-content" class="pob-content">',
+    '<div id="pob-content" class="pob-content contents-page use-layout">'
+  );
+  output = output.replace("<title>{{title}}</title>", "<title>Contents</title>");
   
   return output;
 }
 
 // === Build Pipeline ===
-function build() {
-  console.log("🧹 Clearing dist/...");
-  if (existsSync(DIST_DIR)) {
-    rmSync(DIST_DIR, { recursive: true });
+export async function build(opts: { clean?: boolean } = {}) {
+  const clean = opts.clean ?? true;
+  if (clean) {
+    console.log("🧹 Clearing dist/...");
+    if (existsSync(DIST_DIR)) {
+      rmSync(DIST_DIR, { recursive: true });
+    }
   }
   mkdirSync(DIST_DIR, { recursive: true });
+
+  console.log("Copying CSS files...");
+  if (existsSync(STYLES_DIR)) {
+    // Only copy pob.css (the unified content stylesheet)
+    const pobCss = join(STYLES_DIR, "pob.css");
+    if (existsSync(pobCss)) {
+      const css = readFileSync(pobCss, "utf-8");
+      writeFileSync(join(DIST_DIR, "pob.css"), css);
+      console.log("  -> pob.css");
+    }
+  }
 
   console.log("📄 Reading template...");
   const template = readFileSync(TEMPLATE_PATH, "utf-8");
@@ -267,9 +286,11 @@ function build() {
     
     // 2. Process custom blocks (sidenote, newthought, figure, etc.)
     const step1 = processCustomBlocks(content);
+    // Process diagrams (ASCII art, Mermaid) before markdown parsing
+    const { content: diagramContent } = await processDiagrams(step1);
     
     // 3. Render KaTeX math (before markdown parsing so $...$ patterns exist)
-    const step2 = renderKaTeX(step1);
+    const step2 = renderKaTeX(diagramContent);
     
     // 4. Parse markdown to HTML
     let body = marked.parse(step2) as string;
@@ -277,26 +298,42 @@ function build() {
     // 5. Post-process HTML: add classes to headings based on §X.Y pattern
     body = postProcessHTML(body);
 
-    let output = template.replace("{{content}}", body);
+    let output = template.replace("{{title}}", meta.title || "Poverty of Biomechanics");
+    output = output.replace("{{content}}", body);
     
-    // Apply body class from frontmatter style
-    if (meta.style) {
-      output = output.replace("<body>", `<body class="${meta.style}">`);
-    }
+    // Apply classes to the pob-content container
+    // This allows toggling between naked and layout presentation
+    const containerClass = meta.style 
+      ? `pob-content ${meta.style} use-layout`
+      : `pob-content use-layout`;
+    output = output.replace(
+      '<div id="pob-content" class="pob-content">',
+      `<div id="pob-content" class="${containerClass}">`
+    );
     
     const outputName = file.replace(".md", ".html");
     writeFileSync(join(DIST_DIR, outputName), output);
   }
   
+  // Ensure a root index.html exists (copy from index-page.html)
+  const indexPagePath = join(DIST_DIR, "index-page.html");
+  if (existsSync(indexPagePath)) {
+    const indexDestPath = join(DIST_DIR, "index.html");
+    const html = readFileSync(indexPagePath);
+    writeFileSync(indexDestPath, html);
+    console.log("  -> index.html");
+  }
+
   // Generate contents page
   console.log("  → contents.html");
   const contentsHtml = buildContentsPage(true); // Detailed TOC
   writeFileSync(join(DIST_DIR, "contents.html"), contentsHtml);
 
-  console.log(`\n✅ Built ${files.length} pages + contents to dist/\n`);
+  console.log('Built ' + files.length + ' pages + contents to dist/\n');
 }
 
-// === CLI ===
+// === CLI (only when invoked directly via `bun run build.ts`) ===
+if (import.meta.main) {
 const args = Bun.argv.slice(2);
 
 if (args.includes("--help") || args.includes("-h")) {
@@ -328,3 +365,4 @@ if (args.includes("--dry-run")) {
 }
 
 build();
+} // end import.meta.main
