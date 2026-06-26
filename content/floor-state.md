@@ -1,3 +1,7 @@
+---
+title: Floor State
+---
+
 # floor state
 
 - a bounded continuum bio-tensgrity structure resting on a Euclidean half space in an orthogonal 1g vector field.

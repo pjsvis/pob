@@ -1,3 +1,7 @@
+---
+title: Tensor Calculus Notation Test Suite
+---
+
 # Tensor Calculus Notation Test Suite
 
 This document tests the full range of mathematical notation rendering — inline symbols, display equations, and code blocks with embedded math.

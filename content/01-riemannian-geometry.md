@@ -54,7 +54,7 @@ Symbols: Γⁿ_{μν}          Symbols: Γ'ⁿ_{μν}
 ```
 :::
 
-## §1.3 Parallel Transport
+## §1.3 Parallel Transport
 
 A vector $V^\mu$ is parallel transported along a curve $x^\lambda(\tau)$ when:
 

@@ -1,3 +1,7 @@
+---
+title: One-Inch Punch: Tensor Algebra Analysis
+---
+
 # One-Inch Punch: Tensor Algebra Analysis
 
 ## Continuum Mechanics in Euclidean Half-Space

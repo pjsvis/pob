@@ -1,3 +1,7 @@
+---
+title: The Potter's Wheel
+---
+
 Modeling the potter's wheel through the lens of non-linear continuum mechanics and differential geometry elevates the craft into a spectacular demonstration of **plastic tensor fields**.
 
 When you throw clay, you are not just shifting mud; you are acting as an external boundary condition that forces a bounded, anisotropic, viscoplastic body to undergo non-trivial topological transformations.

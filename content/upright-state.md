@@ -1,3 +1,7 @@
+---
+title: Upright State
+---
+
 # upright state
 
 - a bounded continuum bio-tensegrity structure standing on a Euclidean half space in an orthogonal 1g vector field.
