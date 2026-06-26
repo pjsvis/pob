@@ -9,7 +9,6 @@
   },
   "scripts": {
     "build": "bun run build.ts",
-    "dev": "bun run build.ts --watch",
     "preview": "bun run src/cli.ts preview",
     "tree": "bun run src/cli.ts tree",
     "cli": "bun run src/cli.ts"

@@ -40,7 +40,6 @@ pob/
 ```bash
 just build      # Compile content to dist/
 just clean      # Clear dist/
-just dev        # Watch mode (if implemented)
 just check      # Dry-run build
 just deps       # Show dependencies
 ```

@@ -619,32 +619,88 @@
   }
 
   /* ============================================
+     DIAGRAMS (monochrome — ADR-002 hybrid SVG)
+     Colour is deferred until the geometry is verified.
+     ============================================ */
+
+  .pob-content .diagram {
+    margin: 1.5em 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .pob-content .diagram svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: #fafafa;
+  }
+
+  /* All primitives: black ink, hairline strokes, on the white-ish ground. */
+  .pob-content .hybrid-diagram .diagram-half-space,
+  .pob-content .hybrid-diagram .diagram-leg,
+  .pob-content .hybrid-diagram .diagram-identity,
+  .pob-content .hybrid-diagram .diagram-arrow {
+    stroke: #1a1a1a;
+    stroke-width: 1.5;
+    fill: none;
+  }
+
+  /* Nodes: outlined, hollow. */
+  .pob-content .hybrid-diagram .diagram-node {
+    fill: #fafafa;
+    stroke: #1a1a1a;
+    stroke-width: 1.5;
+  }
+
+  /* Matrix stamps: solid black for contrast against hollow nodes. */
+  .pob-content .hybrid-diagram .diagram-stamp {
+    fill: #1a1a1a;
+    stroke: #1a1a1a;
+    stroke-width: 1;
+  }
+  .pob-content .hybrid-diagram .diagram-stamp-circle-inner {
+    fill: #fafafa;
+    stroke: none;
+  }
+
+  /* D’Alembertian: hollow double-lined box (distinct from the node square). */
+  .pob-content .hybrid-diagram .diagram-dalembertian {
+    fill: none;
+    stroke: #1a1a1a;
+    stroke-width: 1.5;
+    stroke-dasharray: 4 2;
+  }
+
+  /* Contraction loop. */
+  .pob-content .hybrid-diagram .diagram-contraction {
+    fill: none;
+    stroke: #1a1a1a;
+    stroke-width: 1.5;
+  }
+
+  /* Arrowhead marker. */
+  .pob-content .hybrid-diagram .diagram-arrowhead {
+    fill: #1a1a1a;
+  }
+
+  /* Labels. */
+  .pob-content .hybrid-diagram .diagram-label {
+    fill: #1a1a1a;
+    font-family: var(--pob-font-mono);
+    font-size: 11px;
+  }
+
+  /* Mermaid placeholder: muted. */
+  .pob-content .mermaid-diagram svg {
+    border: 1px dashed #999;
+  }
+
+  /* ============================================
      PRINT STYLES
      ============================================ */
   
   @media print {
-    /* Colour classes – keep them inside the print media query so they survive printing (they will be rendered in grayscale automatically if the printer is monochrome) */
-    .half-space   { stroke:#444; stroke-width:2; }
-    .field-arrow  { stroke:#0066CC; stroke-width:1.5; }
-    .bio-unit     { fill:#FF6600; stroke:#FF6600; }
-    .stamp-elastic    { fill:#009688; }
-    .stamp-thixotropic{ fill:#9C27B0; }
-    .stamp-plastic    { fill:#E65100; }
-    .diagram-error { fill:#C00; }
-  .ascii-diagram svg text {
-    font-size: 0.85rem; /* Reduce font size for ASCII diagrams */
-    text-rendering: geometricPrecision;
-    font-family: "SF Mono", "DejaVu Sans Mono", Monaco, "Courier New", monospace;
-    stroke: #1a1a1a;
-  }
-    .ascii-diagram {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-    }
-
-    .dalembertian { fill:none; stroke:#000; stroke-width:2; stroke-dasharray:4 2; }
-    /* End colour classes */
     .pob-content.use-layout {
       --pob-margin-width: 0.75in;
     }

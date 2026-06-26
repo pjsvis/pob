@@ -196,5 +196,4 @@ Keep diagrams simple — hand-coded is fine.
 ## Related
 
 - `playbooks/penrose-book-playbook.md` — Book formatting
-- `playbooks/agent-infrastructure-playbook.md` — Build automation
 - `src/agents/diagrams.ts` — Diagram processor source

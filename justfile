@@ -12,10 +12,6 @@ build *args:
 clean:
     rm -rf dist/
 
-[group("dev")]
-watch:
-    @bun run src/cli.ts build --watch
-
 [group("preview")]
 serve:
     @bun run src/cli.ts preview

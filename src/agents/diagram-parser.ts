@@ -66,26 +66,32 @@ const HORIZONTAL_LEGS = new Set(["—", "–", "-", "─", "━"]);
 const IDENTITY = "=";
 const HALF_SPACE_RUN = /-{3,}/; // three or more hyphens on one line
 
+// Structural tokens distinguish a hybrid tensor diagram from prose that
+// happens to contain an arrow. A lone → (e.g. in an illustration) must NOT
+// trigger the hybrid pipeline — at least one node, stamp, half-space,
+// d'Alembertian, or contraction is required.
+const STRUCTURAL_CHARS = new Set([
+  ...Object.keys(NODE_CHARS),
+  ...Object.keys(STAMP_CHARS),
+  DALEMBERTIAN,
+  CONTRACTION,
+]);
+
 // === Parser ===
 
 /**
  * Does this block use the hybrid symbol set?
  * Used to decide between the hybrid parser and the text fallback.
+ * Requires at least one STRUCTURAL token (node, stamp, half-space,
+ * d'Alembertian, or contraction) — a lone field arrow is not enough,
+ * because illustrations use → for direction.
  */
 export function isHybridDiagram(text: string): boolean {
   const lines = text.split("\n");
   for (const line of lines) {
     if (HALF_SPACE_RUN.test(line)) return true;
     for (const ch of line) {
-      if (
-        ch in NODE_CHARS ||
-        ch in STAMP_CHARS ||
-        ch in FIELD_ARROWS ||
-        ch === DALEMBERTIAN ||
-        ch === CONTRACTION
-      ) {
-        return true;
-      }
+      if (STRUCTURAL_CHARS.has(ch)) return true;
     }
   }
   return false;
