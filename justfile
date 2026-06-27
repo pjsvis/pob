@@ -21,6 +21,10 @@ preview *args:
     @bun run src/cli.ts preview {{args}}
 
 [group("meta")]
+orient *args:
+    @bun run src/cli.ts orient {{args}}
+
+[group("meta")]
 tree *args:
     @bun run src/cli.ts tree {{args}}
 

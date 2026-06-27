@@ -18,6 +18,7 @@ const main = defineCommand({
     preview: () => import("./commands/preview.js").then((m) => m.previewCommand),
     tree: () => import("./commands/tree.js").then((m) => m.treeCommand),
     help: () => import("./commands/help.js").then((m) => m.helpCommand),
+    orient: () => import("./commands/orient.js").then((m) => m.orientCommand),
   },
 });
 
