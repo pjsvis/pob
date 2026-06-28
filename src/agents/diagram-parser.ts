@@ -40,7 +40,7 @@ export interface DiagramAst {
 // === Token recognition ===
 
 const NODE_CHARS: Record<string, NodeShape> = {
-  "o": "circle",
+  "○": "circle",
   "□": "square",
   "△": "triangle",
 };

@@ -1,6 +1,6 @@
 import { marked } from "marked";
 import katex from "katex";
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, rmSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, statSync, rmSync, existsSync, copyFileSync } from "node:fs";
 import { processDiagrams, injectDiagrams } from "./src/agents/diagrams";
 import { resolve, join } from "node:path";
 
@@ -357,6 +357,26 @@ export async function build(opts: { clean?: boolean } = {}) {
       writeFileSync(join(DIST_DIR, "pob.css"), css);
       console.log("  -> pob.css");
     }
+  }
+
+  // Self-host KaTeX CSS + fonts (was a CDN link; the CDN failing to load
+  // caused every inline math expression to double — MathML not hidden —
+  // which read as 'E E', 'Ω Ω', etc.). Local copy ships with the build.
+  const katexDist = resolve("./node_modules/katex/dist");
+  if (existsSync(join(katexDist, "katex.min.css"))) {
+    copyFileSync(join(katexDist, "katex.min.css"), join(DIST_DIR, "katex.min.css"));
+    console.log("  -> katex.min.css");
+    const fontsSrc = join(katexDist, "fonts");
+    const fontsDest = join(DIST_DIR, "fonts");
+    if (existsSync(fontsSrc)) {
+      mkdirSync(fontsDest, { recursive: true });
+      for (const f of readdirSync(fontsSrc)) {
+        copyFileSync(join(fontsSrc, f), join(fontsDest, f));
+      }
+      console.log(`  -> fonts/ (${readdirSync(fontsSrc).length} files)`);
+    }
+  } else {
+    console.warn("  ⚠️ node_modules/katex/dist/katex.min.css not found — math CSS will be missing");
   }
 
   console.log("📄 Reading template...");

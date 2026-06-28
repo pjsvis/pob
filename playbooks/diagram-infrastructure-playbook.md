@@ -37,7 +37,7 @@ These are the only tokens the parser recognises. Anything else is ignored.
 |-------|---------|---------------|
 | `---` (3+ hyphens) | Half-space — the Euclidean plane / floor, the boundary of the bounded continuum | `<line class="diagram-half-space">` spanning the canvas width at that row |
 | `↓` `↑` `←` `→` | Field arrow — orthogonal 1-g vector field (canonical direction is `↓`, gravity pointing down into the material) | `<line class="diagram-arrow">` with `marker-end="url(#arrowhead)"` |
-| `o` | Tensor node — circle | `<circle class="diagram-node diagram-node-circle">` |
+| `○` | Tensor node — circle | `<circle class="diagram-node diagram-node-circle">` |
 | `□` | Tensor node — square | `<rect class="diagram-node diagram-node-square">` |
 | `△` | Tensor node — triangle | `<polygon class="diagram-node diagram-node-triangle">` |
 | `—` `–` `-` `─` `━` | Horizontal leg (tensor rank line) | `<line class="diagram-leg">` (runs coalesce) |
