@@ -4,28 +4,28 @@ title: "Chapter 05: The Idle State"
 
 # The Idle State (The Protocol of Nothing)
 ## The Familiar Hook: Shifting the Frontier
-To the outside world, you are a complete picture of non-productivity. You are simply lying flat on your back on a living room rug, staring at a patch of plaster on the ceiling, doing absolutely nothing. An observer walking past the window would conclude that your system has powered down.
+To the outside world, you are a complete picture of non-productivity. You are simply lying flat on your back on a living room rug, staring at a patch of plaster on the ceiling, doing absolutely nothing. An observer walking past the window would conclude that your system has gone still.
 
-But inside your chassis, the exact opposite is happening. A high-density optimization pass is executing at maximum processing speed.
+But inside your chassis, the exact opposite is happening. A dense, silent recalibration is running at full tilt.
 
 Once you comprehend this process, nothing changes outwardly, but everything changes structurally. You stop treating the floor as a passive rest station and begin to see it as an active practice. As you lie there, you notice that your internal sensory attention doesn't drift aimlessly; it operates like a stochastic border patrol, continuously tracking what we call the **Yellow Frontier**.
 
 ```
  [ GREEN ZONE ] ──► [ YELLOW FRONTIER ] ──► [ RED ZONE ]
- (Cleanly Cached) (The Nuanced Ache: (The High-Noise
+ (Cleanly Mapped) (The Nuanced Ache: (The High-Noise
  (Zero demand) Thawing Boundary) Defensive Clamp)
 
 ```
 
 Your physical architecture is mapped into three distinct internal zones:
 
-- **The Green Areas:** These are your fully integrated, cleanly cached coordinate zones. The tissue is hydrated, the metric tensor is accurate, and the cognitive load is zero. There is nothing to solve here, so the system slides right past them.
+- **The Green Areas:** These are your fully integrated, cleanly mapped coordinate zones. The tissue is hydrated, the metric tensor is accurate, and the cognitive load is zero. There is nothing to solve here, so the system slides right past them.
 - **The Red Areas:** These are your zones of long-term structural trauma or massive defensive clamping—like a deeply matted hip socket or an ancient lower-back brace. If you attempt a top-down, conscious stretching routine to force your way into these zones, you instantly trigger a system alarm. The tissue panics, the neural noise spikes, and the clamp hardens.
 - **The Yellow Frontier:** This is the precise boundary layer adjacent to the green space. It is the zone where the tissue is *just* safe enough to open up, but still retains its historical restriction.
 
 On the rug, the process becomes beautifully self-reinforcing. Left to its own devices, your sub-cortical autopilot naturally drifts to this yellow perimeter. Suddenly, the nature of your aches completely flips.
 
-In standard exercise protocols, pain is a damage report—the sound of a distorted frame shearing under artificial torque. But on the floor, the ache gets quieter, more detailed, and infinitely more nuanced. It ceases to indicate that things are going wrong and begins to track things getting better. It is the explicit physical sensation of blood-starved fascial layers absorbing fluid, sliding across each other for the first time in years, and updating their resting parameters in the system's firmware. You aren't experiencing pain; you are reading the live compilation log of a successful cache synchronization.
+In standard exercise protocols, pain is a damage report—the sound of a distorted frame shearing under artificial torque. But on the floor, the ache gets quieter, more detailed, and infinitely more nuanced. It ceases to indicate that things are going wrong and begins to track things getting better. It is the explicit physical sensation of blood-starved fascial layers absorbing fluid, sliding across each other for the first time in years, and updating their resting parameters in the body's baseline. You aren't experiencing pain; you are reading the live record of a successful recalibration.
 
 ---
 
@@ -34,13 +34,13 @@ Mainstream exercise science operates on a linear, high-effort model of adaptatio
 
 We model the body's internal tissue configuration as a state-space manifold $\Omega$. The total structural noise—the wasted metabolic energy spent maintaining defensive muscular clamps against gravity—is represented by a global objective cost function $C(\mathbf{g})$, where $\mathbf{g}$ is the real-time metric tensor field.
 
-When you enter the Idle State and set your conscious spatial velocity field to zero ($\mathbf{v}_{\text{conscious}} = \mathbf{0}$), you strip away all top-down coordinate overrides. The system settles into a state of pure stochastic relaxation, running a background optimization pass that mimics **Stochastic Gradient Descent**:
+When you enter the Idle State and set your conscious spatial velocity field to zero ($\mathbf{v}_{\text{conscious}} = \mathbf{0}$), you strip away all top-down coordinate overrides. The system settles into a state of pure stochastic relaxation, running a background process that mimics **Stochastic Gradient Descent**:
 
 $$\mathbf{g}_{k+1} = \mathbf{g}_k - \gamma \nabla C(\mathbf{g}_k) + \boldsymbol{\zeta}_k$$
 
 Where $\gamma$ is the local compliance step-size and $\boldsymbol{\zeta}_k$ is a random thermal/neurological fluctuation vector generated by your breathing and involuntary micro-oscillations (pandiculation).
 
-Because the system is anchored to the infinite mass sink of the $z=0$ floor, the objective cost function simplifies. The sub-cortical engine does not waste processing power on the deep, high-resistance $\Omega_{\text{red}}$ domains, nor does it linger in the zero-gradient $\Omega_{\text{green}}$ zones. It naturally concentrates its updates precisely along the frontier gradient:
+Because the system is anchored to the infinite mass sink of the $z=0$ floor, the objective cost function simplifies. The sub-cortical engine does not waste its effort on the deep, high-resistance $\Omega_{\text{red}}$ domains, nor does it linger in the zero-gradient $\Omega_{\text{green}}$ zones. It naturally concentrates its updates precisely along the frontier gradient:
 
 $$\partial \Omega_{\text{green}} \cap \partial \Omega_{\text{yellow}}$$
 
