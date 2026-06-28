@@ -48,7 +48,7 @@ $ git status -s
 
 ## Related
 
-- ADR: `docs/adr/001-multi-modal-content-architecture.md` (superseded diagram mode)
-- ADR: `docs/adr/002-hybrid-svg-approach.md` (canonical diagram strategy)
+- ADR: `decisions/005-multi-modal-content-architecture.md` (superseded diagram mode)
+- ADR: `decisions/006-hybrid-svg-approach.md` (canonical diagram strategy)
 - Epic: `td-43526f` Hybrid ASCII→SVG Diagram Pipeline
 - Session state: `briefs/2026-06-26-session-state.md`

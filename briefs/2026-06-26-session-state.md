@@ -17,7 +17,7 @@
 
 ### Documentation Created
 - `briefs/2026-06-26-brief-multi-modal-content.md` — Full proposal
-- `docs/adr/001-multi-modal-content-architecture.md` — Decision record
+- `decisions/005-multi-modal-content-architecture.md` — Decision record
 - `briefs/2026-06-26-debrief-init-and-penrose.md` — Session debrief
 
 ### Epic Created
@@ -99,7 +99,7 @@ pob/
 │   └── diagrams/       # Exported SVGs
 ├── playbooks/          # 8 playbooks
 ├── briefs/             # 8 briefs + INDEX.jsonl
-├── docs/adr/           # ADRs
+├── decisions/           # ADRs
 └── justfile            # Task facade
 ```
 

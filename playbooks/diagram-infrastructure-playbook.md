@@ -4,7 +4,7 @@
 
 Document the canonical diagram pipeline for the book: the **Hybrid ASCII→SVG** generator (ADR-002), its recognised symbol set, the authoring workflow, and the review-only conventions. Mermaid is retained as a secondary, placeholder path.
 
-**Authoritative sources for behaviour:** `src/agents/diagram-parser.ts`, `src/agents/diagrams.ts`, `docs/adr/002-hybrid-svg-approach.md`. If this playbook and the code disagree, the code is right — fix the playbook.
+**Authoritative sources for behaviour:** `src/agents/diagram-parser.ts`, `src/agents/diagrams.ts`, `decisions/006-hybrid-svg-approach.md`. If this playbook and the code disagree, the code is right — fix the playbook.
 
 ---
 
@@ -129,7 +129,7 @@ The wrapper class is `hybrid-diagram` (not `ascii-diagram` — that name appeare
 
 ## Related
 
-- `docs/adr/002-hybrid-svg-approach.md` — the decision record
+- `decisions/006-hybrid-svg-approach.md` — the decision record
 - `src/agents/diagram-parser.ts` — the token recogniser and AST
 - `src/agents/diagrams.ts` — the SVG renderer and build integration
 - `playbooks/epic-hybrid-svg.md` — the epic this pipeline closed

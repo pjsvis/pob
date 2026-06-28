@@ -130,7 +130,7 @@ pob/
 - Epic: td-c6ff1d "Diagram Infrastructure"
 - Epic: td-a4c238 "Multi-Modal Content" (new)
 - Brief: briefs/2026-06-26-brief-multi-modal-content.md
-- ADR: docs/adr/001-multi-modal-content-architecture.md
+- ADR: decisions/005-multi-modal-content-architecture.md
 
 ---
 

@@ -51,7 +51,7 @@ The hybrid SVGs look like schematic diagrams — clean lines, geometric shapes, 
 
 ## Related
 
-- `docs/adr/002-hybrid-svg-approach.md` — the original decision to build the hybrid pipeline
+- `decisions/006-hybrid-svg-approach.md` — the original decision to build the hybrid pipeline
 - `playbooks/diagram-infrastructure-playbook.md` — the authoring workflow (now reflects this assessment's context)
 - `src/agents/diagram-parser.ts` — the parser (retained)
 - `src/agents/diagrams.ts` — the renderer (retained)

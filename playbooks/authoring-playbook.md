@@ -187,5 +187,5 @@ Not every concept needs all four. A simple identity may need only the equation. 
 
 - `playbooks/diagram-infrastructure-playbook.md` — the hybrid ASCII→SVG pipeline
 - `playbooks/style-playbook.md` — the voice (the single-voice gate applies to all four modes)
-- `docs/adr/001-multi-modal-content-architecture.md` — the decision record
-- `docs/adr/002-hybrid-svg-approach.md` — the diagram decision
+- `decisions/005-multi-modal-content-architecture.md` — the decision record
+- `decisions/006-hybrid-svg-approach.md` — the diagram decision
