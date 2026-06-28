@@ -10,19 +10,20 @@ Everywhere you look, you see flat floors, parallel walls, rectangular desks, 90-
 
 But your body didn't evolve in a box. Your internal architecture is a chaotic masterwork of curves, spirals, toroids, and floating tension loops. There is not a single straight line or true right angle in your entire fascial matrix.
 
-When you spend seven decades navigating a flat environment, your sub-cortical system is forced to execute a catastrophic structural compromise: **it attempts to track an artificial, rectilinear path through your internal space.** ```
+When you spend seven decades navigating a flat environment, your sub-cortical system is forced to execute a catastrophic structural compromise: **it attempts to track an artificial, rectilinear path through your internal space.**
+
+```
 [ Environmental Grid ] ──► Forces Linear Cartesian Tracking (x, y, z)
 │
 (The Internal Projection Error)
 │
 ▼
 [ Spherical Tensegrity ] ◄── Distortion at the Poles (Hips, Feet, Neck)
-
 ```
 
 To survive in a world of flat concrete and square chairs, your brain projects a rigid, Cartesian coordinate map over your fluid, spherical tensegrity chassis. You stop moving through your native, three-dimensional space-time continuum and begin marching along flat $x, y, z$ axes. 
 
-This internal projection error doesn't just change how you walk; it corrupts your master coordinate maps. Because you cannot flatten a sphere without tearing or stretching its fabric, this artificial grid introduces massive, chronic distortion at your structural poles—your feet, your Kua vaults, and your sub-occipital junction. You aren't stiff because you are aging; you are stiff because you have forced a non-linear engine to live on a two-dimensional graph sheet.
+This internal projection error doesn't just change how you walk; it distorts your master coordinate maps. Because you cannot flatten a sphere without tearing or stretching its fabric, this artificial grid introduces massive, chronic distortion at your structural poles—your feet, your Kua vaults, and your sub-occipital junction. You aren't stiff because you are aging; you are stiff because you have forced a curved body to live on a flat plane.
 
 ---
 
@@ -48,28 +49,18 @@ By forcing your internal tracker to navigate a flat path through a curved space,
 
 ## The Hardware Smoke Test (De-Grid the Internal Tracker)
 
-This practical test allows you to run a quick examination on your own body to prove that your central nervous system instantly drops its guard when you break the internal Cartesian grid.
+This practical test lets you check, on your own body, that the central nervous system drops its guard the moment you break the internal Cartesian grid.
 
-<Sequence>
-{/* Reason: This sequence explicitly contrasts a standard, linear Cartesian movement against a non-Euclidean curvilinear trace to show the immediate drop in neural resistance. */}
- <Step subtitle="Run Time: 1 min" title="The Linear Grid Baseline">
- Stand up tall. Step your left leg back into a standard, perfectly linear forward lunge, keeping your torso straight and your hips squaring directly forward along a classic 90-degree Cartesian line. Sink down until you feel the tension build. Note the exact location of the blocky, resistant tug in the front of your left hip and your lower back. Stand back up.
- </Step>
- <Step subtitle="Run Time: 3 min" title="Run the Non-Euclidean Trace Script">
- Drop down to the rigid floor datum ($z=0$). Lie on your back with your knees bent and feet flat. Close your eyes. Drop your conscious effort to near-zero. 
- 
- Instead of moving your knees in straight lines up and down or side to side, begin to trace a slow, continuous, asymmetrical **infinity loop** or an irregular spiral with your tailbone against the rug. Move so slowly and minutely that the movement is barely visible from the outside. 
- 
- As you trace this non-Euclidean curve, look for the **Green-Yellow boundary**—that specific coordinate where the spiral trajectory loses its smoothness and becomes slightly grainy, hitching, or blocky. Stop your cursor right on that grain. Breathe into your laminated core, let the floor mass sink absorb your torso, and let the spiral melt the matting. Spend three minutes stochastically wandering through these non-linear lines.
- </Step>
- <Step subtitle="Run Time: 30 seconds" title="The reset Rest">
- Stop all movement. Extend your legs out flat and lie completely still for thirty seconds, letting the sub-cortical governor update its internal spatial metrics.
- </Step>
- <Step subtitle="Run Time: 1 min" title="Run the Non-Linear Verification Test">
- Stand back up slowly into the vertical world. Step back into the exact same left-leg lunge pattern you ran in Step 1.
- </Step>
-</Sequence>
+First, give yourself a baseline. Stand up, step your left leg back into a plain, straight forward lunge — torso upright, hips squared forward along a clean ninety-degree line. Sink until you feel the tug, and notice exactly where it bites: that blocky, resistant pull in the front of the left hip and the lower back. Stand back up.
 
-> **The Verification Metric:** If you observe that your hips now sink into the lunge with a sudden, oily, open depth, and the baseline lower-back clamp has completely dissolved *without you ever stretching along a linear line*, then the change has taken hold. the autonomous governor has recognized the Cartesian projection error, dropped its protective guardings, and re-cached your structure into its native, curved reference metric.
+Now drop to the floor datum ($z=0$). Lie on your back, knees bent, feet flat, eyes closed. Let your conscious effort fall to almost nothing. Instead of moving your knees in straight lines — up and down, side to side — begin to trace a slow, continuous, asymmetrical **infinity loop** or an irregular spiral with your tailbone against the rug. Move so slowly that the motion is barely visible from the outside.
+
+Somewhere along that curve you will hit the **Green-Yellow boundary**: the spot where the spiral loses its smoothness and turns grainy, hitching, or blocky. Stop right on that grain. Breathe into your laminated core, let the floor take the weight of your torso, and let the spiral melt the matting. Wander through these non-linear lines for three minutes.
+
+Then stop. Extend your legs, lie completely still for thirty seconds, and let the sub-cortical governor update its spatial map.
+
+Finally, stand back up into the vertical world and step into the same left-leg lunge you began with.
+
+> **The Verification Metric:** If you observe that your hips now sink into the lunge with a sudden, oily, open depth, and the baseline lower-back clamp has completely dissolved *without you ever stretching along a linear line*, then the change has taken hold. The autonomous governor has recognized the Cartesian projection error, dropped its protective guardings, and re-mapped your structure into its native, curved reference metric.
 
 ---
