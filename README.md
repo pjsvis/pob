@@ -32,7 +32,7 @@ pob/
 ├── briefs/               # Session briefs
 ├── debriefs/             # Session retrospectives
 ├── decisions/            # Architecture decision records
-└── scripts/              # Support scripts
+└── scripts/              # Support scripts (TypeScript — run via `bun run scripts/<name>.ts`)
 ```
 
 ## Commands
@@ -50,6 +50,7 @@ just deps       # Show dependencies
 - **Server-side rendering:** KaTeX compiled to HTML at build time
 - **Minimal deps:** Only what's necessary for the job
 - **Bun-native:** TypeScript execution, package management, build runner
+- **Single runtime:** Bun is the sole runtime. Python is used **only** for WeasyPrint (PDF export); all text-processing utilities in `scripts/` are TypeScript.
 
 ## Related
 

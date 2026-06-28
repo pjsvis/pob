@@ -21,9 +21,10 @@
 
 | Tool | Purpose |
 |------|---------|
-| `bun` | Runtime, package manager, build runner |
+| `bun` | Runtime, package manager, build runner (sole runtime) |
 | `pob` | Our CLI (via `bun run src/cli.ts`) |
 | `just` | Task facade (wraps `pob` commands) |
+| `python3` + `weasyprint` | PDF engine only (in `.venv/`). No text-processing scripts use Python — all five former `.py` utilities were ported to TypeScript under `scripts/`. Run them via `bun run scripts/<name>.ts`. |
 
 ## Installation
 
