@@ -1,0 +1,13 @@
+---
+exported: 2026-06-27T16:47:01.619Z
+source: NotebookLM
+type: note
+title: "SYSTEM ARCHITECTURE DIRECTIVE"
+---
+
+# SYSTEM ARCHITECTURE DIRECTIVE
+
+导出时间: 27/06/2026, 17:47:01
+
+---
+

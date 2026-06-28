@@ -95,7 +95,10 @@ export const previewCommand = defineCommand({
         const content = readFileSync(filePath);
 
         return new Response(content, {
-          headers: { "Content-Type": contentType },
+          headers: {
+            "Content-Type": contentType,
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0"
+          },
         });
       },
     });

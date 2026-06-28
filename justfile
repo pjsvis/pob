@@ -20,6 +20,12 @@ serve:
 preview *args:
     @bun run src/cli.ts preview {{args}}
 
+[group("pdf")]
+pdf file='2026-06-26-staved-finger-tensor-algebra':
+    @just build
+    @.venv/bin/weasyprint "dist/{{file}}.html" "pdf/{{file}}.pdf" 2>/dev/null
+    @echo "📄 pdf/{{file}}.pdf"
+
 [group("meta")]
 orient *args:
     @bun run src/cli.ts orient {{args}}

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta http-equiv="refresh" content="5">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
@@ -10,7 +12,7 @@
   
   <!-- Base styles (readable without layout) -->
   <!-- Content styles -->
-  <link rel="stylesheet" href="/pob.css">
+  <link rel="stylesheet" href="pob.css">
   
   <!-- Toggle button for layout switching -->
   <script>
@@ -61,6 +63,10 @@
     
     #layout-toggle:hover {
       background: #555;
+    }
+    
+    @media print {
+      #layout-toggle { display: none !important; }
     }
   </style>
 </head>

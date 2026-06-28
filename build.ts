@@ -5,10 +5,37 @@ import { processDiagrams, injectDiagrams } from "./src/agents/diagrams";
 import { resolve, join } from "node:path";
 
 // === Configuration ===
-const CONTENT_DIR = resolve("./content");
+// Source directories are scanned in order. `content/` holds the book
+// structure (front-matter, chapters, index); `briefs/` holds standalone
+// articles. Files are keyed by basename, so a name must be unique across
+// all source dirs (the first directory wins on collision).
+const SOURCE_DIRS = [resolve("./content"), resolve("./briefs")];
 const DIST_DIR = resolve("./dist");
 const TEMPLATE_PATH = resolve("./src/templates/layout.html");
 const STYLES_DIR = resolve("./src/styles");
+
+// Collect every markdown file across all source directories, de-duplicated
+// by basename. Returns an array of { file, dir } in stable sort order.
+function collectMarkdownFiles(): { file: string; dir: string }[] {
+  const seen = new Set<string>();
+  const out: { file: string; dir: string }[] = [];
+  for (const dir of SOURCE_DIRS) {
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir)) {
+      if (!f.endsWith(".md")) continue;
+      if (seen.has(f)) continue; // first dir wins
+      seen.add(f);
+      out.push({ file: f, dir });
+    }
+  }
+  // Stable sort: front-matter (00-) first, then lexicographic.
+  out.sort((a, b) => {
+    if (a.file.startsWith("00-") && !b.file.startsWith("00-")) return -1;
+    if (!a.file.startsWith("00-") && b.file.startsWith("00-")) return 1;
+    return a.file.localeCompare(b.file);
+  });
+  return out;
+}
 
 // === Pre-processors ===
 
@@ -137,22 +164,17 @@ interface TocEntry {
   file: string;
 }
 
-function generateTOC(files: string[], detailed: boolean = false): string {
+function generateTOC(files: { file: string; dir: string }[], detailed: boolean = false): string {
   // Group entries by file
   const chapters: { file: string; title: string; anchor: string; sections: TocEntry[] }[] = [];
   
-  // Sort files by name to get consistent ordering
-  const sortedFiles = [...files].sort((a, b) => {
-    if (a.startsWith("00-") && !b.startsWith("00-")) return -1;
-    if (!a.startsWith("00-") && b.startsWith("00-")) return 1;
-    return a.localeCompare(b);
-  });
+  const sortedFiles = [...files]; // already sorted by collectMarkdownFiles
   
-  for (const file of sortedFiles) {
+  for (const { file, dir } of sortedFiles) {
     // Skip front matter files
     if (file.startsWith("00-")) continue;
     
-    const inputPath = join(CONTENT_DIR, file);
+    const inputPath = join(dir, file);
     const stat = statSync(inputPath);
     if (!stat.isFile()) continue;
     
@@ -230,7 +252,7 @@ function generateTOC(files: string[], detailed: boolean = false): string {
 
 function buildContentsPage(detailed: boolean = false): string {
   const template = readFileSync(TEMPLATE_PATH, "utf-8");
-  const files = readdirSync(CONTENT_DIR).filter(f => f.endsWith(".md"));
+  const files = collectMarkdownFiles();
   
   const tocHtml = generateTOC(files, detailed);
   
@@ -270,10 +292,10 @@ export async function build(opts: { clean?: boolean } = {}) {
   const template = readFileSync(TEMPLATE_PATH, "utf-8");
 
   console.log("📚 Processing content...");
-  const files = readdirSync(CONTENT_DIR).filter(f => f.endsWith(".md"));
+  const files = collectMarkdownFiles();
 
-  for (const file of files) {
-    const inputPath = join(CONTENT_DIR, file);
+  for (const { file, dir } of files) {
+    const inputPath = join(dir, file);
     const stat = statSync(inputPath);
     if (!stat.isFile()) continue;
 
@@ -360,8 +382,8 @@ Examples:
 
 if (args.includes("--dry-run")) {
   console.log("🔍 Dry run — files that would be generated:");
-  const files = readdirSync(CONTENT_DIR).filter(f => f.endsWith(".md"));
-  for (const file of files) {
+  const files = collectMarkdownFiles();
+  for (const { file } of files) {
     console.log(`  dist/${file.replace(".md", ".html")}`);
   }
   process.exit(0);

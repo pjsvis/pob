@@ -1,5 +1,8 @@
 # Build output
 dist/
+
+# Published PDFs (persistent, tracked)
+# pdf/ is intentionally NOT ignored — these are deliverables, not build artefacts.
 PENROSE-LETTER.md
 
 # Dependencies
@@ -39,3 +42,13 @@ coverage/
 # If using npm: package-lock.json
 pnpm-lock.yaml
 .todos/
+
+# Google Takeout (large, source data already extracted)
+Takeout/
+takeout-*.zip
+
+# NotebookLM dialog archive (extracted from Takeout, large)
+notebooklm/
+
+# Python venv
+.venv/

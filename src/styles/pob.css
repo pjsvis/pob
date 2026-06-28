@@ -24,7 +24,7 @@
     --pob-font-math: "Latin Modern Math", "Times New Roman", serif;
     --pob-font-mono: "SF Mono", Monaco, "Courier New", monospace;
     
-    --pob-size: 1rem;
+    --pob-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
     --pob-line-height: 1.7;
     --pob-text-color: #1a1a1a;
     --pob-muted: #666;
@@ -37,15 +37,18 @@
   /* Content container — makes a hole in the host page */
   .pob-content {
     all: initial;                           /* Break inheritance */
+    display: block;                         /* Ensure block layout so width applies */
     font-family: var(--pob-font-main);
     font-size: var(--pob-size);
     line-height: var(--pob-line-height);
     color: var(--pob-text-color);
-    /* Two-mode responsive: fill available, but stay readable */
-    /* Never narrower than 45ch, never wider than 65ch */
-    max-width: clamp(45ch, 100%, 65ch);
-    margin-left: 0;                         /* Left-align by default */
+    /* Fixed width in characters – enforce a readable line length */
+    width: 80ch;
+    max-width: 80ch;
+    margin: 0 auto;                        /* Center the container */
     padding: 1rem;
+    /* Ensure long words don’t break layout */
+    overflow-wrap: break-word;
   }
 
   /* Re-establish box model inside container */
@@ -701,6 +704,59 @@
      ============================================ */
   
   @media print {
+    /* Hide the layout toggle button in print output. */
+    #layout-toggle { display: none !important; }
+
+    /* --- Paged-media pagination controls --- */
+
+    /* Page geometry: generous margins for a readable print column. */
+    @page {
+      margin: 2cm;
+    }
+
+    /* Keep headings with their following content: no orphaned
+       section titles at the bottom of a page. */
+    .pob-content h1,
+    .pob-content h2,
+    .pob-content h3,
+    .pob-content h4 {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    /* Optionally force a fresh page before each top-level section.
+       Disabled by default to avoid half-empty pages; uncomment to
+       get one-section-per-page layout. */
+    /* .pob-content h2 { break-before: page; page-break-before: always; } */
+
+    /* Keep blocks intact: figures, tables, quotes, code, and
+       display math should not be split across a page break. */
+    .pob-content figure,
+    .pob-content table,
+    .pob-content blockquote,
+    .pob-content pre,
+    .pob-content .katex-display,
+    .pob-content .margin-figure,
+    .pob-content .full-width {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* Classic typographic widows/orphans: at least three lines
+       on either side of a paragraph page break. */
+    .pob-content p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* Avoid breaking immediately after a list intro paragraph. */
+    .pob-content ol,
+    .pob-content ul {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* --- Existing layout-mode print tweaks --- */
     .pob-content.use-layout {
       --pob-margin-width: 0.75in;
     }
