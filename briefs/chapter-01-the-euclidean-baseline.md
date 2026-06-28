@@ -3,7 +3,7 @@ title: "Chapter 01: The Euclidean Baseline"
 ---
 
 # The Euclidean Baseline
-## The Familiar Hook: The Rug Defrag
+## The Familiar Hook: The Rug Reset
 Every human being with a creaky frame and a desk job knows the exact sensation of the evening drop. You walk into the room, exhaust your capacity to negotiate with gravity while upright, and simply abandon your structure to the floor.
 
 In those first few minutes on the rug, nothing active is happening. You aren’t stretching, you aren't core-bracing, and you aren't doing three sets of ten of anything an influencer recommended. Yet, the physical feedback is immediate.
@@ -43,6 +43,6 @@ $$\mathbf{E} \to \mathbf{0}$$
 
 ```
 
-The sub-cortical kernel takes one look at this sudden drop in structural technical debt, hooks into the open identity channels, and safely flushes the distorted positional maps built up from a day of standing.
+The sub-cortical system takes one look at this sudden drop in structural technical debt, hooks into the open identity channels, and safely flushes the distorted positional maps built up from a day of standing.
 
 ---

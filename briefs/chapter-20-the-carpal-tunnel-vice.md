@@ -51,7 +51,7 @@ The burning numbness you feel at 3:00 AM is the physical readout of an ischemic 
 ---
 
 ## The Hardware Smoke Test (The Elbow-Datum Grounding Pass)
-This user acceptance test allows your body to verify that the pressure in your wrist is an upstream routing problem that can be solved instantly by establishing a physical mass sink.
+This practical test allows your body to verify that the pressure in your wrist is an upstream routing problem that can be solved instantly by establishing a physical mass sink.
 
 > **The Verification Metric:** If you observe that your fingers can now move across the keys with a lightning-fast, effortless agility, and the stringy, burning pressure in your wrist has completely vanished—*without you ever wearing a splint or stretching your hands*—then the change has taken hold. The autonomous governor has verified the hydrostatic tunnel equation. It has dropped the tendon tension vector ($T$) and cleared the ischemic exception log .
 

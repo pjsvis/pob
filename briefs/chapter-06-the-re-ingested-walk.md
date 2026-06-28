@@ -27,13 +27,13 @@ Mainstream movement coaching tells you that to keep that fluid feeling, you must
 ## The Mathematical Justification: Non-Affine Metric Ingestion
 When you stand up from the floor datum ($z=0$), your system transitions instantly from a state of zero-load relaxation back into the orthogonal gravity vector field ($\mathbf{g} = -g \mathbf{e}_z$).
 
-On the floor, your sub-cortical kernel successfully computed a clean, low-entropy reference metric tensor ($\tilde{g}_{ij}$) across the Green-Yellow boundary. But the moment you stand up, the system must transform that flat coordinate map back into a dynamic, three-dimensional moving frame. This is a problem of **Non-Affine Coordinate Deformation**.
+On the floor, your sub-cortical system successfully computed a clean, low-entropy reference metric tensor ($\tilde{g}_{ij}$) across the Green-Yellow boundary. But the moment you stand up, the system must transform that flat coordinate map back into a dynamic, three-dimensional moving frame. This is a problem of **Non-Affine Coordinate Deformation**.
 
 Let the transformation of your body’s internal sensory map during the transition from the floor to walking be represented by a deformation mapping $\boldsymbol{\chi}$. The localized change in the metric tensor field over time ($t$) while moving through space is dictated by the mapping gradient $\mathbf{F}$:
 
 $$\mathbf{g}*{\text{upright}}(t) = \mathbf{F}^T \tilde{g}*{ij} \mathbf{F}$$
 
-If you stand up and immediately force a conscious, top-down posture command (conscious control override), you distort the mapping matrix $\mathbf{F}$. You present the system with an artificial torque, forcing the kernel to discard the clean floor metric ($\tilde{g}_{ij}$) and fall back on its hardcoded, defensive legacy caches to prevent an equilibrium exception error.
+If you stand up and immediately force a conscious, top-down posture command (conscious control override), you distort the mapping matrix $\mathbf{F}$. You present the system with an artificial torque, forcing the protective system to discard the clean floor metric ($\tilde{g}_{ij}$) and fall back on its ingrained, defensive legacy caches to prevent an equilibrium alarm.
 
 ```
  [Floor Sync Metric ğ_ij] ──► Stand Up into 1g Field ──► Live Locomotion (F-Matrix)
@@ -42,7 +42,7 @@ If you stand up and immediately force a conscious, top-down posture command (con
  │
  ┌────────────────────────────────────────────┴────────────────────────────────────────────┐
  ▼ ▼
- [conscious control Manual Bracing] [Kernel Space Autopilot]
+ [conscious control Manual Bracing] [autonomous autopilot]
  Injects Artificial Torque Noise Allows Natural Dynamic Shear
  │ │
  ▼ ▼
@@ -55,7 +55,7 @@ To permanently ingest the new code, the system requires a period of un-managed d
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
-This is your user acceptance test. Run this simple debugging script on your own hardware to discover how your system ingests spatial data.
+This is your practical test. Run this simple examination on your own body to discover how your system ingests spatial data.
 
 > **The Verification Metric:** If you notice that your stride length has naturally expanded and the baseline lower-back clamp has completely vanished *without you consciously telling any muscle to relax*, then the change has taken hold. the autonomous governor has verified the utility of the floor datum .
 

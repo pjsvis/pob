@@ -8,11 +8,11 @@ As you deepen your floor practice, you eventually run face-first into an undenia
 
 You discover that your right side and your left side appear to be running entirely different software versions. For many, this asymmetry centers sharply around the left leg and hip axis. Your right leg feels fluent, connected, and cleanly cached—it slides into the green zone with zero overhead.
 
-But your left leg behaves like a heavily partitioned drive. The moment your attention drifts into the left Kua, you hit a dense wall of historical restriction. The hip socket feels deep, dark, and locked behind a permanent security firewall.
+But your left leg behaves like a heavily locked compartment. The moment your attention drifts into the left Kua, you hit a dense wall of historical restriction. The hip socket feels deep, dark, and locked behind a permanent security guarding.
 
 The standard conscious control reaction to this imbalance is an aggressive symmetry drive. You decide that because the left side is "tight," you must stretch it twice as hard, roll it twice as long, and force it to match the output of the right side.
 
-This strategy is a complete system failure. The harder you smash into that left-side restriction, the deeper the governor buries the clamp. You are trying to debug a localized software conflict by hitting the motherboard with a hammer.
+This strategy is a complete system failure. The harder you smash into that left-side restriction, the deeper the governor buries the clamp. You are trying to force a release by driving harder into the restriction.
 
 True equalization requires a complete reversal of the symmetry myth. You don't force the restricted side to match the mobile side; you map the exact frontier gradient *around* the restriction and let the system re-ingest the partitioned memory on its own timeline.
 
@@ -27,7 +27,7 @@ Let the mobile right hemisphere be governed by a clean, Euclidean reference metr
 
 $$\mathbf{E}_L = \frac{1}{2}(\mathbf{F}^T \mathbf{G}_L \mathbf{F} - \mathbf{I})$$
 
-This mathematical imbalance means that forcing a symmetrical movement path onto an asymmetrical tissue metric doesn't clear the restriction—it violently shears the matted boundary layers, forcing the sub-cortical kernel to throw an immediate defensive exception error that hardens the local firewall ($\mu \to \infty$).
+This mathematical imbalance means that forcing a symmetrical movement path onto an asymmetrical tissue metric doesn't clear the restriction—it violently shears the matted boundary layers, forcing the sub-cortical kernel to throw an immediate defensive alarm that hardens the local guarding ($\mu \to \infty$).
 
 ```
  [ Symmetrical Exercise Force ] ──► Forces Symmetrical Deformation (F)
@@ -46,8 +46,8 @@ To safely unwind this left-side technical debt, the system must navigate the **C
 
 ---
 
-## The Hardware Smoke Test (The Left-Side Partition Defrag)
-This user acceptance test allows you to safely interface with a long-term left-side restriction without triggering the sub-cortical security alarm.
+## The Hardware Smoke Test (The Left-Side Partition Reset)
+This practical test allows you to safely interface with a long-term left-side restriction without triggering the sub-cortical security alarm.
 
 > **The Verification Metric:** If you observe that your left leg now rolls inward with a sudden, oily clearance that matches or exceeds the right side—*despite you never forcing a stretch or using high-effort mechanics*—then the change has taken hold. The autonomous governor has re-ingested the partitioned memory block and updated the left-side reference configuration.
 

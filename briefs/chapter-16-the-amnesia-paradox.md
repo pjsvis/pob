@@ -6,7 +6,7 @@ title: "Chapter 16: The Amnesia Paradox"
 ## The Familiar Hook: The Cleared Log File
 The most insidious feature of a highly optimized operating system is that when it is working perfectly, it becomes completely invisible.
 
-You can witness this in every physical development pipeline ever designed. A user drops to the rug with a severely restricted left hip, an iron yoke clamped onto their neck, and a muddy, high-noise footprint. They spend three weeks quietly navigating the Green-Yellow boundary at $z = 0, v = 0$. Step by step, the sub-cortical kernel defrags the tissue layers, flushes the residual coordinate errors, and produces a clean, low-entropy metric tensor.
+You can witness this in every physical development pipeline ever designed. A user drops to the rug with a severely restricted left hip, an iron yoke clamped onto their neck, and a muddy, high-noise footprint. They spend three weeks quietly navigating the Green-Yellow boundary at $z = 0, v = 0$. Step by step, the sub-cortical system resets the tissue layers, flushes the residual coordinate errors, and produces a clean, low-entropy metric tensor.
 
 Then, the user stands up. Because the new, fluid verticality is processed entirely in Kernel Space, it doesn’t feel like an achievement. It simply feels normal.
 
@@ -43,7 +43,7 @@ Because the tissue matrix is hyperelastic and viscoelastic, the line integral ar
 
 When an advanced mover deconstructs their current performance into a sequence of top-down posture rules, they are presenting an un-cached beginner with a static spatial deformation template ($\mathbf{F}$).
 
-When the beginner tries to copy that template through sheer willpower, they inject massive artificial torque and high-frequency neural noise into an already distorted reference metric ($\mathbf{g}*0$). They aren't running the development path ($\gamma*{\text{integration}}$); they are just manually clenching their muscles to mimic the look of an refined system. They are trying to reach the destination without walking the path.
+When the beginner tries to copy that template through sheer willpower, they inject massive artificial torque and neural noise into an already distorted reference metric ($\mathbf{g}*0$). They aren't running the development path ($\gamma*{\text{integration}}$); they are just manually clenching their muscles to mimic the look of an refined system. They are trying to reach the destination without walking the path.
 
 ---
 

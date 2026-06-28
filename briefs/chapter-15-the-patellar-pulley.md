@@ -12,7 +12,7 @@ If we look at them through our **Operational Heuristic**, we don't see exercises
 
 ### The Mainstream Failure Mode
 
-To a standard trainer or physical therapist, Seiza is just a deep quad/ankle stretch, and the Reverse Nordic is an eccentric strengthening exercise for the rectus femoris. When a user with a matted, un-cached lower limb attempts them, they treat the knee as an isolated hinge joint. They force the lean-back, the matted tissue resists, and the entire tensile load concentrates as a violent, localized shear vector ($J_2$) directly inside the patellar tendon. The user enters a destructive **Red Firewall** zone, trips an inflammation exception error, and destroys their knees trying to "bulletproof" them.
+To a standard trainer or physical therapist, Seiza is just a deep quad/ankle stretch, and the Reverse Nordic is an eccentric strengthening exercise for the rectus femoris. When a user with a matted, un-cached lower limb attempts them, they treat the knee as an isolated hinge joint. They force the lean-back, the matted tissue resists, and the entire tensile load concentrates as a violent, localized shear vector ($J_2$) directly inside the patellar tendon. The user enters a destructive **Red Zone** zone, triggers an inflammation alarm, and destroys their knees trying to "bulletproof" them.
 
 ### The Operational Heuristic Translation
 

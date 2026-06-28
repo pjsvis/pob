@@ -16,7 +16,7 @@ The standard medical diagnostic for this misery is Plantar Fasciitis. You are to
  (The Posterior Tension Wave)
  │
  ▼
- [ The Tensegrity Manual ] ──► Release Lumbar Firewall ──► Drops Line Tension (T) ──► Foot Shard Dissolves
+ [ The Tensegrity Manual ] ──► Release Lumbar Guarding ──► Drops Line Tension (T) ──► Foot Shard Dissolves
 
 ```
 
@@ -24,7 +24,7 @@ This is a complete inversion of the physical reality.
 
 The bottom of your foot is not failing, and it is not suffering from an over-use injury. The plantar fascia is the absolute distal end—the terminal anchor—of a continuous, multi-layered sheet of tissue that runs all the way up the back of your calf, through your hamstrings, across your pelvis, and up your entire spine to the base of your skull.
 
-When your lower back is running a constant, high-intensity defensive firewall (a chronic "sore back"), the entire posterior line runs out of slack. The sheet is yanked tight from above.
+When your lower back is running a constant, high-intensity protective guarding (a chronic "sore back"), the entire posterior line runs out of slack. The sheet is yanked tight from above.
 
 The sharp burning in your heel is not an isolated foot disease; it is the terminal point of an upstream tug-of-war. Your foot screams simply because it is the only part of the rope forced to slam into the floor datum every time you take a step.
 
@@ -35,7 +35,7 @@ In a continuous tensegrity matrix, a local tissue structure cannot be analyzed i
 
 When an upright biped shifts weight during gait, the foot strikes the ground ($z=0$), generating an immediate input force ($F_{\text{impact}}$). This impact forces the ankle into dorsiflexion, which requires the entire posterior tissue sheet to rapidly elongate.
 
-Let the total active tension running through this continuous posterior fascial line be represented by $T$. Under an un-cached, high-noise state—where the lumbar paraspinal muscles are tightly clenched behind a defensive firewall—the proximal line cannot elongate. The displacement deficit ($\Delta l$) is shifted entirely to the furthest point of the chain.
+Let the total active tension running through this continuous posterior fascial line be represented by $T$. Under an un-cached, high-noise state—where the lumbar paraspinal muscles are tightly clenched behind a protective guarding—the proximal line cannot elongate. The displacement deficit ($\Delta l$) is shifted entirely to the furthest point of the chain.
 
 When you step forward, the geometric torque amplifies this line tension, transforming the input into a severe **Tensile Stress Vector ($\sigma_{\text{axial}}$)** concentrated directly at the calcaneal insertion (the heel bone):
 
@@ -52,12 +52,12 @@ When you sleep, your foot naturally relaxes into plantar flexion, allowing the m
 
 The "glass shard" sensation is the direct mechanical readout of this sudden, high-velocity shear wave tearing through the matted collagen bonds.
 
-You cannot fix this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data, and causes the autonomous governor to crank the upstream spinal firewalls even tighter to stabilize your mass. You are trying to fix a taut rope by wrapping tape around the pole it is ripping out of the ground.
+You cannot fix this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data, and causes the autonomous governor to crank the upstream spinal guardings even tighter to stabilize your mass. You are trying to fix a taut rope by wrapping tape around the pole it is ripping out of the ground.
 
 ---
 
 ## The Hardware Smoke Test (The Remote Anchor Release)
-This user acceptance test allows your conscious mind to witness the immediate, remote communication line running between your sore back and your painful foot, proving that the shard can be dissolved from across the room.
+This practical test allows your conscious mind to witness the immediate, remote communication line running between your sore back and your painful foot, proving that the shard can be dissolved from across the room.
 
 > **The Verification Metric:** If you discover that your foot now presses into the floor with a soft, wide, entirely yielding elasticity, and the sharp, blocky "pulling" sensation at your heel has completely evaporated—*despite you never touching, stretching, or rolling your foot*—then the change has taken hold. successfully. the autonomous governor has cleared the proximal spinal exception, dropped the master line tension vector ($T$), and deleted the terminal anchor shear on its own authority.
 

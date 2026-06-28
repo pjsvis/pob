@@ -35,7 +35,7 @@ $$\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}$$
 
 When you operate with a clenched, anxious midsection or a collapsed thoracic spine, the vector lines of the **serratus anterior** and **pectoralis minor** (the deep tissue lines running through the armpit) shorten and dehydrate. This short-circuit drops the local tension baseline, causing the scapula to lose its hydrostatic clearance over the ribs. It slips off its optimal track and shears inward toward the spine (chronic adduction).
 
-Faced with this structural sag, the sub-cortical kernel panics. To prevent your entire arm assembly from sliding off the back of your rib cage, it issues an emergency high-intensity command to the upper trapezius and levator scapulae: *Clamp the bone to the spine by force.*
+Faced with this structural sag, the sub-cortical protective system panics. To prevent your entire arm assembly from sliding off the back of your rib cage, it issues an emergency high-intensity command to the upper trapezius and levator scapulae: *Clamp the bone to the spine by force.*
 
 The rock-hard "knots" in your shoulders are not a muscular disease; they are a necessary, life-saving structural weld. If you try to stretch or massage those traps without restoring the tension loops under the armpit, you are literally trying to cut the emergency cables while the bridge is still sagging.
 

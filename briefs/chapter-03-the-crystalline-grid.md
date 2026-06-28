@@ -19,7 +19,7 @@ Standard Newtonian biomechanics attempts to analyze impact force using the Work-
 
 In non-linear continuum mechanics, the one-inch strike is not an acceleration problem; it is a **Topological Phase Change** problem.
 
-The human fascial continuum is a distributed, non-Newtonian, fluid-filled network. Under normal conditions, it maintains a compliant, low-viscosity baseline to allow for smooth coordinate transformations. But when the sub-cortical kernel detects an impact vector, it triggers a global, instantaneous synchronization pass across the entire pre-stress tensor field ($\boldsymbol{\sigma}_0$).
+The human fascial continuum is a distributed, non-Newtonian, fluid-filled network. Under normal conditions, it maintains a compliant, low-viscosity baseline to allow for smooth coordinate transformations. But when the sub-cortical system detects an impact vector, it triggers a global, instantaneous synchronization pass across the entire pre-stress tensor field ($\boldsymbol{\sigma}_0$).
 
 Let the body's distributed material space be $\Omega$. At the moment of impact ($\Delta t \to 0$), the local **Shear Modulus** ($\mu$) across every joint node and fascial sling is driven toward infinity simultaneously:
 

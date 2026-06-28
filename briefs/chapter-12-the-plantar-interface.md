@@ -22,7 +22,7 @@ To make sense of this static, you have to slowly develop your internal sensory b
 
 But here is the beautiful, reassuring paradox of the entire process: **you do not actually need to do anything to fix your feet.**
 
-You don’t need to perform thousands of tedious short-foot exercises, and you don’t need to consciously force your arches into an artificial, aesthetic shape while you walk. The sub-cortical kernel is already doing all the heavy structural engineering behind your back.
+You don’t need to perform thousands of tedious short-foot exercises, and you don’t need to consciously force your arches into an artificial, aesthetic shape while you walk. The sub-cortical system is already doing all the heavy structural engineering behind your back.
 
 ```
  [ Conscious Foot Bracing ] ──► Artificial Arch Gripping ──► High Extrinsic Noise ──► Foot Fatigue
@@ -48,9 +48,9 @@ $$\mathbf{t}(\mathbf{x}) = \boldsymbol{\sigma}(\mathbf{x}) \cdot \mathbf{n}(\mat
 
 Where $\mathbf{n}$ is the unit normal vector pointing vertically out from the floor hyperplane.
 
-When you wear thick, heavily cushioned modern shoes or rigid custom orthotics, you place a high-compliance, data-filtering buffer between the sole and the earth. This buffer scrambles the normal vector ($\mathbf{n}$). The receptor array cannot read the true topography of the force field, which causes the signal-to-noise ratio ($S/N$) to collapse toward zero.
+When you wear thick, heavily cushioned modern shoes or rigid custom orthotics, you place a high-compliance, data-filtering layer between the sole and the earth. This buffer scrambles the normal vector ($\mathbf{n}$). The receptor array cannot read the true topography of the force field, which causes the signal-to-noise ratio ($S/N$) to collapse toward zero.
 
-Starved of ground-truth data, the sub-cortical kernel cannot calculate the correct inverse-dynamics equation for your walk. It flags the foot as an unsafe, untrusted zone, invalidates the local coordinate cache, and throws a permanent defensive clamp (Red Firewall) into your hip sockets and lower back to stabilize your mass by brute force.
+Starved of ground-truth data, the sub-cortical system cannot calculate the correct inverse-dynamics equation for your walk. It flags the foot as an unsafe, untrusted zone, invalidates the local coordinate cache, and throws a permanent defensive clamp (Red Zone) into your hip sockets and lower back to stabilize your mass by brute force.
 
 ```
  [ Cushioned Shoe / Orthotic ] ──► Normal Vector Scrambled ──► S/N Ratio Drops ──► Defensive Hip Clamp
@@ -58,17 +58,17 @@ Starved of ground-truth data, the sub-cortical kernel cannot calculate the corre
  (Strip to z = 0 Datum)
  │
  ▼
- [ Plantar Interface on Rug ] ──► Raw Cauchy Data Stream ──► S/N Ratio Spikes ──► Hip Firewall Clears
+ [ Plantar Interface on Rug ] ──► Raw Cauchy Data Stream ──► S/N Ratio Spikes ──► Hip Guarding Clears
 
 ```
 
-When you return to the raw floor datum and stochastically explore the Green-Yellow boundary of the sole, you are performing a hardware loop calibration. You aren't building muscle strength; you are giving the distributed transducer array the unpolluted mathematical feedback it needs to compute the exact orientation of the earth. The moment the CNS trusts the ground-truth data coming from your heels, it instantly drops the defensive firewalls in your waist.
+When you return to the raw floor datum and stochastically explore the Green-Yellow boundary of the sole, you are performing a sensory calibration. You aren't building muscle strength; you are giving the distributed transducer array the unpolluted mathematical feedback it needs to compute the exact orientation of the earth. The moment the CNS trusts the ground-truth data coming from your heels, it instantly drops the protective guardings in your waist.
 
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
 This diagnostic script allows you to prove to your conscious control ego that your feet are data processors, not just leather meat-shoes.
 
-> **The Verification Metric:** If you observe that your left hip now rotates with a sudden, oily freedom and your left foot feels twice as wide and flat as the right foot—*despite you never stretching your hip or exercising your arch*—then the change has taken hold. Your central nervous system has accepted the raw Cauchy data stream, updated its reference metric, and cleared the defensive hip firewall on its own authority.
+> **The Verification Metric:** If you observe that your left hip now rotates with a sudden, oily freedom and your left foot feels twice as wide and flat as the right foot—*despite you never stretching your hip or exercising your arch*—then the change has taken hold. Your central nervous system has accepted the raw Cauchy data stream, updated its reference metric, and cleared the defensive hip guarding on its own authority.
 
 ---

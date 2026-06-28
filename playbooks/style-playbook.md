@@ -74,6 +74,8 @@ These are concrete rules for the editorial pass. They are not aspirational — t
 5. **No cross-chapter references that break self-containment.** "As we discussed in Chapter 4..." Each chapter should read standalone. If a concept from another chapter is needed, introduce it briefly in context.
 6. **No instructions for self-harm.** If an experiment is described, it must not ask the reader to injure themselves.
 7. **No "corrective."** The word "corrective" is banned. The book does not correct; it informs. The body is not broken; it is lost. The procedure does not fix; it gives the nervous system a reference.
+8. **No hacker-coder register.** The body is not a computer. It is a continuum. Metaphors must come from continua, fluids, tensions, and structures — not from code. Not "crash script" but "protective reflex." Not "exception error" but "alarm." Not "defrag" but "reset." Not "smoke bomb" but "false alarm." The hacker-cool register dates the text and narrows the audience. "The pain is the guard, not the fire" will read the same in a century; "digital smoke bomb" will read as 2010s tech-bro slang in ten years.
+9. **No narration of the edit.** Delete any sentence that describes the act of editing rather than the result of editing. "We have moved the Popperian sections to an appendix" is meaningless to a reader who never saw them elsewhere. "Let's deploy this insight into Chapter 12" is meaningless to a reader of Chapter 12 who doesn't know it was deployed from a conversation. The test: would this sentence exist if the chapter had been written in one pass, from scratch? If not, cut it. The book is not about the book's production. The author is not the subject.
 
 ## The Structure of a Chapter
 

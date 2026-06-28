@@ -45,6 +45,6 @@ The system can no longer calculate balance relative to an external floor hyperpl
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
-You do not need to board a rocket to Mars to execute a User Acceptance Test on the zero-gravity manifold. You can simulate the absolute deletion of the directional datum on your own hardware by running this specific decoupling script.
+You do not need to board a rocket to Mars to execute a User Acceptance Test on the zero-gravity manifold. You can simulate the absolute deletion of the directional datum on your own body by running this specific decoupling script.
 
 > **The Verification Metric:** The instant you abandon the linear vertical blueprint and drop your frame into the closed, spherical loop, the violent muscle chattering and lower-back clamping will instantly vanish. Your structure stabilizes effortlessly on the sliding surface because you have switched off the broken external coordinate tracker and allowed the autonomous governor to balance your mass purely around your internal center invariants. You have verified the non-Euclidean chassis on your own body.

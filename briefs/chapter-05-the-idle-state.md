@@ -20,7 +20,7 @@ Once you comprehend this process, nothing changes outwardly, but everything chan
 Your physical architecture is mapped into three distinct internal zones:
 
 - **The Green Areas:** These are your fully integrated, cleanly cached coordinate zones. The tissue is hydrated, the metric tensor is accurate, and the cognitive load is zero. There is nothing to solve here, so the system slides right past them.
-- **The Red Areas:** These are your zones of long-term structural trauma or massive defensive clamping—like a deeply matted hip socket or an ancient lower-back brace. If you attempt a top-down, conscious stretching routine to force your way into these zones, you instantly trip a system exception error. The tissue panics, the Gamma gain spikes, and the clamp hardens.
+- **The Red Areas:** These are your zones of long-term structural trauma or massive defensive clamping—like a deeply matted hip socket or an ancient lower-back brace. If you attempt a top-down, conscious stretching routine to force your way into these zones, you instantly trigger a system alarm. The tissue panics, the neural noise spikes, and the clamp hardens.
 - **The Yellow Frontier:** This is the precise boundary layer adjacent to the green space. It is the zone where the tissue is *just* safe enough to open up, but still retains its historical restriction.
 
 On the rug, the process becomes beautifully self-reinforcing. Left to its own devices, your sub-cortical autopilot naturally drifts to this yellow perimeter. Suddenly, the nature of your aches completely flips.

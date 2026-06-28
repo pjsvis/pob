@@ -8,7 +8,7 @@ If you want to observe the exact moment a human being's structural operating sys
 
 Their head shears forward, their chin tilts upward slightly, and their eyes lock onto a tiny 2D glowing window. To the untrained eye, it looks like a simple posture choice. But inside their sensory processing core, a significant coordinate calculation error is executing.
 
-When you spend hours tracking a digital world through a static screen, your neck doesn't just get stiff—it freezes like old wood. Your skull begins to feel indeterminably heavy, like a bowling ball resting on a spindly stick. You experience a constant, dull pressure right at the base of your skull, accompanied by an ambient, exhausting tightness that radiates all the way down into your lower back.
+When you spend hours tracking a a screen through a static screen, your neck doesn't just get stiff—it freezes like old wood. Your skull begins to feel indeterminably heavy, like a bowling ball resting on a spindly stick. You experience a constant, dull pressure right at the base of your skull, accompanied by an ambient, exhausting tightness that radiates all the way down into your lower back.
 
 To fix this, you roll your head, stretch your neck sideways, or rub the base of your skull with your thumbs. The relief is completely non-existent.
 
@@ -31,15 +31,15 @@ $$\mathbf{v}_e + \mathbf{v}_b = \mathbf{0}$$
 
 When you stare fixedly at a 2D screen while moving, you force $\mathbf{v}_e$ to become completely static relative to your face, while your walking body forces $\mathbf{v}_b$ to oscillate. This disconnect triggers a severe software conflict—a coordinate cache invalidation event.
 
-Because the sub-cortical kernel can no longer determine the true orientation of the horizon relative to the spine, it declares an emergency tracking exception.
+Because the sub-cortical system can no longer determine the true orientation of the horizon relative to the spine, it declares an emergency tracking alarm.
 
-To prevent your skull from shearing off the **Transverse process of Atlas**, the governor fires a massive electrical clamp across the **Obliquus capitis inferior** and surrounding tissues. This high-amplitude neural noise (Gamma gain) doesn't stay local; it streams down the paraspinal chain, throwing a protective, high-intensity firewall across your lower back. Your lower back is locked down simply because your eyes are trapped inside a digital box.
+To prevent your skull from shearing off the **Transverse process of Atlas**, the governor fires a massive electrical clamp across the **Obliquus capitis inferior** and surrounding tissues. This high-amplitude neural noise (high-amplitude) doesn't stay local; it streams down the paraspinal chain, throwing a protective, high-intensity firewall across your lower back. Your lower back is locked down simply because your eyes are trapped inside a screen.
 
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
-This user acceptance test allows you to prove to your conscious mind that your eyes and your lower back are running on the exact same software pipeline.
+This practical test allows you to prove to your conscious mind that your eyes and your lower back are running on the exact same software pipeline.
 
-> **The Verification Metric:** If you discover that your hands now effortlessly travel two to three inches closer to the floor, and the chronic, iron-like tightness in your lower back has transformed into a soft, yielding fold—*despite you never stretching your back or your legs*—then the change has taken hold. The autonomous governor has cleared the oculomotor exception and deleted the protective spinal firewall.
+> **The Verification Metric:** If you discover that your hands now effortlessly travel two to three inches closer to the floor, and the chronic, iron-like tightness in your lower back has transformed into a soft, yielding fold—*despite you never stretching your back or your legs*—then the change has taken hold. The autonomous governor has cleared the oculomotor alarm and released the protective spinal guarding.
 
 ---
