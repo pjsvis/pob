@@ -69,6 +69,14 @@ Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamine
 
 The yap is research; the voice is authorship; never let the yap author. See `blog/the-yap-and-the-voice.md` for the full argument.
 
+### Incremental formalisation
+
+Add what the work demands, when the work demands it; formalise at the second occurrence, not the first and not the fifth. This is the meta-principle that governs the other six — each was added in response to a real problem (the voice pass surfaced the voice invariant; the tidy pass surfaced tidy-first; the Gemini memory problem surfaced the memory-vs-documentation principle), not in anticipation of an imagined one.
+
+The anti-greenfield argument: front-loading the formalisation ("let's create a new repo with all the things we think it needs") is the map-before-the-territory error. The rules are guesses written for a practice not yet practised, and they survive on inertia as barnacles when the work arrives and does not match them. The incremental approach comprehends the moving ground — tools change, the project's understanding changes, practices that seemed right at week one are wrong by week four. You formalise only what the work has already taught you, so every rule carries a living justification you can test when the ground moves.
+
+The risk: incremental can tip into *no* formalisation if the trigger threshold is too high. The companion rule: formalise at the second occurrence, not the first (too early — you don't know if it's a pattern) and not the fifth (too late — you've accumulated the damage). See `blog/incremental-formalisation.md` for the full argument.
+
 ## 5. Playbooks to read before the relevant work
 
 | Before | Read |
