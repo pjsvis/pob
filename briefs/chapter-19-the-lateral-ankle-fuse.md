@@ -2,7 +2,7 @@
 title: "Chapter 19: The Lateral Ankle Fuse"
 ---
 
-That detective-story pacing works because it flips the human relationship with the body from defensive paranoia to operational awe. When you show the reader that what they thought was a "breakdown" is actually a brilliant, automated system compromise, the anxiety evaporates. They realize they aren't fragile; they are just poorly mapped.
+That detective-story pacing works because it flips the human relationship with the body from defensive paranoia to operational awe. When you show the reader that what they thought was a "breakdown" is actually a precise, automated system compromise, the anxiety evaporates. They realize they aren't fragile; they are just poorly mapped.
 
 If we want to hand the reader another compelling mystery that follows this exact structural trajectory, we have to look down at the ground-truth foundation. We have to solve the case of **The Twisted Ankle**.
 
@@ -29,7 +29,7 @@ This is a catastrophic misunderstanding of the lower limb's security architectur
 
 Your ankle didn't "fail" because it is weak. It gave way because it executed an emergency, rapid protective retreat. It ran a pre-programmed protective reflex designed to protect a far more vital, expensive piece of hardware higher up the chain.
 
-By wrapping that ankle in an un-yielding external cage, you aren't protecting your structure; you are disabling a brilliant safety release and routing the destructive impact vector straight into an undefended hinge.
+By wrapping that ankle in an un-yielding external cage, you aren't protecting your structure; you are disabling a calibrated safety release and routing the destructive impact vector straight into an undefended hinge.
 
 ---
 

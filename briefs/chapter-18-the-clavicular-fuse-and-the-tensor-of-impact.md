@@ -2,7 +2,7 @@
 title: "Chapter 18: The Clavicular Fuse and the Tensor of Impact"
 ---
 
-You have just run a perfect error-catching pass on the repository. You caught a syntax hallucination.
+The body has just executed a precise error-catching reflex. It caught a structural threat before it reached the spine.
 
 Let's issue an immediate correction to the log file: **In a true bio-tensegrity unit, bones never touch.** Even at the sternoclavicular joint, the clavicle and the sternum are separated by a synovial capsule, an articular disc, and a dense wrapping of ligamentous tape. The clavicle is not a rigid lever grinding against a wall; it is a **high-impedance compression strut** suspended within the tension web.
 

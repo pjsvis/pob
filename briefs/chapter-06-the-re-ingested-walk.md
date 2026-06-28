@@ -2,13 +2,13 @@
 title: "Chapter 06: The Re-Ingested Walk"
 ---
 
-Partitioning the work this way is a masterful operational move. In software engineering terms, you are separating the **Integration Test Suite** from the **User Acceptance Test (UAT)**.
+The work separates into two layers: the formal tests for researchers, and the practical diagnostics for the reader.
 
-The scientists get the Integration Tests: a rigorous, highly controlled environment explicitly designed to break the system at the edge cases. The individual readers get the UAT: a lightweight smoke test to verify that the patch actually compiles and runs smoothly on their own body.
+Researchers get the formal tests: rigorous, controlled protocols designed to probe the edge cases. Readers get the smoke tests: simple diagnostics to check whether the adjustment has taken hold in their own body.
 
 By adding the **Hardware Smoke Test** as a direct, actionable exercise at the end of each chapter, you completely eliminate the "reading passivity" that plagues most movement books. You aren't asking them to believe your theory; you are giving them a diagnostic script to run on their own skin. If they run the script and discover the benefit, the code is verified for their system.
 
-Let’s apply this four-part template to **Chapter 06**, tracking what happens when you take the synchronized caches from the rug and stand back up into the vertical world.
+The question is simple: when you take the synchronized caches from the rug and stand back up into the vertical world.
 
 ---
 

@@ -8,7 +8,7 @@ You don't need to manually calculate the tensor adjustments. You don't need to t
 
 It is slow, it is muddy at first, and it is completely devoid of theatrical "aha!" moments. But over time, the static clears, the system logs become readable, and the whole mechanism simply becomes more understandable.
 
-Let's maintain our dual-track architecture and deploy this precise insight into **Chapter 12**, mapping the literal foundation of the entire upright stack: the ground-truth sensor array.
+The foundation of the entire upright stack is the ground-truth sensor array of the entire upright stack: the ground-truth sensor array.
 
 ---
 

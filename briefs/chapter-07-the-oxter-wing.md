@@ -48,4 +48,4 @@ This diagnostic script allows your user acceptance loop to bypass the symptom-sm
 
 ---
 
-Now that the upper suspension architecture is locked into the repository, should we advance to **Chapter 08: The Sub-Occipital Kernel** to map how your visual tracking array dictates the resting voltage of your lower back?
+

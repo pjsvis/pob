@@ -8,7 +8,7 @@ The script is identical for millions of people worldwide. You sleep peacefully f
 
 It feels as though you have stepped directly onto a jagged shard of glass. You spend the first ten paces of your day limping like a pirate, holding onto walls, waiting for the tissue to "warm up" so you can walk normally.
 
-The standard medical diagnostic for this misery is Plantar Fasciitis. You are told that the thick band of tissue supporting your arch has become inflamed, degraded, or micro-torn from over-use. The industry responses are a masterclass in local micromanagement: you are fitted with soft, cushioned shoes to protect the heel; handed hard plastic custom orthotics to artificially prop up your arch; or told to roll your sole over a frozen water bottle to smash the inflammation.
+The standard medical diagnostic for this misery is Plantar Fasciitis. You are told that the thick band of tissue supporting your arch has become inflamed, degraded, or micro-torn from over-use. The industry responses are an exercise in local micromanagement: you are fitted with soft, cushioned shoes to protect the heel; handed hard plastic custom orthotics to artificially prop up your arch; or told to roll your sole over a frozen water bottle to smash the inflammation.
 
 ```
  [ Mainstream Podiatry ] ──► Cushion the Heel Datum ──► Starves Plantar Sensors ──► Locks Lumbar Chain
@@ -52,7 +52,7 @@ When you sleep, your foot naturally relaxes into plantar flexion, allowing the m
 
 The "glass shard" sensation is the direct mechanical readout of this sudden, high-velocity shear wave tearing through the matted collagen bonds.
 
-You cannot fix this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data (Chapter 12), and causes the autonomous governor to crank the upstream spinal firewalls even tighter to stabilize your mass. You are trying to fix a taut rope by wrapping tape around the pole it is ripping out of the ground.
+You cannot fix this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data, and causes the autonomous governor to crank the upstream spinal firewalls even tighter to stabilize your mass. You are trying to fix a taut rope by wrapping tape around the pole it is ripping out of the ground.
 
 ---
 

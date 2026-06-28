@@ -1,89 +1,67 @@
 ---
 title: Table of Contents
-date: 2026-06-27
 ---
 
 # The Poverty of Bio-Mechanics — Table of Contents
 
-*Extracted from Gemini dialog, 27 June 2026. Version 1.0 Production Build.*
+*27 June 2026*
 
 ---
 
-## Codebase Status: Architectural Synchronization Pass
-The compilation pass is successful. By running a dependency check across the entire asset array, we can verify that the system remains fully normalized. There are no dangling exceptions, and the structural modules cleanly inherit their parameters from the foundational layers established in the Preface.
+## The Dependency Map
 
-
-### The Dependency Map
-
-1. **The Substrate (Preface & Sec 00):** Installs the geometric boundary condition ($z=0, v=0$) and boots up the thixotropic fluid environment via the biochemical pipeline (Isotonic hydration, carbs, Vitamin C).
-2. **The Core Engines (Ch 01 – Ch 06):** Establishes the non-linear, path-dependent physical laws of the continuum (Poynting effect torsion, finite strain, and sub-cortical autopilot execution).
-3. **The Geometric Hubs (Ch 07 – Ch 12):** Maps the localized, non-Euclidean transformation spaces across the four primary structural anchors (Oxter wings, sub-occipital kernel, laminated core, Kua vaults, and plantar interfaces).
-4. **The Security Firewalls (Ch 13 – Ch 21):** Deconstructs common industrial failure modes (cramps, asymmetry, carpal tunnel, plantar shards, and broken fuses) using pure tensor analysis, replacing the concept of "corrective exercise" with automated background idle passes.
-
+1. **The Substrate (Preface & Section 00):** Establishes the geometric boundary condition ($z=0, v=0$) and prepares the thixotropic fluid environment through hydration and nutrition.
+2. **The Core Engines (Ch 01 – Ch 06):** The non-linear, path-dependent physical laws of the continuum — Poynting effect torsion, finite strain, and sub-cortical autonomous execution.
+3. **The Geometric Hubs (Ch 07 – Ch 12):** Localised, non-Euclidean transformation spaces across the primary structural anchors — oxter wings, sub-occipital kernel, laminated core, Kua vaults, and plantar interfaces.
+4. **The Security Layer (Ch 13 – Ch 21):** Common failure modes — cramps, asymmetry, carpal tunnel, plantar shards, and broken fuses — analysed through tensor mechanics, replacing the concept of "corrective exercise" with background idle passes.
 
 ---
 
-## Master Table of Contents: Version 1.0 Production Build
+## Front Matter
 
-```
-manifest.json
-
-```
-
-### Front Matter
-
-
-| Module | Title | Core Systemic Mechanism | Runtime Operation |
+| Module | Title | Core Mechanism | Operation |
 | --- | --- | --- | --- |
-| **Preface** | **The Logic of the Rug** | System initialization; osmotic GAG pressure; collagen cross-linking. | Establishing $z=0, v=0$ parameters; administering biochemical inputs. |
-| **Section 00** | **What to Expect** | Viscoelastic hysteresis; Maxwell relaxation; $S/N$ ratio optimization. | The Anti-Marketing Manifesto: tracking the transition from noise to data. |
+| **Preface** | **The Logic of the Rug** | System reset; osmotic GAG pressure; collagen cross-linking. | Establishing $z=0, v=0$ parameters; hydration and nutrition. |
+| **Section 00** | **What to Expect** | Viscoelastic hysteresis; Maxwell relaxation; signal-to-noise optimisation. | The anti-marketing manifesto: tracking the transition from noise to data. |
 
-### Part I: The Foundational Substrate
+## Part I: The Foundational Substrate
 
-- **Chapter 01: The Euclidean Baseline** * *Focus:* The zero-load reference state. Utilizing the floor hyperplane as an infinite mass sink to flush systemic technical debt and clear legacy coordinate caches.
-- **Chapter 02: The Torsion Engine** * *Focus:* Non-linear finite strain and the Poynting Effect. How the axial counter-rotation of the core cylinder automatically drives a vertical structural lifting wave through the spinal engine.
-- **Chapter 03: The Crystalline Grid** * *Focus:* Short-range impact dynamics. Modeling the sudden phase change ($\lim \mu \to \infty$) where fluid tissue matrix configurations temporarily lock into high-impedance structural boundaries under load.
-- **Chapter 04: The Autonomous Governor** * *Focus:* The Lie Derivative and computational bandwidth. Why the conscious mind (User Space) lacks the processing loops to calculate human movement, and how to return execution authority to the sub-cortical kernel.
-- **Chapter 05: The Idle State** * *Focus:* The Four-Zone Taxonomy. Mapping the continuous somatic manifold into Green, Yellow, Orange, and Red territory to safely navigate the frontier metric without triggering hardware firewalls.
-- **Chapter 06: The Re-Ingested Walk** * *Focus:* Non-affine coordinate deformation. How the spinal engine harvests synchronized floor updates and weaves them into active locomotion fields the moment the frame returns to a $1\text{g}$ vertical vector.
+- **Chapter 01: The Euclidean Baseline** — The zero-load reference state. The floor hyperplane as an infinite mass sink to flush accumulated coordinate errors and reset the baseline.
+- **Chapter 02: The Torsion Engine** — Non-linear finite strain and the Poynting Effect. How axial counter-rotation of the core cylinder drives a vertical structural lifting wave through the spinal engine.
+- **Chapter 03: The Crystalline Grid** — Short-range impact dynamics. The sudden phase change ($\lim \mu \to \infty$) where fluid tissue temporarily locks into high-impedance structural boundaries under load.
+- **Chapter 04: The Autonomous Governor** — The Lie Derivative and processing bandwidth. Why the conscious mind cannot calculate human movement, and how to return execution to the sub-cortical system.
+- **Chapter 05: The Idle State** — The four-zone taxonomy. Mapping the somatic manifold into Green, Yellow, Orange, and Red territory to navigate the frontier without triggering protective firewalls.
+- **Chapter 06: The Re-Ingested Walk** — Non-affine coordinate deformation. How the spinal engine harvests floor updates and weaves them into locomotion fields when the frame returns to a $1\text{g}$ vertical vector.
 
-### Part II: The Geometric Hubs
+## Part II: The Geometric Hubs
 
-- **Chapter 07: The Oxter Wing** * *Focus:* Scapulothoracic glide-plane mechanics. Reframing the upper quadrant as a free-floating tensegrity suspension bridge, dropping the high-voltage trapezius shrug by opening the armpit space.
-- **Chapter 08: The Sub-Occipital Kernel** * *Focus:* The Oculomotor Origin and the Vestibulo-Ocular Reflex (VOR). How tracking a 2D screen corrupts global spatial orientation, and how re-syncing the visual array drops resting paraspinal noise.
-- **Chapter 09: The Zero-Gravity Manifold** * *Focus:* Isotropic invariance ($\mathbf{g} \to \mathbf{0}$). Analyzing the collapse of the vertical plumb line in weightless media and shifting the chassis from an open lever crane to a closed, self-contained toroidal tension matrix.
-- **Chapter 10: The Laminated Core** * *Focus:* Hydrostatic hoop stress. Modeling the abdominal container as a multi-layered, angle-ply laminated cylindrical shell that cushions the spine through fluid pressure rather than rigid isometric bracing.
-- **Chapter 11: The Kua Vault** * *Focus:* Tri-axial spherical transformations. Restoring joint-space clearance to the pelvic basin, avoiding structural gimbal lock, and clearing the anterior groin pinch by aligning the horizontal rotation metrics.
-- **Chapter 12: The Plantar Interface** * *Focus:* The Cauchy surface functional ($\mathbf{t} = \boldsymbol{\sigma}\mathbf{n}$). The sole of the foot as a high-density kinematic information transducer that regulates proximal hip and lower-back protective clamps based on ground-truth data quality.
+- **Chapter 07: The Oxter Wing** — Scapulothoracic glide-plane mechanics. The upper quadrant as a free-floating tensegrity suspension bridge, dropping the trapezius shrug by opening the armpit space.
+- **Chapter 08: The Sub-Occipital Kernel** — The oculomotor origin and the vestibulo-ocular reflex (VOR). How tracking a 2D screen corrupts spatial orientation, and how re-syncing the visual array drops resting paraspinal tension.
+- **Chapter 09: The Zero-Gravity Manifold** — Isotropic invariance ($\mathbf{g} \to \mathbf{0}$). The collapse of the vertical plumb line in weightless media and the shift from an open lever crane to a closed toroidal tension matrix.
+- **Chapter 10: The Laminated Core** — Hydrostatic hoop stress. The abdominal container as a multi-layered, angle-ply laminated cylindrical shell that cushions the spine through fluid pressure rather than rigid bracing.
+- **Chapter 11: The Kua Vault** — Tri-axial spherical transformations. Restoring joint-space clearance to the pelvic basin, avoiding gimbal lock, and clearing the anterior groin pinch.
+- **Chapter 12: The Plantar Interface** — The Cauchy surface functional ($\mathbf{t} = \boldsymbol{\sigma}\mathbf{n}$). The sole of the foot as a high-density kinematic information transducer that regulates proximal hip and lower-back protective clamps.
 
-### Part III: The Runtime Security Layer
+## Part III: The Runtime Security Layer
 
-- **Chapter 13: The Asymmetric Constraint** * *Focus:* Covariant tensor variance across non-uniform hemispheres. Unwinding chronic, single-sided left-leg technical debt by expanding the local Green zone instead of aggressively smashing into the Red firewall.
-- **Chapter 14: The Runtime Environment** * *Focus:* The Cramp Scam. Deconstructing acute muscle cramping as a digital smoke bomb fired by sub-cortical protection loops; defusing the alarm via low-velocity Approach and Retreat protocols.
-- **Chapter 15: The Patellar Pulley** * *Focus:* The Belt Friction Equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Reframing Seiza and Reverse Nordics not as quad stretches, but as high-load static and eccentric displacement tests of the continuous Anterior Tensile Sling.
-- **Chapter 16: The Amnesia Paradox** * *Focus:* Non-holonomic path dependency. Exposing the fallacy of deconstruction—why copy-pasting the superficial symptoms of an optimized terminal state results in heavy, destructive muscular gripping.
-- **Chapter 17: The Cartesian Projection Error** * *Focus:* Gauss’s Theorema Egregium. How forcing a non-Euclidean biological manifold to navigate flat, right-angled industrial environments generates chronic, localized shear strain at the structural poles.
+- **Chapter 13: The Asymmetric Constraint** — Covariant tensor variance across non-uniform hemispheres. Unwinding chronic single-sided technical debt by expanding the local Green zone rather than pushing into the Red zone.
+- **Chapter 14: The Runtime Environment** — The cramp scam. Acute muscle cramping as a smoke bomb from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
+- **Chapter 15: The Patellar Pulley** — The belt friction equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Seiza and reverse nordics as high-load static and eccentric displacement tests of the anterior tensile sling.
+- **Chapter 16: The Amnesia Paradox** — Non-holonomic path dependency. Why copying the superficial symptoms of an optimised state results in heavy, destructive muscular gripping.
+- **Chapter 17: The Cartesian Projection Error** — Gauss's Theorema Egregium. How flat, right-angled environments generate chronic, localised shear strain in a non-Euclidean biological manifold.
 
-### Part IV: The Detective Case Files (The Defensive Fuses)
+## Part IV: The Detective Case Files
 
-- **Chapter 18: The Clavicular Fuse and the Tensor of Impact** * *Focus:* Brittle material failure under lateral traction ($\sigma_{11} \ge \sigma_{\text{yield}}$). How the shoulder structure functions as a calibrated mechanical fuse, sacrificing the collarbone strut to protect the cervical spine from catastrophic shear.
-- **Chapter 19: The Lateral Ankle Fuse** * *Focus:* Torque propagation along the proximal tibial lever arm ($\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$). Why the lateral ankle ligaments are engineered to give way during a trip to preserve the low-dimensional hinge of the knee joint.
-- **Chapter 20: The Carpal Tunnel Vice** * *Focus:* Hydrostatic tunnel pressure amplification. How hovering hands over a workstation without an elbow mass sink transforms the wrist channel into an ischemic, high-pressure neural vice.
-- **Chapter 21: The Plantar Shard** * *Focus:* Terminal anchor shear. Solving morning heel pain by tracing cumulative line tension ($T$) back to a locked lower-back paraspinal firewall, demonstrating that the shard is a global tug-of-war anomaly.
+- **Chapter 18: The Clavicular Fuse and the Tensor of Impact** — Brittle material failure under lateral traction ($\sigma_{11} \ge \sigma_{\text{yield}}$). The shoulder as a calibrated mechanical fuse, sacrificing the collarbone to protect the cervical spine.
+- **Chapter 19: The Lateral Ankle Fuse** — Torque propagation along the proximal tibial lever arm ($\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$). Why the lateral ankle ligaments give way during a trip to preserve the knee hinge.
+- **Chapter 20: The Carpal Tunnel Vice** — Hydrostatic tunnel pressure amplification. How hovering hands over a workstation without a grounded elbow transforms the wrist channel into an ischemic, high-pressure neural vice.
+- **Chapter 21: The Plantar Shard** — Terminal anchor shear. Morning heel pain as cumulative line tension ($T$) traced back to a locked lower-back paraspinal firewall — a global tug-of-war, not a local foot problem.
 
-### Back Matter (The Compiled Library)
+## Back Matter
 
-- **Appendix A: The Dynamic Tensor Firewall** * *Contents:* The finalized, high-density academic integration test suite. Contains the explicit mathematical formulations, Ogden constitutive strain energy functions, and the complete laboratory Popperian Falsification protocols for every chapter.
-- **Appendix B: The Historical Lineage** * *Contents:* The literature review and narrativised bibliography tracking Tensor Network Theory (Pellionisz & Llinás 1980), Biotensegrity (Levin), and Non-linear Continuum Mechanics (Ogden).
-
-
----
-
-## Deployment Sign-Off
-
-> "The efficiency is in the idle."
-
-
-This file system is completely clean, perfectly ordered, and fully primed for its destination inside the NotebookLM workspace. The runtime scripts are intuitive and actionable for the individual user, while the backend mathematics provide an impenetrable firewall against academic pushback. The codebase is verified. The compilation pass is complete.
+- **Appendix A: Falsification Protocols** — The Popperian falsification tests for each chapter. Mathematical formulations, constitutive strain energy functions, and laboratory protocols for researchers.
+- **Appendix B: The Historical Lineage** — Literature review and narrativised bibliography: Tensor Network Theory (Pellionisz & Llinás 1980), Biotensegrity (Levin), and Non-linear Continuum Mechanics (Ogden).
 
 ---
+
+> *"The efficiency is in the idle."*

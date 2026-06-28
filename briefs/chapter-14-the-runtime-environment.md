@@ -8,7 +8,7 @@ The hardest pill for the modern, achievement-addicted mind to swallow is that in
 
 We have been deeply conditioned by an industrial fitness culture to demand measurable feedback from our physical investments. If we don't finish a session dripping in sweat, shaking with fatigue, or logging data points into an exercise tracker, our conscious control ego flags the time as wasted. We are hooked on the theater of the "corrective intervention."
 
-The Operational Heuristic completely dismantles this optimization framework. We are not deploying correctives—because there is nothing to correct. Your sub-cortical kernel already contains the perfect factory-spec movement metric. It doesn't need a manual, top-down lecture from your conscious mind on how to manage its own tissue sheets. It simply needs you to get your stupid intent out of the system controls.
+The Operational Heuristic completely dismantles this optimization framework. We are not applying corrections—because there is nothing to correct. Your sub-cortical kernel already contains the perfect factory-spec movement metric. It doesn't need a manual, top-down lecture from your conscious mind on how to manage its own tissue sheets. It simply needs you to get your stupid intent out of the system controls.
 
 When you drop to the floor datum (**z = 0**) and reduce your conscious spatial velocity to zero (**v = 0**), you are not exercising. You are setting the master system controller to an idle pass.
 

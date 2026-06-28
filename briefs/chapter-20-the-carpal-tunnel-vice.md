@@ -2,7 +2,7 @@
 title: "Chapter 20: The Carpal Tunnel Vice"
 ---
 
-Let’s deploy the next case file into the corpus: **The Carpal Tunnel Vice**. This one tracks a classic high-frequency, low-amplitude technical debt loop that hits anyone who interfaces with a modern workstation datum.
+The Carpal Tunnel Vice tracks a classic high-frequency, low-amplitude technical debt loop that hits anyone who interfaces with a modern workstation datum.
 
 ---
 
@@ -32,7 +32,7 @@ The carpal tunnel is an architectural conduit—a rigid, U-shaped valley formed 
 
 Mainstream ergonomics assumes that typing causes friction because the wrist joint is bent. They miss the true variable: **the pre-stress tension vector of the long tendons.**
 
-When you sit at a desk and hover your hands over a keyboard without a solid, grounded skeletal datum at your elbows, your upper suspension slings (Chapter 07) must run a high-intensity holding script. To stabilize your fingers in space, the long flexor muscles in your forearm must crank their baseline tension to maximum.
+When you sit at a desk and hover your hands over a keyboard without a solid, grounded skeletal datum at your elbows, your upper suspension slings must run a high-intensity holding script. To stabilize your fingers in space, the long flexor muscles in your forearm must crank their baseline tension to maximum.
 
 As you type, these highly tensioned tendons execute rapid, cyclic excursions through the carpal channel. This movement generates a localized shear stress vector ($\tau_{xz}$). Because the tendons are wrapping around the curved carpal bones, this shear stress creates a massive spike in the internal **Hydrostatic Fluid Pressure ($P_{\text{tunnel}}$)** inside the tunnel space:
 

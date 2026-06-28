@@ -14,7 +14,7 @@ Now, consider the counter-sensation. When the midsection operates on its native 
 
 When you breathe, your lower abdomen expands naturally in three dimensions—not just pushing forward, but widening into your hips and filling your lower back. When you walk, this zone behaves like a fluid, rhythmic piston that pumps with every stride. There is zero manual clenching, yet your spine feels entirely weightless and supported.
 
-Mainstream fitness looks at the trunk and treats it as a rigid box made of straight muscle straps designed to stop the spine from moving. In doing so, they turn off your body's most elegant internal suspension system: the hyperelastic laminated engine.
+Mainstream fitness looks at the trunk and treats it as a rigid box made of straight muscle straps designed to stop the spine from moving. In doing so, they disable the body's most refined internal suspension system: the hyperelastic laminated engine.
 
 ---
 
@@ -23,7 +23,7 @@ Standard 1D biomechanics treats the abdominal muscles as independent linear actu
 
 Your midsection is not a box; it is a pressurized, multi-layered, anisotropically laminated cylindrical shell enclosing a fluid-filled core.
 
-Look closely at the architecture revealed in the transverse section of the anterior abdominal wall above. The system does not rely on a single thick sheet of tissue. Instead, it deploys three distinct, overlapping sheets arranged at alternating fiber angles: the **External oblique**, the **Internal oblique**, and the **Transversus abdominis**.
+Look closely at the architecture revealed in the transverse section of the anterior abdominal wall above. The system does not rely on a single thick sheet of tissue. Instead, it uses three distinct, overlapping sheets arranged at alternating fiber angles: the **External oblique**, the **Internal oblique**, and the **Transversus abdominis**.
 
 In structural engineering, this layout is known as an **angle-ply laminated composite material**. By stacking hyperelastic sheets at alternating orientations ($\theta \approx \pm 45^\circ, 90^\circ$), the system prevents structural buckling and optimizes its resistance to multi-directional shear vectors without requiring rigid bone reinforcement.
 

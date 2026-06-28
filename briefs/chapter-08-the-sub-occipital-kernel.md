@@ -6,7 +6,7 @@ title: "Chapter 08: The Sub-Occipital Kernel"
 ## The Familiar Hook: The Screen Stare Lock
 If you want to observe the exact moment a human being's structural operating system disconnects from its evolutionary hardware, just watch someone look at a smartphone while walking down the street.
 
-Their head shears forward, their chin tilts upward slightly, and their eyes lock onto a tiny 2D glowing window. To the untrained eye, it looks like a simple posture choice. But inside their sensory processing core, a devastating coordinate calculation error is executing.
+Their head shears forward, their chin tilts upward slightly, and their eyes lock onto a tiny 2D glowing window. To the untrained eye, it looks like a simple posture choice. But inside their sensory processing core, a significant coordinate calculation error is executing.
 
 When you spend hours tracking a digital world through a static screen, your neck doesn't just get stiff—it freezes like old wood. Your skull begins to feel indeterminably heavy, like a bowling ball resting on a spindly stick. You experience a constant, dull pressure right at the base of your skull, accompanied by an ambient, exhausting tightness that radiates all the way down into your lower back.
 
