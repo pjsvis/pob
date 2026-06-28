@@ -33,7 +33,7 @@ When you stare fixedly at a 2D screen while moving, you force $\mathbf{v}_e$ to 
 
 Because the sub-cortical system can no longer determine the true orientation of the horizon relative to the spine, it declares an emergency tracking alarm.
 
-To prevent your skull from shearing off the **Transverse process of Atlas**, the governor fires a massive electrical clamp across the **Obliquus capitis inferior** and surrounding tissues. This high-amplitude neural noise (high-amplitude) doesn't stay local; it streams down the paraspinal chain, throwing a protective, high-intensity firewall across your lower back. Your lower back is locked down simply because your eyes are trapped inside a screen.
+To prevent your skull from shearing off the **Transverse process of Atlas**, the governor fires a massive electrical clamp across the **Obliquus capitis inferior** and surrounding tissues. This high-amplitude neural noise (high-amplitude signal) doesn't stay local; it streams down the paraspinal chain, throwing a protective, high-intensity guarding across your lower back. Your lower back is locked down simply because your eyes are trapped inside a screen.
 
 ---
 

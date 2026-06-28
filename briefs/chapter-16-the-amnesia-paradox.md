@@ -8,7 +8,7 @@ The most insidious feature of a highly optimized operating system is that when i
 
 You can witness this in every physical development pipeline ever designed. A user drops to the rug with a severely restricted left hip, an iron yoke clamped onto their neck, and a muddy, high-noise footprint. They spend three weeks quietly navigating the Green-Yellow boundary at $z = 0, v = 0$. Step by step, the sub-cortical system resets the tissue layers, flushes the residual coordinate errors, and produces a clean, low-entropy metric tensor.
 
-Then, the user stands up. Because the new, fluid verticality is processed entirely in Kernel Space, it doesn’t feel like an achievement. It simply feels normal.
+Then, the user stands up. Because the new, fluid verticality is processed entirely in the autonomous system, it doesn’t feel like an achievement. It simply feels normal.
 
 The conscious control ego immediately deletes its historical system logs. It looks back at its three weeks on the floor and thinks, *"Eh, nothing much really changed. I guess my hips have always been pretty loose."* This is the **Amnesia of Progress**.
 

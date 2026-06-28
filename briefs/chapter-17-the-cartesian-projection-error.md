@@ -10,7 +10,7 @@ Everywhere you look, you see flat floors, parallel walls, rectangular desks, 90-
 
 But your body didn't evolve in a box. Your internal architecture is a chaotic masterwork of curves, spirals, toroids, and floating tension loops. There is not a single straight line or true right angle in your entire fascial matrix.
 
-When you spend seven decades navigating a flat environment, your sub-cortical kernel is forced to execute a catastrophic structural compromise: **it attempts to track an artificial, rectilinear path through your internal space.** ```
+When you spend seven decades navigating a flat environment, your sub-cortical system is forced to execute a catastrophic structural compromise: **it attempts to track an artificial, rectilinear path through your internal space.** ```
 [ Environmental Grid ] ──► Forces Linear Cartesian Tracking (x, y, z)
 │
 (The Internal Projection Error)
@@ -22,7 +22,7 @@ When you spend seven decades navigating a flat environment, your sub-cortical ke
 
 To survive in a world of flat concrete and square chairs, your brain projects a rigid, Cartesian coordinate map over your fluid, spherical tensegrity chassis. You stop moving through your native, three-dimensional space-time continuum and begin marching along flat $x, y, z$ axes. 
 
-This internal projection error doesn't just change how you walk; it corrupts your master system files. Because you cannot flatten a sphere without tearing or stretching its fabric, this artificial grid introduces massive, chronic distortion at your structural poles—your feet, your Kua vaults, and your sub-occipital kernel. You aren't stiff because you are aging; you are stiff because you have forced a non-linear engine to live on a two-dimensional graph sheet.
+This internal projection error doesn't just change how you walk; it corrupts your master coordinate maps. Because you cannot flatten a sphere without tearing or stretching its fabric, this artificial grid introduces massive, chronic distortion at your structural poles—your feet, your Kua vaults, and your sub-occipital junction. You aren't stiff because you are aging; you are stiff because you have forced a non-linear engine to live on a two-dimensional graph sheet.
 
 ---
 

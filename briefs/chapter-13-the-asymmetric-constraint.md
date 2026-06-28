@@ -27,7 +27,7 @@ Let the mobile right hemisphere be governed by a clean, Euclidean reference metr
 
 $$\mathbf{E}_L = \frac{1}{2}(\mathbf{F}^T \mathbf{G}_L \mathbf{F} - \mathbf{I})$$
 
-This mathematical imbalance means that forcing a symmetrical movement path onto an asymmetrical tissue metric doesn't clear the restriction—it violently shears the matted boundary layers, forcing the sub-cortical kernel to throw an immediate defensive alarm that hardens the local guarding ($\mu \to \infty$).
+This mathematical imbalance means that forcing a symmetrical movement path onto an asymmetrical tissue metric doesn't clear the restriction—it violently shears the matted boundary layers, forcing the sub-cortical system to throw an immediate defensive alarm that hardens the local guarding ($\mu \to \infty$).
 
 ```
  [ Symmetrical Exercise Force ] ──► Forces Symmetrical Deformation (F)
