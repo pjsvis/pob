@@ -43,7 +43,7 @@ Because the tissue matrix is hyperelastic and viscoelastic, the line integral ar
 
 When an advanced mover deconstructs their current performance into a sequence of top-down posture rules, they are presenting an un-mapped beginner with a static spatial deformation template ($\mathbf{F}$).
 
-When the beginner tries to copy that template through sheer willpower, they inject massive artificial torque and neural noise into an already distorted reference metric ($\mathbf{g}*0$). They aren't running the development path ($\gamma*{\text{integration}}$); they are just manually clenching their muscles to mimic the look of a refined system. They are trying to reach the destination without walking the path.
+When the beginner tries to copy that template through sheer willpower, they inject massive artificial torque and neural noise into an already distorted reference metric ($\mathbf{g}_0$). They aren't running the development path ($\gamma_{\text{integration}}$); they are just manually clenching their muscles to mimic the look of a refined system. They are trying to reach the destination without walking the path.
 
 ---
 

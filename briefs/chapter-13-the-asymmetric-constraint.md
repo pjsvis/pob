@@ -42,7 +42,7 @@ This mathematical imbalance means that forcing a symmetrical movement path onto 
 
 ```
 
-To safely unwind this left-side structural debt, the system must navigate the **Covariant Tensor Variance**. Instead of forcing a top-down spatial path ($\mathbf{F}$), you drop to $z=0$ and allow the left hip to operate inside its own local coordinate framework. By exploring only the micro-gradients where $\mathbf{G}*L$ transitions from Green to Yellow, the thixotropic operator ($\mathbf{M}*{\text{thixo}}$) can safely liquefy the matted laminates, updating the local reference configuration until $\mathbf{G}_L$ asymptotically approaches $\mathbf{G}_R$.
+To safely unwind this left-side structural debt, the system must navigate the **Covariant Tensor Variance**. Instead of forcing a top-down spatial path ($\mathbf{F}$), you drop to $z=0$ and allow the left hip to operate inside its own local coordinate framework. By exploring only the micro-gradients where $\mathbf{G}_L$ transitions from Green to Yellow, the thixotropic operator ($\mathbf{M}_{\text{thixo}}$) can safely liquefy the matted laminates, updating the local reference configuration until $\mathbf{G}_L$ asymptotically approaches $\mathbf{G}_R$.
 
 ---
 

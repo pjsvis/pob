@@ -23,7 +23,7 @@ To describe how the sub-cortical governor tracks and updates the geometry of the
 
 The intrinsic geometry of your body's felt sense of space is governed by the covariant metric tensor $g_{ij}$. When you execute an undirected somatic movement, you introduce a localized velocity vector field $\mathbf{v}$. The rate of change of your body's internal spatial map along the flow of this movement field is calculated mathematically by the Lie Derivative:
 
-$$\mathcal{L}*{\mathbf{v}} g*{ij} = \nabla_i v_j + \nabla_j v_i$$
+$$\mathcal{L}_{\mathbf{v}} g_{ij} = \nabla_i v_j + \nabla_j v_i$$
 
 This equation maps the exact differential change in the metric tensor field under a specific physical flow.
 

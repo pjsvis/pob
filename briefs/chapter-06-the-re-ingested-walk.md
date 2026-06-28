@@ -21,7 +21,7 @@ On the floor, your sub-cortical system successfully computed a clean, low-entrop
 
 Let the transformation of your body’s internal sensory map during the transition from the floor to walking be represented by a deformation mapping $\boldsymbol{\chi}$. The localized change in the metric tensor field over time ($t$) while moving through space is dictated by the mapping gradient $\mathbf{F}$:
 
-$$\mathbf{g}*{\text{upright}}(t) = \mathbf{F}^T \tilde{g}*{ij} \mathbf{F}$$
+$$\mathbf{g}_{\text{upright}}(t) = \mathbf{F}^T \tilde{g}_{ij} \mathbf{F}$$
 
 If you stand up and immediately force a conscious, top-down posture command (conscious control override), you distort the mapping matrix $\mathbf{F}$. You present the system with an artificial torque, forcing the protective system to discard the clean floor metric ($\tilde{g}_{ij}$) and fall back on its ingrained, defensive old patterns to prevent an equilibrium alarm.
 
