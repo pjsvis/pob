@@ -51,15 +51,16 @@ The Popperian Falsification Protocols have been moved to **Appendix A**. They ar
 - [Chapter 14: The Floor Datum (z = 0, v = 0)](/chapter-14-the-floor-datum.html)
 - [Chapter 15: The Patellar Pulley](/chapter-15-the-patellar-pulley.html)
 - [Chapter 16: The Amnesia Paradox](/chapter-16-the-amnesia-paradox.html)
-- [Chapter 17: The Cartesian Projection Error](/chapter-17-the-cartesian-projection-error.html)
+- [Chapter 17: The Two Faces of Amnesia](/chapter-17-the-two-faces-of-amnesia.html)
+- [Chapter 18: The Cartesian Projection Error](/chapter-18-the-cartesian-projection-error.html)
 
 ## Part IV: The Detective Case Files
 
 - [Part Introduction](/part-04-detective-case-files.html)
-- [Chapter 18: The Clavicular Fuse and the Tensor of Impact](/chapter-18-the-clavicular-fuse-and-the-tensor-of-impact.html)
-- [Chapter 19: The Lateral Ankle Fuse](/chapter-19-the-lateral-ankle-fuse.html)
-- [Chapter 20: The Carpal Tunnel Vice](/chapter-20-the-carpal-tunnel-vice.html)
-- [Chapter 21: The Plantar Shard](/chapter-21-the-plantar-shard.html)
+- [Chapter 19: The Clavicular Fuse and the Tensor of Impact](/chapter-19-the-clavicular-fuse-and-the-tensor-of-impact.html)
+- [Chapter 20: The Lateral Ankle Fuse](/chapter-20-the-lateral-ankle-fuse.html)
+- [Chapter 21: The Carpal Tunnel Vice](/chapter-21-the-carpal-tunnel-vice.html)
+- [Chapter 22: The Plantar Shard](/chapter-22-the-plantar-shard.html)
 
 ## Back Matter
 

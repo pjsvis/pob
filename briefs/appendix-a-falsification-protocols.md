@@ -421,7 +421,7 @@ This theory will be falsified in a motor-learning and neural-computation laborat
 
 ---
 
-## Chapter 17: The Cartesian Projection Error
+## Chapter 18: The Cartesian Projection Error
 
 Our core structural assertion is that **somatic technical debt and chronic paraspinal hypertonicity are secondary structural distortions caused by forcing a non-Euclidean biological manifold to map onto an orthogonal Euclidean tracking grid, meaning that systemic voltage drops automatically when the internal map is un-decoupled from Cartesian constraints through stochastic, non-linear boundary exploration.**
 
@@ -441,7 +441,7 @@ This theory will be falsified in a computational biomechanics and neural-trackin
 
 ---
 
-## Chapter 18: The Clavicular Fuse and the Tensor of Impact
+## Chapter 19: The Clavicular Fuse and the Tensor of Impact
 
 Our core structural assertion is that **clavicular fracture under high-velocity lateral impact is an engineered, protective mechanism (a mechanical fuse) preventing catastrophic axial loading of the cervical spine, driven by the geometric inability of a high-impedance compressive strut to achieve omnidirectional fascial dispersion.**
 
@@ -469,7 +469,7 @@ This theory will be falsified in an impact-biomechanics laboratory using the fol
 
 ---
 
-## Chapter 19: The Lateral Ankle Fuse
+## Chapter 20: The Lateral Ankle Fuse
 
 Our core structural assertion is that **lateral ankle inversion is an engineered, low-threshold energy-dissipation mechanism designed to protect the knee joint from destructive rotational torque, meaning that artificially restricting lateral ankle mobility increases the incidence and severity of proximal joint failures during lateral impact events.**
 
@@ -495,7 +495,7 @@ The Encased Cage Protocol demonstrates equal or *lower* peak shear strain within
 
 ---
 
-## Chapter 20: The Carpal Tunnel Vice
+## Chapter 21: The Carpal Tunnel Vice
 
 Our core structural assertion is that **carpal tunnel paresthesia is an ischemic tracking exception driven by proximal shoulder-girdle tension and the absence of an elbow mass sink, meaning that internal tunnel pressure drops below the perfusion threshold when the upper quadrant suspension loops are cleared, independent of local wrist positioning.**
 
@@ -523,7 +523,7 @@ This theory will be falsified in a clinical neurophysiology and micro-vascular r
 
 ---
 
-## Chapter 21: The Plantar Shard
+## Chapter 22: The Plantar Shard
 
 Our core structural assertion is that **plantar fascia mechanical strain is a direct function of proximal paraspinal line tension, meaning that resting heel anchor stress drops automatically when the posterior lumbar firewall is cleared, completely independent of local mechanical support at the foot.**
 

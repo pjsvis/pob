@@ -1,5 +1,5 @@
 ---
-title: "Chapter 20: The Carpal Tunnel Vice"
+title: "Chapter 21: The Carpal Tunnel Vice"
 ---
 
 # The Carpal Tunnel Vice (The Keyboard Counter-Torque)
