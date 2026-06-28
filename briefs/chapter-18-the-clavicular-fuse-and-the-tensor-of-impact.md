@@ -40,3 +40,17 @@ $$\sigma_{11} \ge \sigma_{\text{yield}}$$
 The bone experiences catastrophic brittle failure. **It snaps.**
 
 If it did not snap—if that collarbone were an unbreakable iron bar—that exact same un-dispersed stress tensor ($\sigma_{11}$) would travel straight through the sternum and violently shear the **Sub-Occipital Origin** (C1-C7). You wouldn't have a broken collarbone; you would have a severed spinal cord.
+
+The snap is not a structural failure. It is a calibrated release — a structural fuse firing exactly where the body needs it to, to keep the line above it intact. The same governor that runs the Lie derivative across your tissue network on the floor also runs the impact equation on the pitch, and it has already done the math before you hit the ground. Your biology did not break; it chose.
+
+## The Hardware Smoke Test (Feeling the Strut vs. the Sling)
+
+This is a practical test. It lets you feel, in your own shoulders, the difference between routing force through a rigid strut and dispersing it through a soft sling.
+
+Sit or stand comfortably. Let your arms hang. First, deliberately shrug — pull your shoulders up toward your ears and lock them there, the way you do when you brace for a fall or a catch. Feel the line of tension running from the top of each shoulder straight inward, toward the collarbone and the sternum. That taut, horizontal bar is the clavicular strut engaged: a high-impedance path, ready to funnel any incoming force straight into the bone. Hold it for a breath.
+
+Now let the shrug go — not by pulling the shoulders down, but by softening the tissue under the armpits (the *Oxter*) and letting the whole shoulder girdle settle of its own weight. Feel the difference. The horizontal bar dissolves; the tension that was running through the bone now spreads outward through the fascial sling of the upper back and the armpit. The shoulder girdle becomes a dispersal net rather than a strut.
+
+Raise your arms again, gently, and let them fall back to your sides — once with the shoulders braced, once with the shoulders soft. Notice which version sends a small, blunt knock into the collarbone, and which lets the weight arrive in the floor through a broad, quiet sheet.
+
+> **The Verification Metric:** If you discover that the soft-shoulder version sends no knock at all into the collarbone — the weight of the arm simply falling away through the armpit and the upper back, like water finding a wider channel — then you have felt the difference between the human protocol and the feline one. The autonomous governor has shown you both paths, and the choice between strut and sling is one it makes on its own when you stop bracing.
