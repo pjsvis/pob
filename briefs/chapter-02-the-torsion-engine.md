@@ -4,11 +4,11 @@ title: "Chapter 02: The Torsion Engine"
 
 # The Torsion Engine
 ## The Familiar Hook: The Passive Flail
-Think about the last time you experienced a walk that felt completely effortless—the kind of movement where you felt weightless, covering ground as if the pavement were moving underneath you rather than you fighting across it.
+There is a walk that feels completely effortless — weightless, as if the pavement were moving beneath you rather than you across it.
 
 If you sample your internal sensory telemetry during that state, you notice a strange paradox: your legs don’t feel like they are working. Your calves aren’t violently pushing the earth away, and your quadriceps aren't straining to drag your thighs forward. Instead, your lower limbs feel like heavy, passive pendulums—loose flails uncoiling from your center.
 
-The active processing isn't happening in the periphery; it is localized entirely within your waist. You feel a rhythmic, alternating wringing of your core cylinder, a subtle internal twisting where the pelvis and the rib cage counter-rotate over an invisible vertical axis.
+The work isn't happening in the periphery; it is localized entirely within your waist. You feel a rhythmic, alternating wringing of your core cylinder, a subtle internal twisting where the pelvis and the rib cage counter-rotate over an invisible vertical axis.
 
 Mainstream fitness looks at this counter-rotation and calls it "arm swing," treating it as a decorative consequence of leg movement. They have the physics completely upside down. Your legs are not driving your torso; your torso is a centralized torsion engine that flings your legs down the street.
 
@@ -23,7 +23,7 @@ Let the torso be modeled as a pre-stressed hyperelastic cylinder of radius $R$. 
 
 $$E_{zz} = \frac{1}{2}R^2\alpha^2$$
 
-This equation reveals an invariant physical truth: **you cannot execute a rotational displacement ($\alpha$) in a hyperelastic cylinder without mechanically forcing a linear elongation ($E_{zz}$) along its longitudinal axis.**
+The equation encodes a strict invariant: **you cannot execute a rotational displacement ($\alpha$) in a hyperelastic cylinder without mechanically forcing a linear elongation ($E_{zz}$) along its longitudinal axis.**
 
 ```
  [Torso Counter-Rotation] ──► Axial Twist (α) ──► Non-Linear Poynting Interface
