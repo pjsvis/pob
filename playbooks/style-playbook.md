@@ -52,6 +52,29 @@ These are the raw Gemini outputs after mechanical cleanup. They have the substan
 - **Not a journal preprint:** no abstract, no keywords, no affiliations, no DOI.
 - **Not a blog post:** no tags, no "share this," no comments, no casual asides.
 
+## The Voice Invariant (the principle that governs everything below)
+
+**The voice is the invariant; the tracks are the variety.** There are several routes to publication — book chapters, standalone essays, series pieces, marketing — and they share a single register (the one defined above and in the Voice Rules). The tracks differ only in *format scaffolding* (chapter arc vs. self-contained essay vs. series thread vs. pitch); they do not differ in voice. A measured book next to a hyped blog post is the same cacophony at a larger scale that a palimpsest chapter is at the paragraph scale.
+
+**The single-voice gate.** Every track passes through one voice pass, calibrated against the staved-finger essay, before it ships. The pass is done by one consistent processor — the author, or a voice-locked model — never by committee, and never by stitching together outputs from different processors. The test for a seam: read two adjacent paragraphs aloud. If you can hear the join, one of them was voiced by a different processor and must be re-voiced.
+
+**Why this exists.** Gemini is good at generating first-draft material (the "yap") and bad at holding a measured register across a long piece. Redrafting its output with Gemini produces a mishmash of voices — cacophonous. The fix is not to make Gemini quieter; it is to let exactly one processor touch the voice, using the generated material as *source* (research notes), not as *text to edit*. See Rule 11.
+
+We do not drift from this unless we deem it necessary and say so. The single-voice gate is the load-bearing rule; everything else in this playbook is its elaboration.
+
+## The Tracks
+
+A piece's track is chosen at the assimilation step (see `playbooks/curation-playbook.md`), not at the voice step. The track changes the format scaffolding, never the register.
+
+| Track | Format scaffolding | Where it lives |
+|-------|-------------------|----------------|
+| **Book chapter** | Familiar Hook → Mathematical Justification → Hardware Smoke Test; self-contained; no byline/dek; integrates into the book's arc; cross-references inline | `briefs/chapter-*.md` |
+| **Standalone essay** | Self-contained essay format (byline + dek allowed — see `self-contained-essay-playbook.md`); same register; stands outside the book's arc. The staved-finger essay and the Nessie syntheses are the existing models | `content/` |
+| **Series piece** | A sequence of standalone essays on one theme; each self-contained; linked by a stated thread | `content/` |
+| **Marketing** | Derivative, shorter, points at the book; *same register* — never a louder voice than the book. A dry, world-weary pitch that trusts the reader's curiosity is the book's voice applied to outreach | `content/` (or external) |
+
+The same voice pass gates all four. The track only changes the scaffolding.
+
 ## The Voice Rules
 
 These are concrete rules for the editorial pass. They are not aspirational — they are testable.

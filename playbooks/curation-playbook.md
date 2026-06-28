@@ -27,13 +27,20 @@
 4. **Draft** — I write the chapter or post from scratch, using the asset as *source*, not as text to rewrite. (Gemini is a brainstorming partner, not an editor — see `playbooks/style-playbook.md` Rule 11. Redrafting Gemini output makes a palimpsest.)
 5. **Registry sync** — the chapter lands in `briefs/chapter-*.md`; `just build` picks it up; the index updates. Run registry hygiene (`td-7fbb8c`) to sync the `.jsonl` files.
 
-## Two sinks for an asset
+## The tracks (where an asset can go)
 
-An asset can feed either:
-- **The book** — a new chapter, or material folded into an existing one.
-- **A blog piece** — a standalone essay derived from the book's themes (the staved-finger essay and the Nessie syntheses are the existing models). Blog pieces live in `content/` and use the self-contained-essay format (`playbooks/self-contained-essay-playbook.md`).
+An asset can feed one of four tracks. The track is chosen at the assimilation step (step 2) and named in the brief — it is a placement decision, not a voice decision. **All four tracks share a single register** (the staved-finger voice, `playbooks/style-playbook.md`); they differ only in format scaffolding.
 
-The brief at step 2 names which sink, and why.
+| Track | Scaffolding | Lives in |
+|-------|-------------|----------|
+| **Book chapter** | Familiar Hook → Math → Smoke Test; self-contained; no byline/dek; integrates into the arc | `briefs/chapter-*.md` |
+| **Standalone essay** | Self-contained essay format (byline + dek allowed); same register; outside the book's arc | `content/` |
+| **Series piece** | A sequence of standalone essays on one theme, linked by a stated thread | `content/` |
+| **Marketing** | Derivative, shorter, points at the book; *same register, never louder* | `content/` or external |
+
+**The single-voice gate (load-bearing).** Every track passes through one voice pass, calibrated against the staved-finger essay, before publication — done by one consistent processor, never by committee. The voice is the invariant; the tracks are the variety. See `playbooks/style-playbook.md` § The Voice Invariant for the canonical statement and the reasoning. We do not drift from this unless we deem it necessary and say so.
+
+The brief at step 2 names the track and the sink, and why.
 
 ## Adding a chapter (the renumbering cascade)
 
