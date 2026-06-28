@@ -39,4 +39,4 @@ $$\sigma_{11} \ge \sigma_{\text{yield}}$$
 
 The bone experiences catastrophic brittle failure. **It snaps.**
 
-If it did not snap—if that collarbone were an unbreakable iron bar—that exact same un-dispersed stress tensor ($\sigma_{11}$) would travel straight through the sternum and violently shear the **Sub-Occipital Kernel** (C1-C7). You wouldn't have a broken collarbone; you would have a severed spinal cord.
+If it did not snap—if that collarbone were an unbreakable iron bar—that exact same un-dispersed stress tensor ($\sigma_{11}$) would travel straight through the sternum and violently shear the **Sub-Occipital Origin** (C1-C7). You wouldn't have a broken collarbone; you would have a severed spinal cord.

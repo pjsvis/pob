@@ -38,7 +38,7 @@ The Popperian Falsification Protocols have been moved to **Appendix A**. They ar
 
 - [Part Introduction](/part-02-geometric-hubs.html)
 - [Chapter 07: The Oxter Wing](/chapter-07-the-oxter-wing.html)
-- [Chapter 08: The Sub-Occipital Kernel](/chapter-08-the-sub-occipital-kernel.html)
+- [Chapter 08: The Sub-Occipital Origin](/chapter-08-the-sub-occipital-origin.html)
 - [Chapter 09: The Zero-Gravity Manifold](/chapter-09-the-zero-gravity-manifold.html)
 - [Chapter 10: The Laminated Core](/chapter-10-the-laminated-core.html)
 - [Chapter 11: The Kua Vault](/chapter-11-the-kua-vault.html)

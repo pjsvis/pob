@@ -202,7 +202,7 @@ This theory will be falsified in an electromyographic research environment using
 
 ---
 
-## Chapter 08: The Sub-Occipital Kernel
+## Chapter 08: The Sub-Occipital Origin
 
 Our core structural assertion is that **resting tone in the deep lumbar erectors is directly modulated by oculomotor tracking synchronization, meaning that chronic lower back voltage drops automatically when sub-occipital coordinate tracking is re-synchronized, without any direct mechanical intervention below the neck.**
 
@@ -219,7 +219,7 @@ This theory will be falsified in a neuro-kinematic research lab using the follow
 
 **The Metrics:** Track the baseline resting micro-voltage of the deep lumbar stabilizers down to the microvolt scale using high-density surface EMG arrays during un-braced, relaxed upright standing.
 
-**The Falsification Conditions:** Our Sub-Occipital Kernel theory is proven completely **false** if:
+**The Falsification Conditions:** Our Sub-Occipital Origin theory is proven completely **false** if:
 
 
 1. Group 1 demonstrates a more permanent, statistically significant reduction in resting lumbar voltage and greater spinal compliance than Group 2.

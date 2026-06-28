@@ -1,8 +1,8 @@
 ---
-title: "Chapter 08: The Sub-Occipital Kernel"
+title: "Chapter 08: The Sub-Occipital Origin"
 ---
 
-# The Sub-Occipital Kernel
+# The Sub-Occipital Origin
 ## The Familiar Hook: The Screen Stare Lock
 If you want to observe the exact moment a human being's structural governance disconnects from its evolved frame, just watch someone look at a smartphone while walking down the street.
 

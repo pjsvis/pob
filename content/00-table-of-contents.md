@@ -36,7 +36,7 @@ title: Table of Contents
 ## Part II: The Geometric Hubs
 
 - **Chapter 07: The Oxter Wing** — Scapulothoracic glide-plane mechanics. The upper quadrant as a free-floating tensegrity suspension bridge, dropping the trapezius shrug by opening the armpit space.
-- **Chapter 08: The Sub-Occipital Kernel** — The oculomotor origin and the vestibulo-ocular reflex (VOR). How tracking a 2D screen corrupts spatial orientation, and how re-syncing the visual array drops resting paraspinal tension.
+- **Chapter 08: The Sub-Occipital Origin** — The oculomotor origin and the vestibulo-ocular reflex (VOR). How tracking a 2D screen corrupts spatial orientation, and how re-syncing the visual array drops resting paraspinal tension.
 - **Chapter 09: The Zero-Gravity Manifold** — Isotropic invariance ($\mathbf{g} \to \mathbf{0}$). The collapse of the vertical plumb line in weightless media and the shift from an open lever crane to a closed toroidal tension matrix.
 - **Chapter 10: The Laminated Core** — Hydrostatic hoop stress. The abdominal container as a multi-layered, angle-ply laminated cylindrical shell that cushions the spine through fluid pressure rather than rigid bracing.
 - **Chapter 11: The Kua Vault** — Tri-axial spherical transformations. Restoring joint-space clearance to the pelvic basin, avoiding gimbal lock, and clearing the anterior groin pinch.
