@@ -29,7 +29,7 @@ export const orientCommand = defineCommand({
       try {
         execSync(`${tool} --version`, { stdio: "ignore" });
       } catch {
-        console.error(`❌ Required tool "${tool}" not found. Please install it before orienting.\`);
+        console.error(`❌ Required tool "${tool}" not found. Please install it before orienting.`);
         process.exit(1);
       }
     }
