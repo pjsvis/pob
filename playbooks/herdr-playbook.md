@@ -9,7 +9,7 @@ Reference for monitoring a pi coding-agent session from a remote, keyboard-only 
 - **Remote:** iPad (or similar) over SSH into the machine running pi.
 - **No mouse:** selection, scrolling, and navigation are all keyboard.
 - **Small / unfamiliar keyboard:** a hunt-and-peck layout; modifier combos can be unreliable.
-- **Readability:** 1.5× text size in the terminal reader; less screen noise is better.
+- **Readability:** reading spectacles at 1.5× magnification to see the small screen text; less screen noise is better (the `ctrl+o` trick halves what you have to wade through).
 - **Posture:** monitoring, not driving. You're watching the agent grind, catching drift at commit boundaries, interjecting only when the work goes somewhere wrong.
 
 ## The Essential Four
