@@ -2,16 +2,16 @@
 
 **Date:** 2026-06-28
 **Status:** Open
-**Source material:** `docs/the-pain-scale.md` (structural proposal, untracked — commit it as source)
+**Source material:** `assets/the-pain-scale.md` (structural proposal, untracked — commit it as source)
 **Related tasks:** td-cd7bb7 (Chapter title pass), td-7fbb8c (Registry hygiene), td-6b5002 (Math rendering pass)
 
 ## Objective
 
-Assimilate the pain-scale structural proposal (`docs/the-pain-scale.md`) into the book as a chapter, reframing the clinical 1–10 pain scale as the four-zone operational telemetry (Green / Yellow / Orange / Red) that the rest of the book already uses implicitly.
+Assimilate the pain-scale structural proposal (`assets/the-pain-scale.md`) into the book as a chapter, reframing the clinical 1–10 pain scale as the four-zone operational telemetry (Green / Yellow / Orange / Red) that the rest of the book already uses implicitly.
 
 ## Context
 
-The book's Green/Yellow/Red zone framework currently appears *without an explicit introduction* — Ch05 (The Idle State) uses it, Ch13/14/21 rely on it, but no chapter states it as the book's replacement for the pain scale. The source doc (`docs/the-pain-scale.md`) is that missing introduction: it attacks the 1–10 visual analogue scale as "dead data" (a volume slider on a binary threat signal, yielding no trajectory, no spatial boundary, no instruction for the governor) and replaces it with a horizontal map of systemic permission. It then seeds Sensory-Motor Amnesia (SMA) as a sidebar teaser for a later chapter — that teaser is spun out into its own brief (the amnesia pairing, same date).
+The book's Green/Yellow/Red zone framework currently appears *without an explicit introduction* — Ch05 (The Idle State) uses it, Ch13/14/21 rely on it, but no chapter states it as the book's replacement for the pain scale. The source doc (`assets/the-pain-scale.md`) is that missing introduction: it attacks the 1–10 visual analogue scale as "dead data" (a volume slider on a binary threat signal, yielding no trajectory, no spatial boundary, no instruction for the governor) and replaces it with a horizontal map of systemic permission. It then seeds Sensory-Motor Amnesia (SMA) as a sidebar teaser for a later chapter — that teaser is spun out into its own brief (the amnesia pairing, same date).
 
 The doc is chapter-shaped (three sections: the cul-de-sac of 1–10; the four-zone map; the SMA sidebar) but written in a brisker, more polemical register than the staved-finger benchmark. It needs a full voice pass against `playbooks/style-playbook.md` and a recasting into the canonical Familiar Hook → Mathematical Justification → Hardware Smoke Test arc.
 
@@ -25,7 +25,7 @@ Three candidates, in my order of preference:
 
 ## Deliverables
 
-1. **Commit `docs/the-pain-scale.md`** as source material (it is currently untracked).
+1. **`assets/the-pain-scale.md` is committed** as source material (it lives in `assets/`, the build-ignored dump zone — see `playbooks/curation-playbook.md`).
 2. **A new chapter draft** in `briefs/`, recast from the source doc into the canonical arc:
    - **Familiar Hook:** a sensation the reader recognises — being asked "rate your pain 1–10" and the uselessness of the answer. Open with the body, not the critique.
    - **Mathematical Justification:** the four-zone map as a state-space partition (Green = high-fidelity mapped ROM, Yellow = low-resolution frontier, Orange = active brake, Red = lockout). Formalise the zone transitions the book already uses informally (the $z=0$ floor datum, the Green-Yellow boundary $\partial\Omega_{\text{green}} \cap \partial\Omega_{\text{yellow}}$ from Ch05). A clean equation for the zone boundary as a function of the objective cost / threat-signal threshold would tie it to the existing math — coordinate with `td-6b5002` (math rendering pass) so the notation matches.
