@@ -24,6 +24,7 @@ change. What once made sense becomes noise, then harm.
 | `justfile` lowercase | Tool default; formatter compatibility | 2026-06-24 |
 | `bun` over `node` where both work | Project standard; faster; native TS | 2026-06-24 |
 | Server-side KaTeX rendering | Zero client-side latency for math | 2026-06-24 |
+| Self-hosted KaTeX CSS + fonts | CDN failure doubled every math expression (E E, Ω Ω); local copy ships with the build | 2026-06-28 |
 | Clean build (always clear `dist/`) | Prevents stale artifact pollution | 2026-06-24 |
 | Every deliberate folder has a `README.md` | Prevents mystery; draws boundaries | 2026-06-24 |
 | **Directory hierarchy** | | |
@@ -32,6 +33,10 @@ change. What once made sense becomes noise, then harm.
 | `content/` = raw markdown | Build input, not build output | 2026-06-24 |
 | `dist/` = generated output | Always clean, never committed | 2026-06-24 |
 | `scripts/` = support scripts | Tooling, automation, not shipped | 2026-06-24 |
+| `decisions/` = canonical ADR directory | Single numbering scheme (001–007); `docs/adr/` was a palimpsest, consolidated | 2026-06-28 |
+| **Principles** | | |
+| Tidy-first | Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamined | 2026-06-28 |
+| Single-voice gate | Every track passes through one voice pass before publication | 2026-06-28 |
 
 ## Barnacle Removal Record
 

@@ -53,6 +53,10 @@ These are the principles we do not drift from unless we deem it necessary and sa
 
 A **brief** is a plan to do something. An **asset** is material to process. They are not the same thing and they do not live in the same place — assets in `assets/`, briefs in `briefs/`. Conflating them is what makes "where do I put this" feel derailing.
 
+### Tidy-first
+
+Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamined. A barnacle is a convention, a file, a reference that has lost its justification but lives on — the `decisions/` vs `docs/adr/` split was one (two ADR directories, overlapping numbering, no living reason for the split). The tidy-first pass is a standing task: after a grind phase, scan the repo for barnacles (stale references, duplicated directories, broken cross-refs, jargon that slipped the voice pass). Fix the cheap ones inline; brief the expensive ones. The build passing is necessary but not sufficient — a human reading the rendered output is the ground truth. See `playbooks/conventions-playbook.md`.
+
 ## 5. Playbooks to read before the relevant work
 
 | Before | Read |
