@@ -52,6 +52,10 @@ just deps       # Show dependencies
 - **Bun-native:** TypeScript execution, package management, build runner
 - **Single runtime:** Bun is the sole runtime. Python is used **only** for WeasyPrint (PDF export); all text-processing utilities in `scripts/` are TypeScript.
 
+## Diagrams
+
+Penrose-style tensor diagrams use the **Hybrid ASCII→SVG** pipeline (ADR-002): write a limited ASCII token set (`---` half-space, `↓` field arrows, `o □ △` nodes, legs, `=` identity, `⟲` contraction, `▱` d'Alembertian, `◇ Δ ⊚` matrix stamps) in a fenced code block; the build parses it into true SVG primitives. The pipeline is **review-only** — no pre-visualisation, no auto-fit; oversized diagrams scroll (`overflow-x: auto`). The full symbol set, authoring workflow, and gating rules live in [playbooks/diagram-infrastructure-playbook.md](./playbooks/diagram-infrastructure-playbook.md).
+
 ## Related
 
 - [dependencies.md](./dependencies.md) — Full dependency list
