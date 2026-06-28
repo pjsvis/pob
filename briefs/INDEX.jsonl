@@ -1,1 +1,57 @@
-{"file":"2026-06-26-brief-multi-modal-content.md","date":"2026-06-26","status":"active","summary":"Four-mode content architecture: equation, diagram, explanation, commentary","meta":{"type":"brief","author":"pob","tags":["content","multi-modal","tensor-algebra"]}}
+{"file":"2026-06-24-brief-init-repo.md","date":"2026-06-24","status":"active","summary":"AI Agent Brief: Project Initialization & Minimalist SSG Engine","meta":{"type":"brief"}}
+{"file":"2026-06-24-brief-penrose-template.md","date":"2026-06-24","status":"active","summary":"Brief: Penrose-Style Book Template Implementation","meta":{"type":"brief"}}
+{"file":"2026-06-25-02-the-torsion-engine.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-25-03-the-crystalline-grid.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-25-04-the-autonomous-governor.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-25-brief-01-the-invariant.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"brief"}}
+{"file":"2026-06-25-brief-penrose-diagram-agent-01.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"brief"}}
+{"file":"2026-06-25-brief-penrose-diagram-agent-02.md","date":"2026-06-25","status":"active","summary":"System Prompt: Penrose Diagram Agent (Updated with Change Matrix Specification)","meta":{"type":"brief"}}
+{"file":"2026-06-25-brief-writing-style.md","date":"2026-06-25","status":"active","summary":"(untitled)","meta":{"type":"brief"}}
+{"file":"2026-06-26-05-the-idle-state.md","date":"2026-06-26","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-26-blog-style.md","date":"2026-06-26","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-26-brief-create-agent-infrastructure.md","date":"2026-06-26","status":"active","summary":"create agent infrastructure","meta":{"type":"brief"}}
+{"file":"2026-06-26-brief-css-architecture.md","date":"2026-06-26","status":"active","summary":"A Minimalist CSS Architecture for Embedded Content","meta":{"type":"brief"}}
+{"file":"2026-06-26-brief-multi-modal-content.md","date":"2026-06-26","status":"active","summary":"Brief: Multi-Modal Content Architecture","meta":{"type":"brief"}}
+{"file":"2026-06-26-closed-loop-afferent-calibration.md","date":"2026-06-26","status":"active","summary":"(untitled)","meta":{"type":"document"}}
+{"file":"2026-06-26-debrief-init-and-penrose.md","date":"2026-06-26","status":"active","summary":"Debrief: Init + Penrose-Style Layout (2026-06-24 to 2026-06-26)","meta":{"type":"debrief"}}
+{"file":"2026-06-26-session-state.md","date":"2026-06-26","status":"active","summary":"Session State: 2026-06-26 (Part 2)","meta":{"type":"document"}}
+{"file":"2026-06-26-staved-finger-tensor-algebra.md","date":"2026-06-26","status":"active","summary":"Staved Finger Tensor Algebra","meta":{"type":"essay"}}
+{"file":"2026-06-26-staved-finger.md","date":"2026-06-26","status":"active","summary":"(untitled)","meta":{"type":"essay"}}
+{"file":"2026-06-28-brief-assess-diagram-pipeline.md","date":"2026-06-28","status":"active","summary":"Brief: Assess Hybrid ASCII→SVG Diagram Pipeline Viability","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-beta-readers.md","date":"2026-06-28","status":"active","summary":"Brief: Beta Readers — Emma, Barbara, Craig","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-chapter-titles-and-structure.md","date":"2026-06-28","status":"active","summary":"Brief: Chapter Title Pass + Structural Fixes (Ch15, Ch18)","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-grad-div-curl-explanations.md","date":"2026-06-28","status":"active","summary":"Brief: Grad/Div/Curl Explanation Blocks for Chapter Math","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-math-rendering-pass.md","date":"2026-06-28","status":"active","summary":"Brief: Math Rendering Pass — Audit and Repair All KaTeX Notation","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-onboarding-grad-div-curl.md","date":"2026-06-28","status":"active","summary":"Brief: Onboarding Chapter — Grad, Div, Curl, and the Wet Towel","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-persist-nessie-syntheses.md","date":"2026-06-28","status":"active","summary":"Brief: Persist Nessie Syntheses as Style References","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-port-scripts-to-typescript.md","date":"2026-06-28","status":"active","summary":"Brief: Port Python Scripts to TypeScript","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-preface-and-section-00.md","date":"2026-06-28","status":"active","summary":"Brief: Write Preface and Section 00","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-registry-hygiene.md","date":"2026-06-28","status":"active","summary":"Brief: Registry Hygiene — INDEX.jsonl and REGISTRY.jsonl Sync","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-somatic-and-practitioner-amnesia.md","date":"2026-06-28","status":"active","summary":"Brief: Two Faces of Amnesia — Somatic Amnesia and Practitioner-Amnesia","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-the-pain-scale-chapter.md","date":"2026-06-28","status":"active","summary":"Brief: The Pain Scale — Reframing Pain as Operational Telemetry","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-voice-pass.md","date":"2026-06-28","status":"active","summary":"Brief: Voice Pass — Bring Chapter Drafts to Target Register","meta":{"type":"brief"}}
+{"file":"2026-07-01-brief-hybrid-svg-approach.md","date":"2026-07-01","status":"active","summary":"Brief: Hybrid ASCII‑→‑SVG Approach for Penrose‑Style Diagrams","meta":{"type":"brief"}}
+{"file":"2026-07-02-brief-dalembertian.md","date":"2026-07-02","status":"active","summary":"Brief: D’Alembertian Symbol Integration","meta":{"type":"brief"}}
+{"file":"appendix-a-falsification-protocols.md","date":"2026-06-27","status":"active","summary":"Appendix A: Falsification Protocols","meta":{"type":"appendix"}}
+{"file":"chapter-00-the-vocabulary.md","date":"2026-06-28","status":"active","summary":"Chapter 0: The Vocabulary","meta":{"type":"chapter"}}
+{"file":"chapter-01-the-euclidean-baseline.md","date":"2026-06-28","status":"active","summary":"Chapter 01: The Euclidean Baseline","meta":{"type":"chapter"}}
+{"file":"chapter-02-the-torsion-engine.md","date":"2026-06-28","status":"active","summary":"Chapter 02: The Torsion Engine","meta":{"type":"chapter"}}
+{"file":"chapter-03-the-crystalline-grid.md","date":"2026-06-28","status":"active","summary":"Chapter 03: The Crystalline Grid","meta":{"type":"chapter"}}
+{"file":"chapter-04-the-autonomous-governor.md","date":"2026-06-28","status":"active","summary":"Chapter 04: The Autonomous Governor","meta":{"type":"chapter"}}
+{"file":"chapter-05-the-idle-state.md","date":"2026-06-28","status":"active","summary":"Chapter 05: The Idle State","meta":{"type":"chapter"}}
+{"file":"chapter-06-the-re-ingested-walk.md","date":"2026-06-28","status":"active","summary":"Chapter 06: The Re-Ingested Walk","meta":{"type":"chapter"}}
+{"file":"chapter-07-the-oxter-wing.md","date":"2026-06-28","status":"active","summary":"Chapter 07: The Oxter Wing","meta":{"type":"chapter"}}
+{"file":"chapter-08-the-sub-occipital-origin.md","date":"2026-06-28","status":"active","summary":"Chapter 08: The Sub-Occipital Origin","meta":{"type":"chapter"}}
+{"file":"chapter-09-the-zero-gravity-manifold.md","date":"2026-06-28","status":"active","summary":"Chapter 09: The Zero-Gravity Manifold","meta":{"type":"chapter"}}
+{"file":"chapter-10-the-laminated-core.md","date":"2026-06-28","status":"active","summary":"Chapter 10: The Laminated Core","meta":{"type":"chapter"}}
+{"file":"chapter-11-the-kua-vault.md","date":"2026-06-28","status":"active","summary":"Chapter 11: The Kua Vault","meta":{"type":"chapter"}}
+{"file":"chapter-12-the-plantar-interface.md","date":"2026-06-28","status":"active","summary":"Chapter 12: The Plantar Interface","meta":{"type":"chapter"}}
+{"file":"chapter-13-the-asymmetric-constraint.md","date":"2026-06-28","status":"active","summary":"Chapter 13: The Asymmetric Constraint","meta":{"type":"chapter"}}
+{"file":"chapter-14-the-floor-datum.md","date":"2026-06-28","status":"active","summary":"Chapter 14: The Floor Datum (z = 0, v = 0)","meta":{"type":"chapter"}}
+{"file":"chapter-15-the-patellar-pulley.md","date":"2026-06-28","status":"active","summary":"Chapter 15: The Patellar Pulley","meta":{"type":"chapter"}}
+{"file":"chapter-16-the-amnesia-paradox.md","date":"2026-06-28","status":"active","summary":"Chapter 16: The Amnesia Paradox","meta":{"type":"chapter"}}
+{"file":"chapter-17-the-cartesian-projection-error.md","date":"2026-06-28","status":"active","summary":"Chapter 17: The Cartesian Projection Error","meta":{"type":"chapter"}}
+{"file":"chapter-18-the-clavicular-fuse-and-the-tensor-of-impact.md","date":"2026-06-28","status":"active","summary":"Chapter 18: The Clavicular Fuse and the Tensor of Impact","meta":{"type":"chapter"}}
+{"file":"chapter-19-the-lateral-ankle-fuse.md","date":"2026-06-28","status":"active","summary":"Chapter 19: The Lateral Ankle Fuse","meta":{"type":"chapter"}}
+{"file":"chapter-20-the-carpal-tunnel-vice.md","date":"2026-06-28","status":"active","summary":"Chapter 20: The Carpal Tunnel Vice","meta":{"type":"chapter"}}
+{"file":"chapter-21-the-plantar-shard.md","date":"2026-06-28","status":"active","summary":"Chapter 21: The Plantar Shard","meta":{"type":"chapter"}}

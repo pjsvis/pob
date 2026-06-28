@@ -1,5 +1,25 @@
-{"file": "TEMPLATE.md", "date": "2026-05-11", "status": "active", "summary": "(auto-generated — add description)", "meta": {"template": true}}
-{"file": "init-playbook.md", "date": "2026-06-24", "status": "active", "summary": "Standardized procedure for initializing new repositories", "meta": {"tags": ["initialization", "setup", "workflow"]}}
-{"file": "tree-view-playbook.md", "date": "2026-06-24", "status": "active", "summary": "Terminal vs browser tree approaches, @pierre/trees SSR issues", "meta": {"tags": ["tree", "browser", "cli"]}}
-{"file": "penrose-book-playbook.md", "date": "2026-06-24", "status": "active", "summary": "Penrose-style book template conventions: sidenotes, chapter formatting, full-width figures", "meta": {"tags": ["typography", "layout", "book", "penrose"]}}
-{"file": "diagram-infrastructure-playbook.md", "date": "2026-06-26", "status": "active", "summary": "Server-side diagram rendering: Mermaid placeholder, ASCII→SVG, export to dist/diagrams/", "meta": {"author": "pob", "tags": ["diagrams", "mermaid", "svg", "asset"]}}
+{"file":"README.md","date":"2026-06-28","status":"active","summary":"Playbooks","meta":{"type":"document"}}
+{"file":"TEMPLATE.md","date":"YYYY-MM-DD","status":"active","summary":"[Title]","meta":{"type":"document"}}
+{"file":"authoring-playbook.md","date":"2026-06-28","status":"active","summary":"Authoring Playbook — Multi-Modal Content Conventions","meta":{"type":"document"}}
+{"file":"barnacle-playbook.md","date":"2026-06-28","status":"active","summary":"Barnacle Playbook — Identification and Removal Process","meta":{"type":"document"}}
+{"file":"briefs-playbook.md","date":"2026-06-28","status":"active","summary":"Briefs Playbook","meta":{"type":"document"}}
+{"file":"codegraph-playbook.md","date":"2026-06-28","status":"active","summary":"CodeGraph Navigation Playbook","meta":{"type":"document"}}
+{"file":"conventions-playbook.md","date":"2026-06-28","status":"active","summary":"Conventions Playbook","meta":{"type":"document"}}
+{"file":"css-architecture-blog-post.md","date":"2026-06-28","status":"active","summary":"A Minimalist CSS Architecture for Embedded Content","meta":{"type":"document"}}
+{"file":"css-architecture-playbook.md","date":"2026-06-28","status":"active","summary":"CSS Architecture Playbook","meta":{"type":"document"}}
+{"file":"curation-playbook.md","date":"2026-06-28","status":"active","summary":"Curation Playbook — Where Things Live","meta":{"type":"document"}}
+{"file":"debriefs-playbook.md","date":"2026-06-28","status":"active","summary":"Debriefs Playbook","meta":{"type":"document"}}
+{"file":"decisions-playbook.md","date":"2026-06-28","status":"active","summary":"Decisions Playbook","meta":{"type":"document"}}
+{"file":"diagram-infrastructure-playbook.md","date":"2026-06-28","status":"active","summary":"Diagram Infrastructure Playbook","meta":{"type":"document"}}
+{"file":"epic-hybrid-svg.md","date":"2026-06-28","status":"active","summary":"Epic: Hybrid ASCII‑→‑SVG Diagram Pipeline","meta":{"type":"document"}}
+{"file":"git-workflow-playbook.md","date":"2026-06-28","status":"active","summary":"Playbook: Git Workflow","meta":{"type":"document"}}
+{"file":"init-playbook.md","date":"2026-06-28","status":"active","summary":"Repository Initialization Playbook","meta":{"type":"document"}}
+{"file":"just-playbook.md","date":"2026-06-28","status":"active","summary":"Just Playbook","meta":{"type":"document"}}
+{"file":"penrose-book-playbook.md","date":"2026-06-28","status":"active","summary":"Penrose-Style Book Playbook","meta":{"type":"document"}}
+{"file":"playbooks-playbook.md","date":"2026-06-28","status":"active","summary":"Playbook for Playbooks","meta":{"type":"document"}}
+{"file":"registry-playbook.md","date":"2026-06-28","status":"active","summary":"Registry Playbook — Document Index System","meta":{"type":"document"}}
+{"file":"self-contained-essay-playbook.md","date":"2026-06-28","status":"active","summary":"Self-Contained Essay Playbook","meta":{"type":"document"}}
+{"file":"silo-playbook.md","date":"2026-06-28","status":"active","summary":"Silo Playbook","meta":{"type":"document"}}
+{"file":"style-playbook.md","date":"2026-06-28","status":"active","summary":"Style Playbook — Curating the Voice of the Book","meta":{"type":"document"}}
+{"file":"td-playbook.md","date":"2026-06-28","status":"active","summary":"TD Playbook — Solo Workflow","meta":{"type":"document"}}
+{"file":"tree-view-playbook.md","date":"2026-06-28","status":"active","summary":"Tree View Playbook","meta":{"type":"document"}}
