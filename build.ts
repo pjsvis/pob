@@ -290,7 +290,7 @@ function buildIndexListing(files: { file: string; dir: string }[]): string {
     const inputPath = join(dir, file);
     if (!statSync(inputPath).isFile()) continue;
     const markdown = readFileSync(inputPath, "utf-8");
-    const { text: content } = extractFrontmatter(markdown);
+    const { text: content, meta } = extractFrontmatter(markdown);
     const h1Match = content.match(/^#\s+(.+)$/m);
     const title = h1Match ? h1Match[1].trim() : (meta.title || file.replace(/\.md$/, "").replace(/-/g, " "));
     const entry: Entry = { file, dir, title, href: file.replace(/\.md$/, ".html") };
