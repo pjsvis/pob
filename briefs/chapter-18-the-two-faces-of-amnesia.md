@@ -1,5 +1,5 @@
 ---
-title: "Chapter 17: The Two Faces of Amnesia"
+title: "Chapter 18: The Two Faces of Amnesia"
 ---
 
 # The Two Faces of Amnesia

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 16: The Amnesia Paradox"
+title: "Chapter 17: The Amnesia Paradox"
 ---
 
 # The Amnesia Paradox (The Fallacy of Deconstruction)

@@ -13,6 +13,7 @@
 {"file":"diagram-infrastructure-playbook.md","date":"2026-06-28","status":"active","summary":"Diagram Infrastructure Playbook","meta":{"type":"document"}}
 {"file":"epic-hybrid-svg.md","date":"2026-06-28","status":"active","summary":"Epic: Hybrid ASCII‑→‑SVG Diagram Pipeline","meta":{"type":"document"}}
 {"file":"git-workflow-playbook.md","date":"2026-06-28","status":"active","summary":"Playbook: Git Workflow","meta":{"type":"document"}}
+{"file":"herdr-playbook.md","date":"2026-06-28","status":"active","summary":"herdr Playbook — Monitoring pi Over SSH","meta":{"type":"document"}}
 {"file":"init-playbook.md","date":"2026-06-28","status":"active","summary":"Repository Initialization Playbook","meta":{"type":"document"}}
 {"file":"just-playbook.md","date":"2026-06-28","status":"active","summary":"Just Playbook","meta":{"type":"document"}}
 {"file":"penrose-book-playbook.md","date":"2026-06-28","status":"active","summary":"Penrose-Style Book Playbook","meta":{"type":"document"}}

@@ -47,20 +47,21 @@ The Popperian Falsification Protocols have been moved to **Appendix A**. They ar
 ## Part III: The Runtime Security Layer
 
 - [Part Introduction](/part-03-runtime-security-layer.html)
-- [Chapter 13: The Asymmetric Constraint](/chapter-13-the-asymmetric-constraint.html)
-- [Chapter 14: The Floor Datum (z = 0, v = 0)](/chapter-14-the-floor-datum.html)
-- [Chapter 15: The Patellar Pulley](/chapter-15-the-patellar-pulley.html)
-- [Chapter 16: The Amnesia Paradox](/chapter-16-the-amnesia-paradox.html)
-- [Chapter 17: The Two Faces of Amnesia](/chapter-17-the-two-faces-of-amnesia.html)
-- [Chapter 18: The Cartesian Projection Error](/chapter-18-the-cartesian-projection-error.html)
+- [Chapter 13: The Pain Scale](/chapter-13-the-pain-scale.html)
+- [Chapter 14: The Asymmetric Constraint](/chapter-14-the-asymmetric-constraint.html)
+- [Chapter 15: The Floor Datum (z = 0, v = 0)](/chapter-15-the-floor-datum.html)
+- [Chapter 16: The Patellar Pulley](/chapter-16-the-patellar-pulley.html)
+- [Chapter 17: The Amnesia Paradox](/chapter-17-the-amnesia-paradox.html)
+- [Chapter 18: The Two Faces of Amnesia](/chapter-18-the-two-faces-of-amnesia.html)
+- [Chapter 19: The Cartesian Projection Error](/chapter-19-the-cartesian-projection-error.html)
 
 ## Part IV: The Detective Case Files
 
 - [Part Introduction](/part-04-detective-case-files.html)
-- [Chapter 19: The Clavicular Fuse and the Tensor of Impact](/chapter-19-the-clavicular-fuse-and-the-tensor-of-impact.html)
-- [Chapter 20: The Lateral Ankle Fuse](/chapter-20-the-lateral-ankle-fuse.html)
-- [Chapter 21: The Carpal Tunnel Vice](/chapter-21-the-carpal-tunnel-vice.html)
-- [Chapter 22: The Plantar Shard](/chapter-22-the-plantar-shard.html)
+- [Chapter 20: The Clavicular Fuse and the Tensor of Impact](/chapter-20-the-clavicular-fuse-and-the-tensor-of-impact.html)
+- [Chapter 21: The Lateral Ankle Fuse](/chapter-21-the-lateral-ankle-fuse.html)
+- [Chapter 22: The Carpal Tunnel Vice](/chapter-22-the-carpal-tunnel-vice.html)
+- [Chapter 23: The Plantar Shard](/chapter-23-the-plantar-shard.html)
 
 ## Back Matter
 

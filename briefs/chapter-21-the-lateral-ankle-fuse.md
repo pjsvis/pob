@@ -1,5 +1,5 @@
 ---
-title: "Chapter 20: The Lateral Ankle Fuse"
+title: "Chapter 21: The Lateral Ankle Fuse"
 ---
 
 # The Lateral Ankle Fuse

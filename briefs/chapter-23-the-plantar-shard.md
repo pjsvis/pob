@@ -1,5 +1,5 @@
 ---
-title: "Chapter 22: The Plantar Shard"
+title: "Chapter 23: The Plantar Shard"
 ---
 
 # The Plantar Shard (The Terminal Anchor Shear)

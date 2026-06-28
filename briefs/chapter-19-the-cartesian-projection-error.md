@@ -1,5 +1,5 @@
 ---
-title: "Chapter 18: The Cartesian Projection Error"
+title: "Chapter 19: The Cartesian Projection Error"
 ---
 
 # The Cartesian Projection Error

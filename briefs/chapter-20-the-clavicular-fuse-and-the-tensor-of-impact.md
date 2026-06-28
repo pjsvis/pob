@@ -1,5 +1,5 @@
 ---
-title: "Chapter 19: The Clavicular Fuse and the Tensor of Impact"
+title: "Chapter 20: The Clavicular Fuse and the Tensor of Impact"
 ---
 
 # The Clavicular Fuse and the Tensor of Impact

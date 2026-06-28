@@ -44,19 +44,20 @@ title: Table of Contents
 
 ## Part III: The Runtime Security Layer
 
-- **Chapter 13: The Asymmetric Constraint** — Covariant tensor variance across non-uniform hemispheres. Unwinding chronic single-sided technical debt by expanding the local Green zone rather than pushing into the Red zone.
-- **Chapter 14: The Floor Datum (z = 0, v = 0)** — The cramp scam. Acute muscle cramping as a smoke bomb from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
-- **Chapter 15: The Patellar Pulley** — The belt friction equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Seiza and reverse nordics as high-load static and eccentric displacement tests of the anterior tensile sling.
-- **Chapter 16: The Amnesia Paradox** — Non-holonomic path dependency. Why copying the superficial symptoms of an optimised state results in heavy, destructive muscular gripping.
-- **Chapter 17: The Two Faces of Amnesia** — Somatic amnesia (the CNS drops the map of a region; the territory is never lost, only the chart) and practitioner-amnesia (the teacher drops the map of the path). Both are map problems, not territory problems; the floor redraws both.
-- **Chapter 18: The Cartesian Projection Error** — Gauss's Theorema Egregium. How flat, right-angled environments generate chronic, localised shear strain in a non-Euclidean biological manifold.
+- **Chapter 13: The Pain Scale** — The 1–10 pain scale as dead data; the four-zone operational map (Green / Yellow / Orange / Red) as the governor's language of systemic permission. Pain as a boundary, not a volume.
+- **Chapter 14: The Asymmetric Constraint** — Covariant tensor variance across non-uniform hemispheres. Unwinding chronic single-sided structural debt by expanding the local Green zone rather than pushing into the Red zone.
+- **Chapter 15: The Floor Datum (z = 0, v = 0)** — The cramp scam. Acute muscle cramping as a false alarm from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
+- **Chapter 16: The Patellar Pulley** — The belt friction equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Seiza and reverse nordics as high-load static and eccentric displacement tests of the anterior tensile sling.
+- **Chapter 17: The Amnesia Paradox** — Non-holonomic path dependency. Why copying the superficial symptoms of an optimised state results in heavy, destructive muscular gripping.
+- **Chapter 18: The Two Faces of Amnesia** — Somatic amnesia (the CNS drops the map of a region; the territory is never lost, only the chart) and practitioner-amnesia (the teacher drops the map of the path). Both are map problems, not territory problems; the floor redraws both.
+- **Chapter 19: The Cartesian Projection Error** — Gauss's Theorema Egregium. How flat, right-angled environments generate chronic, localised shear strain in a non-Euclidean biological manifold.
 
 ## Part IV: The Detective Case Files
 
-- **Chapter 19: The Clavicular Fuse and the Tensor of Impact** — Brittle material failure under lateral traction ($\sigma_{11} \ge \sigma_{\text{yield}}$). The shoulder as a calibrated mechanical fuse, sacrificing the collarbone to protect the cervical spine.
-- **Chapter 20: The Lateral Ankle Fuse** — Torque propagation along the proximal tibial lever arm ($\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$). Why the lateral ankle ligaments give way during a trip to preserve the knee hinge.
-- **Chapter 21: The Carpal Tunnel Vice** — Hydrostatic tunnel pressure amplification. How hovering hands over a workstation without a grounded elbow transforms the wrist channel into an ischemic, high-pressure neural vice.
-- **Chapter 22: The Plantar Shard** — Terminal anchor shear. Morning heel pain as cumulative line tension ($T$) traced back to a locked lower-back paraspinal guarding — a global tug-of-war, not a local foot problem.
+- **Chapter 20: The Clavicular Fuse and the Tensor of Impact** — Brittle material failure under lateral traction ($\sigma_{11} \ge \sigma_{\text{yield}}$). The shoulder as a calibrated mechanical fuse, sacrificing the collarbone to protect the cervical spine.
+- **Chapter 21: The Lateral Ankle Fuse** — Torque propagation along the proximal tibial lever arm ($\boldsymbol{\tau} = \mathbf{r} \times \mathbf{F}$). Why the lateral ankle ligaments give way during a trip to preserve the knee hinge.
+- **Chapter 22: The Carpal Tunnel Vice** — Hydrostatic tunnel pressure amplification. How hovering hands over a workstation without a grounded elbow transforms the wrist channel into an ischemic, high-pressure neural vice.
+- **Chapter 23: The Plantar Shard** — Terminal anchor shear. Morning heel pain as cumulative line tension ($T$) traced back to a locked lower-back paraspinal guarding — a global tug-of-war, not a local foot problem.
 
 ## Back Matter
 

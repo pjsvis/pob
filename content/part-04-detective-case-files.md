@@ -14,7 +14,7 @@ Read these in any order. Each is self-contained. But each assumes the vocabulary
 
 ---
 
-- [Chapter 19: The Clavicular Fuse and the Tensor of Impact](/chapter-19-the-clavicular-fuse-and-the-tensor-of-impact.html)
-- [Chapter 20: The Lateral Ankle Fuse](/chapter-20-the-lateral-ankle-fuse.html)
-- [Chapter 21: The Carpal Tunnel Vice](/chapter-21-the-carpal-tunnel-vice.html)
-- [Chapter 22: The Plantar Shard](/chapter-22-the-plantar-shard.html)
+- [Chapter 20: The Clavicular Fuse and the Tensor of Impact](/chapter-20-the-clavicular-fuse-and-the-tensor-of-impact.html)
+- [Chapter 21: The Lateral Ankle Fuse](/chapter-21-the-lateral-ankle-fuse.html)
+- [Chapter 22: The Carpal Tunnel Vice](/chapter-22-the-carpal-tunnel-vice.html)
+- [Chapter 23: The Plantar Shard](/chapter-23-the-plantar-shard.html)

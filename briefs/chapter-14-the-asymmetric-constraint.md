@@ -1,5 +1,5 @@
 ---
-title: "Chapter 13: The Asymmetric Constraint"
+title: "Chapter 14: The Asymmetric Constraint"
 ---
 
 # The Asymmetric Constraint (Unwinding the Left-Side Structural Debt)

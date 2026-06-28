@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-28
 **Status:** Open
-**Source material:** `assets/the-pain-scale.md` §3 (SMA sidebar); `briefs/chapter-16-the-amnesia-paradox.md` (existing practitioner-amnesia chapter)
+**Source material:** `assets/the-pain-scale.md` §3 (SMA sidebar); `briefs/chapter-17-the-amnesia-paradox.md` (existing practitioner-amnesia chapter)
 **Related tasks:** td-cd7bb7 (Chapter title pass), td-6b5002 (Math rendering pass)
 
 ## Objective
