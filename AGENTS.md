@@ -16,7 +16,7 @@ td usage -q              # after first read, quiet the instructions
 
 - **Bun is the sole runtime.** `bun install`, `just build`, `just preview` (opens `http://localhost:3000/`).
 - **Python is WeasyPrint-only** (PDF export via `.venv/`). All text-processing utilities in `scripts/` are TypeScript (`bun run scripts/<name>.ts`).
-- The build scans `content/` and `briefs/chapter-*.md` + `briefs/appendix-*.md`. **Nothing else renders.** `assets/`, `playbooks/`, `debriefs/`, `decisions/` are build-ignored.
+- The build scans `content/` and `briefs/chapter-*.md` + `briefs/appendix-*.md`. **Nothing else renders.** `assets/`, `blog/`, `playbooks/`, `debriefs/`, `decisions/` are build-ignored.
 
 ## 3. The directory map (where things live)
 
@@ -26,6 +26,7 @@ td usage -q              # after first read, quiet the instructions
 | `content/` | Front matter, part dividers, book-structure, the index — build-scanned |
 | `briefs/*-brief-*.md` | Briefs — plans to do something |
 | `assets/` | **The dump zone for new raw material** (tracked, build-ignored) |
+| `blog/` | **Blog post drafts in progress** (tracked, build-ignored; promote to `content/` when ready) |
 | `playbooks/` | Workflow documentation — read before editorial work |
 | `debriefs/` | Session debriefs |
 | `decisions/` | Architecture decision records |
@@ -56,6 +57,17 @@ A **brief** is a plan to do something. An **asset** is material to process. They
 ### Tidy-first
 
 Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamined. A barnacle is a convention, a file, a reference that has lost its justification but lives on — the `decisions/` vs `docs/adr/` split was one (two ADR directories, overlapping numbering, no living reason for the split). The tidy-first pass is a standing task: after a grind phase, scan the repo for barnacles (stale references, duplicated directories, broken cross-refs, jargon that slipped the voice pass). Fix the cheap ones inline; brief the expensive ones. The build passing is necessary but not sufficient — a human reading the rendered output is the ground truth. See `playbooks/conventions-playbook.md`.
+
+### Memory vs documentation
+
+**Use Gemini (or any generative model) as a research assistant with memory; use the documented principles as the editorial authority with git.** The two are different roles, and the mistake is letting the research assistant moonlight as the editor.
+
+- **Memory is a research tool.** It lets the model feed you context — the project's themes, connections to other domains, the vocabulary you have been building. That is input. It helps the yap get up to speed. Good.
+- **Memory is not an editorial tool.** It does not hold the voice. It does not apply the style rules consistently. It does not refuse the drift toward belonging (the "just like that thing we did last week" register). When memory touches the voice, the voice drifts toward the model's training defaults — eager, tech-fluent, impressed with itself. That is the path of least resistance, and memory gives it more material to drift with.
+- **Documentation is the editorial authority.** The style rules, the voice benchmark, the principles — they live in git. They are auditable (diffable, revertable, commit-logged). Memory is not auditable. You cannot diff what the model decided to surface from last week; you cannot revert a belonging.
+- **We look forward, not backwards.** Documentation is a gift to the next session, not a debt to the last one. The voice benchmark is not a memory of how we wrote last week; it is a rule for how we write next week. Memory is what happened; documentation is what we decided.
+
+The yap is research; the voice is authorship; never let the yap author. See `blog/the-yap-and-the-voice.md` for the full argument.
 
 ## 5. Playbooks to read before the relevant work
 

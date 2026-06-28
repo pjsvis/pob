@@ -12,6 +12,7 @@
 | `playbooks/` | Workflow documentation (this file) | No |
 | `prompts/` | Agent prompts | No |
 | **`assets/`** | **Raw material to process (the dump zone)** | **No** |
+| **`blog/`** | **Blog post drafts in progress (staging for `content/`)** | **No** |
 | `notebooklm/`, `Takeout/` | Large raw exports | No (gitignored) |
 | `src/`, `build.ts`, `scripts/` | The SSG and utilities | — |
 

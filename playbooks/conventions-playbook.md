@@ -37,6 +37,7 @@ change. What once made sense becomes noise, then harm.
 | **Principles** | | |
 | Tidy-first | Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamined | 2026-06-28 |
 | Single-voice gate | Every track passes through one voice pass before publication | 2026-06-28 |
+| Memory vs documentation | Memory is a research tool (input); documentation is the editorial authority (git, auditable). The yap is research; the voice is authorship; never let the yap author | 2026-06-28 |
 
 ## Barnacle Removal Record
 
