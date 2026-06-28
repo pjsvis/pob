@@ -48,7 +48,9 @@ Takeout/
 takeout-*.zip
 
 # NotebookLM dialog archive (extracted from Takeout, large)
-notebooklm/
+# The nessie-syntheses subdirectory is curated style-reference material and IS tracked.
+notebooklm/*
+!notebooklm/nessie-syntheses/
 
 # Python venv
 .venv/
