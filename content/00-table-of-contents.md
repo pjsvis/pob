@@ -45,7 +45,7 @@ title: Table of Contents
 ## Part III: The Runtime Security Layer
 
 - **Chapter 13: The Asymmetric Constraint** — Covariant tensor variance across non-uniform hemispheres. Unwinding chronic single-sided technical debt by expanding the local Green zone rather than pushing into the Red zone.
-- **Chapter 14: The Runtime Environment** — The cramp scam. Acute muscle cramping as a smoke bomb from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
+- **Chapter 14: The Floor Datum (z = 0, v = 0)** — The cramp scam. Acute muscle cramping as a smoke bomb from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
 - **Chapter 15: The Patellar Pulley** — The belt friction equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Seiza and reverse nordics as high-load static and eccentric displacement tests of the anterior tensile sling.
 - **Chapter 16: The Amnesia Paradox** — Non-holonomic path dependency. Why copying the superficial symptoms of an optimised state results in heavy, destructive muscular gripping.
 - **Chapter 17: The Cartesian Projection Error** — Gauss's Theorema Egregium. How flat, right-angled environments generate chronic, localised shear strain in a non-Euclidean biological manifold.
