@@ -21,8 +21,8 @@ title: Table of Contents
 
 | Module | Title | Core Mechanism | Operation |
 | --- | --- | --- | --- |
-| **Preface** | **The Logic of the Rug** | System reset; osmotic GAG pressure; collagen cross-linking. | Establishing $z=0, v=0$ parameters; hydration and nutrition. |
-| **Section 00** | **What to Expect** | Viscoelastic hysteresis; Maxwell relaxation; signal-to-noise optimisation. | The anti-marketing manifesto: tracking the transition from noise to data. |
+| **Preface** | **[The Logic of the Rug](/preface-the-logic-of-the-rug.html)** | System reset; osmotic GAG pressure; collagen cross-linking. | Establishing $z=0, v=0$ parameters; hydration and nutrition. |
+| **Section 00** | **[What to Expect](/section-00-what-to-expect.html)** | Viscoelastic hysteresis; Maxwell relaxation; signal-to-noise optimisation. | The anti-marketing manifesto: tracking the transition from noise to data. |
 
 ## Part I: The Foundational Substrate
 

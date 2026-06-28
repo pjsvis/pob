@@ -292,7 +292,7 @@ function buildIndexListing(files: { file: string; dir: string }[]): string {
     const markdown = readFileSync(inputPath, "utf-8");
     const { text: content } = extractFrontmatter(markdown);
     const h1Match = content.match(/^#\s+(.+)$/m);
-    const title = h1Match ? h1Match[1].trim() : file.replace(/\.md$/, "").replace(/-/g, " ");
+    const title = h1Match ? h1Match[1].trim() : (meta.title || file.replace(/\.md$/, "").replace(/-/g, " "));
     const entry: Entry = { file, dir, title, href: file.replace(/\.md$/, ".html") };
     if (bookOrder(file) < 5) book.push(entry); else other.push(entry);
   }
