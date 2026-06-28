@@ -112,6 +112,24 @@ Every chapter follows this arc (though not necessarily these exact headings):
 
 The Popperian Falsification Protocols are in Appendix A. They do not appear in the main text.
 
+## Explaining Math In-Chapter
+
+The book teaches its mathematical language once — in **Chapter 0: The Vocabulary** (the onboarding chapter, using a wet towel and a stretched t-shirt to teach gradient, divergence, curl, and the stress tensor). That chapter is the glossary. Each subsequent chapter uses the operators without re-explaining them from scratch, but a chapter may include a brief inline gloss when the reader needs a reminder in context.
+
+**The convention for inline math explanation** is the `:::explanation` block (see `playbooks/authoring-playbook.md`). Place it after an equation that a general reader cannot be expected to parse on sight:
+
+```markdown
+$$\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}$$
+
+:::explanation
+The divergence of the stress tensor is the internal force density. Where it is zero, the tissue is in equilibrium; where it is non-zero, there is a net force and the tissue accelerates.
+:::
+```
+
+The explanation is plain English — no new notation, no math. If the explanation needs math, you need a second equation, not a longer explanation. Do not use the `:::grad` / `:::div` / `:::curl` blocks from the demo page — they are not implemented in the build and render as raw text. Use `:::explanation` instead.
+
+**Do not redraft with Gemini** (Rule 11). The explanations are written by the author (or a voice-locked model) from scratch, using the chapter's math as source material. The one-inch punch analysis (`content/one-inch-punch-tensor-analysis.md`) is the register reference for how to narrate math — the divergence becomes "force density," the gradient becomes "the field," the operators become *narrative devices* that let the reader see what the math is doing in the body.
+
 ## The Editorial Pass Procedure
 
 1. Read the chapter draft alongside the staved finger essay.
