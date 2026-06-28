@@ -56,6 +56,27 @@ o ──── o
 
 See `playbooks/diagram-infrastructure-playbook.md` for the full symbol set, the gating rule, and the authoring workflow. **Do not** use Mermaid for new diagrams — it renders as a placeholder only.
 
+### Named diagram references (`:::diagram:name`)
+
+For embedding a **pre-rendered SVG** (e.g. a reviewed diagram exported to `dist/diagrams/`) with a named reference and a caption, use the `:::diagram` block. This complements the fenced-block pipeline: use the fenced block for inline ASCII authoring, use `:::diagram:name` to reference an already-generated SVG file.
+
+**Syntax:**
+```markdown
+:::diagram:yield-criterion
+The yield criterion: the distortional energy exceeds the threshold.
+:::
+```
+
+**Rendered:**
+```html
+<figure class="diagram" data-diagram="yield-criterion">
+  <img src="diagrams/yield-criterion.svg" alt="The yield criterion: ..." />
+  <figcaption>The yield criterion: the distortional energy exceeds the threshold.</figcaption>
+</figure>
+```
+
+The build looks up the SVG at `diagrams/<name>.svg` (relative to the built page). The block content becomes both the `<figcaption>` and the `alt` attribute (for accessibility). Use this when a diagram has been exported, reviewed, and you want to reference the stable, named version rather than re-rendering the ASCII inline.
+
 ---
 
 ## 3. Explanation blocks (`:::explanation`)

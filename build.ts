@@ -95,6 +95,20 @@ function processCustomBlocks(text: string): string {
   text = text.replace(/:::margin-figure:([^\n]+)\n([\s\S]*?):::/g, (_, caption, content) => {
     return `<figure class="margin-figure">\n${content}\n<figcaption>${caption}</figcaption>\n</figure>`;
   });
+
+  // diagram blocks: :::diagram:name ... caption ... :::
+  // References a pre-rendered SVG by name (looked up at diagrams/<name>.svg)
+  // and wraps it in a <figure class="diagram"> with a figcaption. The block
+  // content is the caption text (also used as the alt attribute). Use this to
+  // embed a pre-exported SVG (e.g. a reviewed diagram from dist/diagrams/)
+  // with a named reference. For inline ASCII authoring, use a fenced code
+  // block instead — the hybrid pipeline auto-detects and renders it.
+  text = text.replace(/:::diagram:([\w\-]+)\n([\s\S]*?):::/g, (_, name, content) => {
+    const caption = content.trim();
+    const svgPath = `diagrams/${name}.svg`;
+    const alt = caption.replace(/"/g, '&quot;');
+    return `<figure class="diagram" data-diagram="${name}">\n<img src="${svgPath}" alt="${alt}" />\n<figcaption>${caption}</figcaption>\n</figure>`;
+  });
   
   // figure blocks with caption: :::figure:num:caption... :::
   text = text.replace(/:::figure:(\d+\.\d+):([^\n]+)\n([\s\S]*?):::/g, (_, num, caption, content) => {
