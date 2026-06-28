@@ -250,6 +250,63 @@ function generateTOC(files: { file: string; dir: string }[], detailed: boolean =
   return html;
 }
 
+// Categorize a markdown file into a book-order bucket.
+// 0 = front matter (00-), 1 = part divider, 2 = chapter, 3 = appendix, 4 = book-structure, 5 = other
+function bookOrder(file: string): number {
+  if (file.startsWith("00-")) return 0;
+  if (file.startsWith("part-")) return 1;
+  if (file.startsWith("chapter-")) return 2;
+  if (file.startsWith("appendix-")) return 3;
+  if (file === "book-structure.md") return 4;
+  return 5;
+}
+
+// Build the auto-generated, two-section link listing for the root index page.
+// Section 1: The Book (front matter, part dividers, chapters, appendix, book-structure).
+// Section 2: Other Documents (essays & demonstrations, then project documents).
+// The listing is injected into the rendered index-page.html so the intro text
+// stays authorable in Markdown while the links never go stale.
+function buildIndexListing(files: { file: string; dir: string }[]): string {
+  interface Entry { file: string; dir: string; title: string; href: string; }
+  const book: Entry[] = [];
+  const other: Entry[] = [];
+
+  for (const { file, dir } of files) {
+    if (file === "index-page.md") continue; // don't list the index itself
+    const inputPath = join(dir, file);
+    if (!statSync(inputPath).isFile()) continue;
+    const markdown = readFileSync(inputPath, "utf-8");
+    const { text: content } = extractFrontmatter(markdown);
+    const h1Match = content.match(/^#\s+(.+)$/m);
+    const title = h1Match ? h1Match[1].trim() : file.replace(/\.md$/, "").replace(/-/g, " ");
+    const entry: Entry = { file, dir, title, href: file.replace(/\.md$/, ".html") };
+    if (bookOrder(file) < 5) book.push(entry); else other.push(entry);
+  }
+
+  book.sort((a, b) => {
+    const oa = bookOrder(a.file), ob = bookOrder(b.file);
+    return oa !== ob ? oa - ob : a.file.localeCompare(b.file);
+  });
+  other.sort((a, b) => a.file.localeCompare(b.file));
+
+  // Split "other" into reader-facing material (content/) vs working project
+  // documents (briefs/). Directory is the clean discriminator: files in
+  // content/ are essays/demos; files in briefs/ that aren't book matter are
+  // briefs, debriefs, session notes, and superseded drafts.
+  const essays = other.filter(e => e.dir === resolve("./content"));
+  const projectDocs = other.filter(e => e.dir === resolve("./briefs"));
+
+  const list = (entries: Entry[]) =>
+    entries.map(e => `  <li><a href="${e.href}">${e.title}</a></li>`).join("\n");
+
+  let html = "\n<hr>\n\n";
+  html += `<h2>The Book</h2>\n<ul>\n${list(book)}\n</ul>\n`;
+  html += `<h2>Other Documents</h2>\n`;
+  if (essays.length) html += `<h3>Essays &amp; Demonstrations</h3>\n<ul>\n${list(essays)}\n</ul>\n`;
+  if (projectDocs.length) html += `<h3>Project Documents</h3>\n<ul>\n${list(projectDocs)}\n</ul>\n`;
+  return html;
+}
+
 function buildContentsPage(detailed: boolean = false): string {
   const template = readFileSync(TEMPLATE_PATH, "utf-8");
   const files = collectMarkdownFiles();
@@ -340,12 +397,16 @@ export async function build(opts: { clean?: boolean } = {}) {
     writeFileSync(join(DIST_DIR, outputName), output);
   }
   
-  // Ensure a root index.html exists (copy from index-page.html)
+  // Build the root index.html: take the rendered index-page.html (title +
+  // intro, authored in content/index-page.md) and inject the auto-generated
+  // two-section link listing before the closing pob-content div.
   const indexPagePath = join(DIST_DIR, "index-page.html");
   if (existsSync(indexPagePath)) {
-    const indexDestPath = join(DIST_DIR, "index.html");
-    const html = readFileSync(indexPagePath);
-    writeFileSync(indexDestPath, html);
+    let indexHtml = readFileSync(indexPagePath, "utf-8");
+    const listing = buildIndexListing(files);
+    // Inject before the final </div> (the pob-content close) that precedes </body>.
+    indexHtml = indexHtml.replace(/(\s*<\/div>\s*<\/body>)/, `${listing}$1`);
+    writeFileSync(join(DIST_DIR, "index.html"), indexHtml);
     console.log("  -> index.html");
   }
 
