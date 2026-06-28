@@ -43,6 +43,6 @@ $$\mathbf{E} \to \mathbf{0}$$
 
 ```
 
-The sub-cortical system takes one look at this sudden drop in structural technical debt, hooks into the open identity channels, and safely flushes the distorted positional maps built up from a day of standing.
+The sub-cortical system takes one look at this sudden drop in structural debt, hooks into the open identity channels, and safely clears the distorted positional maps built up from a day of standing.
 
 ---

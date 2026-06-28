@@ -10,7 +10,7 @@ Now consider the counter-phenomenon: Bruce Lee’s legendary one-inch strike. Fr
 
 Mainstream martial arts calls this "internal chi." Mainstream fitness calls it "explosive hip extension." Both are romantic hand-waving.
 
-When you execute a true short-range impact correctly, the internal sensory telemetry is completely devoid of "shoving." You do not feel your muscles straining to push the target away. Instead, you experience a instantaneous, micro-second freeze—a sudden sensation where your entire frame, from the heel anchored into the dirt up to the knuckles kissing the target, transforms into a single block of solid granite. For a fraction of a millisecond, you aren't an animal moving a limb; you are a structural steel truss welded directly to the center of the earth. You don't push the target; the planet hits them through your sleeve.
+When you execute a true short-range impact correctly, the internal sensory telemetry is completely devoid of "shoving." You do not feel your muscles straining to push the target away. Instead, you experience an instantaneous, micro-second freeze—a sudden sensation where your entire frame, from the heel anchored into the dirt up to the knuckles kissing the target, transforms into a single block of solid granite. For a fraction of a millisecond, you aren't an animal moving a limb; you are a structural steel truss welded directly to the center of the earth. You don't push the target; the planet hits them through your sleeve.
 
 ---
 
@@ -19,7 +19,7 @@ Standard Newtonian biomechanics attempts to analyze impact force using the Work-
 
 In non-linear continuum mechanics, the one-inch strike is not an acceleration problem; it is a **Topological Phase Change** problem.
 
-The human fascial continuum is a distributed, non-Newtonian, fluid-filled network. Under normal conditions, it maintains a compliant, low-viscosity baseline to allow for smooth coordinate transformations. But when the sub-cortical system detects an impact vector, it triggers a global, instantaneous synchronization pass across the entire pre-stress tensor field ($\boldsymbol{\sigma}_0$).
+The human fascial continuum is a distributed, non-Newtonian, fluid-filled network. Under normal conditions, it maintains a compliant, low-viscosity baseline to allow for smooth coordinate transformations. But when the sub-cortical system detects an impact vector, it triggers a global, instantaneous synchronization across the entire pre-stress tensor field ($\boldsymbol{\sigma}_0$).
 
 Let the body's distributed material space be $\Omega$. At the moment of impact ($\Delta t \to 0$), the local **Shear Modulus** ($\mu$) across every joint node and fascial sling is driven toward infinity simultaneously:
 
@@ -37,6 +37,6 @@ This instantaneous shift freezes the material's internal **Green-Lagrange Strain
 
 Because this grid is structurally anchored to the floor datum ($z = 0$), the human frame ceases to function as a self-contained system. The compliance of the ankles, Kua, spine, and shoulders drops to absolute zero. The incoming force vector from the target doesn't find a single soft joint to compress or deform; it encounters the infinite mass sink of the earth itself.
 
-The strike succeeds because the timeline of the phase change is faster than the material deformation rate of the target's ribcage. You haven't swung a hammer; you have simply dropped a mountain onto their chest through an infinitely rigid line of text.
+The strike succeeds because the timeline of the phase change is faster than the material deformation rate of the target's ribcage. You haven't swung a hammer; you have simply dropped a mountain onto their chest through an infinitely rigid line of force.
 
 ---

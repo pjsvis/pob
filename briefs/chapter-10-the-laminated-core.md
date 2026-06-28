@@ -23,7 +23,7 @@ Standard 1D biomechanics treats the abdominal muscles as independent linear actu
 
 Your midsection is not a box; it is a pressurized, multi-layered, anisotropically laminated cylindrical shell enclosing a fluid-filled core.
 
-Look closely at the architecture revealed in the transverse section of the anterior abdominal wall above. The system does not rely on a single thick sheet of tissue. Instead, it uses three distinct, overlapping sheets arranged at alternating fiber angles: the **External oblique**, the **Internal oblique**, and the **Transversus abdominis**.
+The system does not rely on a single thick sheet of tissue. Instead, it uses three distinct, overlapping sheets arranged at alternating fiber angles: the **External oblique**, the **Internal oblique**, and the **Transversus abdominis**.
 
 In structural engineering, this layout is known as an **angle-ply laminated composite material**. By stacking hyperelastic sheets at alternating orientations ($\theta \approx \pm 45^\circ, 90^\circ$), the system prevents structural buckling and optimizes its resistance to multi-directional shear vectors without requiring rigid bone reinforcement.
 
@@ -37,13 +37,13 @@ The true total stress tensor ($\boldsymbol{\sigma}$) of your midsection is a com
 
 $$\boldsymbol{\sigma} = -P\mathbf{I} + \boldsymbol{\sigma}_f$$
 
-When you consciously clench your abs ("sucking the belly in"), you artificially shrink the radius ($R$) and lock the **Transversus abdominis** into a rigid, short-circuited configuration. This destroys the system's ability to modulate hydrostatic pressure. The pressure ($P$) can no longer expand horizontally into the elastic laminates of the **External oblique** and **Internal oblique**; instead, it is forced violently downward into your pelvic floor and backward into your lumbar intervertebral discs.
+When you consciously clench your abs ("sucking the belly in"), you artificially shrink the radius ($R$) and lock the **Transversus abdominis** into a rigid, locked configuration. This destroys the system's ability to modulate hydrostatic pressure. The pressure ($P$) can no longer expand horizontally into the elastic laminates of the **External oblique** and **Internal oblique**; instead, it is forced violently downward into your pelvic floor and backward into your lumbar intervertebral discs.
 
 By forcing a static brace, you convert a dynamic, energy-absorbing hydraulic cylinder into a rigid, bone-crushing mechanical vice.
 
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
-This diagnostic script allows you to bypass the industry propaganda and directly test whether the autonomous governor prefers a static core brace or a fluid hydraulic cylinder.
+This diagnostic lets you bypass the industry propaganda and test directly whether the autonomous governor prefers a static core brace or a fluid hydraulic cylinder.
 
-> **The Verification Metric:** If you observe that your lower back tension has dropped to near-zero and your breathing has automatically shifted from your throat down into your pelvis *while your stomach muscles remain soft to the touch*, then your system has successfully verified the hoop stress equation. The autonomous governor has rejected the linear brace and booted up the native laminated engine.
+> **The Verification Metric:** If you observe that your lower back tension has dropped to near-zero and your breathing has automatically shifted from your throat down into your pelvis *while your stomach muscles remain soft to the touch*, then your system has successfully verified the hoop stress equation. The autonomous governor has rejected the linear brace and engaged the native laminated engine.

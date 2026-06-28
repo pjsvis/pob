@@ -25,7 +25,7 @@ Standard orthopedic biomechanics analyzes the hip joint using basic 1D lever phy
 
 The hip is not a door hinge; it is a three-degree-of-freedom spherical articulation space.
 
-Look closely at the rotational axes mapped out in the engineering diagram above. To execute human movement cleanly, the system must coordinate simultaneous transformations across the **Sagittal plane rotation** (flexion/extension), the **Frontal plane rotation** (abduction/adduction), and the **Horizontal plane rotation** (internal/external rotation).
+To execute human movement cleanly, the system must coordinate simultaneous transformations across the **Sagittal plane rotation** (flexion/extension), the **Frontal plane rotation** (abduction/adduction), and the **Horizontal plane rotation** (internal/external rotation).
 
 Let the pelvic basin be defined as a local reference coordinate frame $\mathbf{X}$, and the femur be defined as a moving coordinate frame $\mathbf{x}$. The mapping of vectors between these two spaces is governed by a time-dependent orthogonal rotation matrix $\mathbf{R}(t)$:
 
@@ -35,7 +35,7 @@ Where $\mathbf{b}(t)$ is the translation vector tracking the position of the fem
 
 In a perfectly integrated tensegrity chassis, the surrounding fascial slings act as a continuous tension loop that maintains a constant hydrostatic clearance zone within the joint space, ensuring that the translation vector remains centered ($\mathbf{b} \to \mathbf{0}$) throughout all rotational phases.
 
-However, when a historical coordinate exception occurs—such as a chronic structural rotation in your left waist—the pre-stress tensor field ($\boldsymbol{\sigma}_0$) becomes highly asymmetric. The fascial sheets pulling across the **Horizontal plane rotation** contract and shorten. This short-circuit bar shifts the translation vector away from the center ($\mathbf{b} \neq \mathbf{0}$).
+However, when a historical coordinate distortion is in place—such as a chronic structural rotation in your left waist—the pre-stress tensor field ($\boldsymbol{\sigma}_0$) becomes highly asymmetric. The fascial sheets pulling across the **Horizontal plane rotation** contract and shorten. This contraction shifts the translation vector away from the center ($\mathbf{b} \neq \mathbf{0}$).
 
 When you attempt to flex the hip under this constraint, the system experiences a mechanical phenomenon analogous to **gimbal lock**. Because the horizontal rotational component is jammed by defensive tension, the transformation matrix loses a degree of freedom.
 
@@ -44,6 +44,6 @@ The femoral head cannot glide backward during the **Sagittal plane rotation**; i
 ---
 
 ## The Hardware Smoke Test (The Reader's Diagnostic)
-This diagnostic script allows you to isolate the mechanical gimbal lock in your hip socket and use a low-load boundary update to clear the tracking exception.
+This diagnostic lets you isolate the mechanical gimbal lock in your hip socket and use a low-load boundary update to clear the tracking error.
 
 > **The Verification Metric:** If you discover that your knee can now travel significantly closer to your chest and the hard, biting pinch in your groin has transformed into an open, empty, effortless fold *without you ever stretching the front of your hip*, then your system has verified the spherical tensor equation. The autonomous governor has cleared the horizontal gimbal lock and unlocked the structural clearance of the vault.

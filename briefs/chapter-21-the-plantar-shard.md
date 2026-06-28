@@ -4,7 +4,7 @@ title: "Chapter 21: The Plantar Shard"
 
 # The Plantar Shard (The Terminal Anchor Shear)
 ## The Familiar Hook: The Morning Shard
-The script is identical for millions of people worldwide. You sleep peacefully for eight hours, swing your legs out of bed, and the absolute millisecond your heel makes contact with the floor, a blinding, white-hot pain shoots through the bottom of your foot.
+The pattern is identical for millions of people worldwide. You sleep peacefully for eight hours, swing your legs out of bed, and the absolute millisecond your heel makes contact with the floor, a blinding, white-hot pain shoots through the bottom of your foot.
 
 It feels as though you have stepped directly onto a jagged shard of glass. You spend the first ten paces of your day limping like a pirate, holding onto walls, waiting for the tissue to "warm up" so you can walk normally.
 
@@ -35,7 +35,7 @@ In a continuous tensegrity matrix, a local tissue structure cannot be analyzed i
 
 When an upright biped shifts weight during gait, the foot strikes the ground ($z=0$), generating an immediate input force ($F_{\text{impact}}$). This impact forces the ankle into dorsiflexion, which requires the entire posterior tissue sheet to rapidly elongate.
 
-Let the total active tension running through this continuous posterior fascial line be represented by $T$. Under an un-cached, high-noise state—where the lumbar paraspinal muscles are tightly clenched behind a protective guarding—the proximal line cannot elongate. The displacement deficit ($\Delta l$) is shifted entirely to the furthest point of the chain.
+Let the total active tension running through this continuous posterior fascial line be represented by $T$. Under an un-mapped, high-noise state—where the lumbar paraspinal muscles are tightly clenched behind a protective guarding—the proximal line cannot elongate. The displacement deficit ($\Delta l$) is shifted entirely to the furthest point of the chain.
 
 When you step forward, the geometric torque amplifies this line tension, transforming the input into a severe **Tensile Stress Vector ($\sigma_{\text{axial}}$)** concentrated directly at the calcaneal insertion (the heel bone):
 
@@ -44,7 +44,7 @@ $$\sigma_{\text{axial}} = \frac{T + (F_{\text{impact}} \cdot \sin\theta)}{A}$$
 Where $\theta$ is the angle of foot extension and $A$ is the cross-sectional area of the fascial anchor.
 
 ```
- [ Locked Lower Back ] ──► Spikes Rest Voltage (T) ──► Pulls Posterior Line Tight ──► Concentrates Strain at Heel Anchor
+ [ Locked Lower Back ] ──► Spikes Rest Tension (T) ──► Pulls Posterior Line Tight ──► Concentrates Strain at Heel Anchor
 
 ```
 
@@ -52,13 +52,13 @@ When you sleep, your foot naturally relaxes into plantar flexion, allowing the m
 
 The "glass shard" sensation is the direct mechanical readout of this sudden, high-velocity shear wave tearing through the matted collagen bonds.
 
-You cannot fix this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data, and causes the autonomous governor to crank the upstream spinal guardings even tighter to stabilize your mass. You are trying to fix a taut rope by wrapping tape around the pole it is ripping out of the ground.
+You cannot solve this by putting a cushion under the heel or stuffing a rigid orthotic into your shoe. Adding a cushion simply dampens the normal vector, starves the plantar interface of ground-truth data, and causes the autonomous governor to crank the upstream spinal guardings even tighter to stabilize your mass. You are trying to mend a taut rope by wrapping tape around the pole it is ripping out of the ground.
 
 ---
 
 ## The Hardware Smoke Test (The Remote Anchor Release)
 This practical test allows your conscious mind to witness the immediate, remote communication line running between your sore back and your painful foot, proving that the shard can be dissolved from across the room.
 
-> **The Verification Metric:** If you discover that your foot now presses into the floor with a soft, wide, entirely yielding elasticity, and the sharp, blocky "pulling" sensation at your heel has completely evaporated—*despite you never touching, stretching, or rolling your foot*—then the change has taken hold. successfully. the autonomous governor has cleared the proximal spinal exception, dropped the master line tension vector ($T$), and deleted the terminal anchor shear on its own authority.
+> **The Verification Metric:** If you discover that your foot now presses into the floor with a soft, wide, entirely yielding elasticity, and the sharp, blocky "pulling" sensation at your heel has completely evaporated—*despite you never touching, stretching, or rolling your foot*—then the change has taken hold. The autonomous governor has cleared the proximal spinal alarm, dropped the master line tension vector ($T$), and released the terminal anchor shear on its own authority.
 
 ---

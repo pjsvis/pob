@@ -12,7 +12,7 @@ If we look at them through our **Operational Heuristic**, we don't see exercises
 
 ### The Mainstream Failure Mode
 
-To a standard trainer or physical therapist, Seiza is just a deep quad/ankle stretch, and the Reverse Nordic is an eccentric strengthening exercise for the rectus femoris. When a user with a matted, un-cached lower limb attempts them, they treat the knee as an isolated hinge joint. They force the lean-back, the matted tissue resists, and the entire tensile load concentrates as a violent, localized shear vector ($J_2$) directly inside the patellar tendon. The user enters a destructive **Red Zone** zone, triggers an inflammation alarm, and destroys their knees trying to "bulletproof" them.
+To a standard trainer or physical therapist, Seiza is just a deep quad/ankle stretch, and the Reverse Nordic is an eccentric strengthening exercise for the rectus femoris. When a person with a matted, un-mapped lower limb attempts them, they treat the knee as an isolated hinge joint. They force the lean-back, the matted tissue resists, and the entire tensile load concentrates as a violent, localized shear vector ($J_2$) directly inside the patellar tendon. The person enters a destructive **Red Zone**, triggers an inflammation alarm, and destroys their knees trying to "bulletproof" them.
 
 ### The Operational Heuristic Translation
 
@@ -31,7 +31,7 @@ If you attempt a Reverse Nordic while your waist is gripped or your sub-occipita
 
 ## The Familiar Hook: The Patellar Bite
 
-You attempt to sit on your heels in Seiza, or you try a gentle Reverse Nordic lean, and within three inches of movement, you hit a sharp, burning bite right at the top of your kneecaps. It feels like an unyielding wire cable is sawing through your cartilage. Mainstream advice tells you to stretch your quads or foam-roll your thighs to release the pressure. It doesn't work because your thigh muscles aren't short—they are simply acting as the middle of a rope that is being yanked from both ends by a locked waist and an un-cached ankle.
+You attempt to sit on your heels in Seiza, or you try a gentle Reverse Nordic lean, and within three inches of movement, you hit a sharp, burning bite right at the top of your kneecaps. It feels like an unyielding wire cable is sawing through your cartilage. Mainstream advice tells you to stretch your quads or foam-roll your thighs to release the pressure. It doesn't work because your thigh muscles aren't short—they are simply acting as the middle of a rope that is being yanked from both ends by a locked waist and an un-mapped ankle.
 
 ## The Mathematical Justification: The Cable-Pulley Friction Equation
 
