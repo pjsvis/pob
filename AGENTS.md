@@ -75,14 +75,24 @@ A book is a context the reader enters somatically — they feel the room before 
 
 ### Operating practices (process-level)
 
-The principles above govern the *output* (the voice, the structure, the barnacles). The operating practices govern the *process* — how to work so the output gets there without losing the plot. All collected in `conceptual-lexicon.jsonl` (along with the project's special terms), updated regularly and pruned occasionally.
+The principles above govern the *output* (the voice, the structure, the barnacles). The operating practices govern the *process* — how to work so the output gets there without losing the plot. All collected in `conceptual-lexicon.jsonl` (along with the project's special terms), updated only in a dedicated pruning session, never as a side task.
 
 - **Hold two ideas without losing the plot.** When a second theme surfaces during a task, package the observation (write it down, flag it for the debrief) and return to the first theme. Do not let the second theme hijack the first. The packaging is the discipline; the returning is the skill.
 - **No long-running tasks.** No task should run longer than the attention span of the person reviewing it. Long tasks produce a bubble reality: the agent's context fills with the task's internal logic, the user's attention drifts, the task's premises stop being questioned. Rest, take stock, confirm the path.
 - **Proactive not reactive mind-changing.** Finish, then question; do not question and finish simultaneously. When you feel the pull to pivot, tidy-first and defer the discussion to the retrospective.
 - **Top-sight.** Keep the end in sight whilst down in the trenches. The commit messages, the critical path, the principles layer, the debrief, and the conceptual-lexicon are externalisations of top-sight — the horizon made visible while the agent is in the trenches. Without them, top-sight is a purely internal discipline, and internal disciplines fail under fatigue.
 
-See `blog/the-palimpsest-and-the-plot.md` for the full argument.
+### The conceptual-lexicon
+
+`conceptual-lexicon.jsonl` is the project's reference of operational heuristics and special terms. It is **not** updated casually. The rule:
+
+> **Focus on the CL if you wish to amend the CL.** The focus is a critical focus: you focus on the CL and you figure out critically if there are any issues — any issues.
+
+The CL is amended only in a **dedicated pruning session** — a special session whose sole purpose is to re-orient against the reference. The session runs tests: does each entry's justification still hold? Has any term drifted from its original intent? Are there entries that should be retired? Are there terms in active use that are not yet in the lexicon? The pruning session is the CL's tidy pass, and it follows the same discipline: finish, then question; prune deliberately, at a stopping point, with the reason recorded.
+
+The CL is not a scrapbook. It is a reference, and a reference that drifts is worse than no reference — it propagates the drift into every session that consults it. The pruning session is the mechanism that prevents the CL from becoming a palimpsest of its own definitions.
+
+See `blog/the-palimpsest-and-the-plot.md` for the full argument on why the discipline must be held in git, not in memory.
 
 ### Incremental formalisation
 
