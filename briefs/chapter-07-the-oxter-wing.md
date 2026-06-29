@@ -18,7 +18,7 @@ When the upper quadrant drops into its native tensegrity alignment, your shoulde
 
 ---
 
-## The Mathematical Model: Non-Euclidean Slings and the Scapulothoracic Glide Plane
+## The Mathematical Justification: Non-Euclidean Slings and the Scapulothoracic Glide Plane
 Mainstream biomechanics mistakenly analyzes the shoulder girdle using the same rigid lever mechanics it applies to the hip joint. This is a profound anatomical error.
 
 The hip is a closed, bone-on-bone ball-and-socket joint. The shoulder blade (scapula), however, has no bony connection to your spine or your ribs. The **scapulothoracic joint** is a pure physiological illusion—it is a free-floating compression strut suspended entirely inside an omnidirectional, non-linear fascial sling.

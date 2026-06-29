@@ -23,7 +23,7 @@ If you lie there for fifteen minutes and nothing spectacular happens, you have e
 
 ---
 
-## The Mathematical Model: The Cramp Scam and the Hysteresis Threshold
+## The Mathematical Justification: The Cramp Scam and the Hysteresis Threshold
 To navigate this idle state cleanly, you must understand the primary defensive play your central nervous system uses to maintain its old, distorted maps: **The Cramp Scam.**
 
 As your system drifts along the Green-Yellow boundary using tiny, low-load micro-movements, you will occasionally cross a threshold where matted, long-partitioned tissue layers are forced to slide across one another for the first time in a decade. The local **Signal-to-Noise Ratio (S/N)** spikes violently.

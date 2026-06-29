@@ -20,7 +20,7 @@ Your torso can fold flat over your thighs while your lower back remains entirely
 
 ---
 
-## The Mathematical Model: Spherical Transformation Metrics and Gimbal Lock
+## The Mathematical Justification: Spherical Transformation Metrics and Gimbal Lock
 Standard orthopedic biomechanics analyzes the hip joint using basic 1D lever physics, treating hip flexion and extension as isolated angular movements occurring around a fixed hinge axis. This linear simplification fails to account for the non-affine coordinate transformations that govern a tri-axial spherical joint embedded within an anisotropic fascial continuum.
 
 The hip is not a door hinge; it is a three-degree-of-freedom spherical articulation space.

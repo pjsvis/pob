@@ -16,7 +16,7 @@ You cannot stand straight when there is no "straight" to stand on. Mainstream bi
 
 ---
 
-## The Mathematical Model: Isotropic Invariance and the Deletion of the Vector Field
+## The Mathematical Justification: Isotropic Invariance and the Deletion of the Vector Field
 In the preceding chapters, the entire continuum mechanics framework relied on a strict external restriction: the Euclidean half-space boundary condition ($z \ge 0$) under an orthogonal gravitational acceleration vector field ($\mathbf{g} = -g \mathbf{e}_z$). This environmental constant acted as a non-zero background metric that automatically solved half of the system's structural balance equations.
 
 When you transition into a zero-gravity manifold, the environmental acceleration vector is deleted completely:

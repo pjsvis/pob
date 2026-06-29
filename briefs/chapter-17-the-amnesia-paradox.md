@@ -20,7 +20,7 @@ They have completely forgotten that their current optimized geometry is the auto
 
 ---
 
-## The Mathematical Model: Non-Holonomic Path Dependency and the Terminal State Error
+## The Mathematical Justification: Non-Holonomic Path Dependency and the Terminal State Error
 In any path-dependent system, trying to recreate a finished state by mimicking its surface symptoms is a fundamental error. In continuum mechanics, the human chassis is defined as a **Non-Holonomic, Path-Dependent System**.
 
 A system is path-dependent when its terminal configuration space cannot be calculated solely by looking at its current coordinates; you must know the exact evolutionary path ($\gamma$) the system took to arrive there.

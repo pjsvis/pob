@@ -30,7 +30,7 @@ The sharp burning in your heel is not an isolated foot disease; it is the termin
 
 ---
 
-## The Mathematical Model: Cumulative Line Tension and Anchor Point Shear
+## The Mathematical Justification: Cumulative Line Tension and Anchor Point Shear
 In a continuous tensegrity matrix, a local tissue structure cannot be analyzed in isolation. The plantar fascia must be modeled as the terminal boundary condition of the **Superficial Posterior Tension Line**.
 
 When an upright biped shifts weight during gait, the foot strikes the ground ($z=0$), generating an immediate input force ($F_{\text{impact}}$). This impact forces the ankle into dorsiflexion, which requires the entire posterior tissue sheet to rapidly elongate.

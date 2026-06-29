@@ -17,7 +17,7 @@ This is the second face of amnesia, and it is the same error in a different dire
 
 ---
 
-## The Mathematical Model: Two Ways a Map Goes Dark
+## The Mathematical Justification: Two Ways a Map Goes Dark
 
 The two amnesias are mirror images, and they share a single structure: a **process** has been deleted, and only its **output** remains. The output is then mistaken for the cause.
 
