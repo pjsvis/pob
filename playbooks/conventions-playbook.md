@@ -39,6 +39,7 @@ change. What once made sense becomes noise, then harm.
 | Single-voice gate | Every track passes through one voice pass before publication | 2026-06-28 |
 | Memory vs documentation | Memory is a research tool (input); documentation is the editorial authority (git, auditable). The yap is research; the voice is authorship; never let the yap author | 2026-06-28 |
 | Incremental formalisation | Add what the work demands, when the work demands it; formalise at the second occurrence, not the first and not the fifth. The meta-principle that governs the others — each was added in response to a real problem, not in anticipation of an imagined one | 2026-06-28 |
+| The applecart principle | A book is a context the reader enters somatically — they feel the room before they read the argument. Every register shift, jarring metaphor, rendering glitch, or broken promise is a contract violation that upsets the applecart: the reader's body leaves the room, and the mind follows with a post-hoc reason. The voice gate and tidy-first are trust-preservation mechanisms for the context, not stylistic preferences. The build passing is not enough; a human (or a proof-reader agent) reading the rendered output is the only test that catches what the reader feels | 2026-06-28 |
 
 ## Barnacle Removal Record
 

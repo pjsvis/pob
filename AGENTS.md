@@ -69,6 +69,10 @@ Fix what's cheap now; brief what's expensive; never let a barnacle sit unexamine
 
 The yap is research; the voice is authorship; never let the yap author. See `blog/the-yap-and-the-voice.md` for the full argument.
 
+### The applecart principle
+
+A book is a context the reader enters somatically — they feel the room before they read the argument. Every register shift, jarring metaphor, rendering glitch, or broken promise is a contract violation that upsets the applecart: the reader's body leaves the room, and the mind follows with a post-hoc reason. The voice gate and tidy-first are trust-preservation mechanisms for the context, not stylistic preferences. The build passing is not enough; a human (or a proof-reader agent — see `playbooks/proof-reader-agent.md`) reading the rendered output is the only test that catches what the reader feels.
+
 ### Incremental formalisation
 
 Add what the work demands, when the work demands it; formalise at the second occurrence, not the first and not the fifth. This is the meta-principle that governs the other six — each was added in response to a real problem (the voice pass surfaced the voice invariant; the tidy pass surfaced tidy-first; the Gemini memory problem surfaced the memory-vs-documentation principle), not in anticipation of an imagined one.
