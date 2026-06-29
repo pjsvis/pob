@@ -73,6 +73,17 @@ The yap is research; the voice is authorship; never let the yap author. See `blo
 
 A book is a context the reader enters somatically — they feel the room before they read the argument. Every register shift, jarring metaphor, rendering glitch, or broken promise is a contract violation that upsets the applecart: the reader's body leaves the room, and the mind follows with a post-hoc reason. The voice gate and tidy-first are trust-preservation mechanisms for the context, not stylistic preferences. The build passing is not enough; a human (or a proof-reader agent — see `playbooks/proof-reader-agent.md`) reading the rendered output is the only test that catches what the reader feels.
 
+### Operating practices (process-level)
+
+The principles above govern the *output* (the voice, the structure, the barnacles). The operating practices govern the *process* — how to work so the output gets there without losing the plot. All collected in `conceptual-lexicon.jsonl` (along with the project's special terms), updated regularly and pruned occasionally.
+
+- **Hold two ideas without losing the plot.** When a second theme surfaces during a task, package the observation (write it down, flag it for the debrief) and return to the first theme. Do not let the second theme hijack the first. The packaging is the discipline; the returning is the skill.
+- **No long-running tasks.** No task should run longer than the attention span of the person reviewing it. Long tasks produce a bubble reality: the agent's context fills with the task's internal logic, the user's attention drifts, the task's premises stop being questioned. Rest, take stock, confirm the path.
+- **Proactive not reactive mind-changing.** Finish, then question; do not question and finish simultaneously. When you feel the pull to pivot, tidy-first and defer the discussion to the retrospective.
+- **Top-sight.** Keep the end in sight whilst down in the trenches. The commit messages, the critical path, the principles layer, the debrief, and the conceptual-lexicon are externalisations of top-sight — the horizon made visible while the agent is in the trenches. Without them, top-sight is a purely internal discipline, and internal disciplines fail under fatigue.
+
+See `blog/the-palimpsest-and-the-plot.md` for the full argument.
+
 ### Incremental formalisation
 
 Add what the work demands, when the work demands it; formalise at the second occurrence, not the first and not the fifth. This is the meta-principle that governs the other six — each was added in response to a real problem (the voice pass surfaced the voice invariant; the tidy pass surfaced tidy-first; the Gemini memory problem surfaced the memory-vs-documentation principle), not in anticipation of an imagined one.
