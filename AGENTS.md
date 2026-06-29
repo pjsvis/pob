@@ -81,6 +81,7 @@ The principles above govern the *output* (the voice, the structure, the barnacle
 - **No long-running tasks.** No task should run longer than the attention span of the person reviewing it. Long tasks produce a bubble reality: the agent's context fills with the task's internal logic, the user's attention drifts, the task's premises stop being questioned. Rest, take stock, confirm the path.
 - **Proactive not reactive mind-changing.** Finish, then question; do not question and finish simultaneously. When you feel the pull to pivot, tidy-first and defer the discussion to the retrospective.
 - **Top-sight.** Keep the end in sight whilst down in the trenches. The commit messages, the critical path, the principles layer, the debrief, and the conceptual-lexicon are externalisations of top-sight — the horizon made visible while the agent is in the trenches. Without them, top-sight is a purely internal discipline, and internal disciplines fail under fatigue.
+- **Perturbation process.** The manuscript's own green-yellow frontier: small, local touches at the boundary between 'done' and 'done properly,' each one moving a sliver of almost-right into right. The perturbation is in the book's voice (the single-voice gate applies); the test is whether the whole feels more like itself after the touch. The perturbation must happen in a controlled environment — a bounded plane to measure against (the staved-finger benchmark, the style playbook, the CL) — not a noisy one. Touch, commit, rest: the sliver maps in the rest, not in the touch.
 
 ### The conceptual-lexicon
 
