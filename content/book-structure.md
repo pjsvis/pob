@@ -47,7 +47,7 @@ The Popperian Falsification Protocols have been moved to **Appendix A**. They ar
 ## Part III: The Runtime Security Layer
 
 - [Part Introduction](/part-03-runtime-security-layer.html)
-- [Chapter 13: The Pain Scale](/chapter-13-the-pain-scale.html)
+- [Chapter 13: The Frontier Scale](/chapter-13-the-frontier-scale.html)
 - [Chapter 14: The Asymmetric Constraint](/chapter-14-the-asymmetric-constraint.html)
 - [Chapter 15: The Floor Datum (z = 0, v = 0)](/chapter-15-the-floor-datum.html)
 - [Chapter 16: The Patellar Pulley](/chapter-16-the-patellar-pulley.html)

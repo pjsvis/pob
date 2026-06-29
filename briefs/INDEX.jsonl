@@ -20,6 +20,7 @@
 {"file":"2026-06-28-brief-assess-diagram-pipeline.md","date":"2026-06-28","status":"active","summary":"Brief: Assess Hybrid ASCII→SVG Diagram Pipeline Viability","meta":{"type":"brief"}}
 {"file":"2026-06-28-brief-beta-readers.md","date":"2026-06-28","status":"active","summary":"Brief: Beta Readers — Emma, Barbara, Craig","meta":{"type":"brief"}}
 {"file":"2026-06-28-brief-chapter-titles-and-structure.md","date":"2026-06-28","status":"active","summary":"Brief: Chapter Title Pass + Structural Fixes (Ch15, Ch18)","meta":{"type":"brief"}}
+{"file":"2026-06-28-brief-consolidate-adr-directories.md","date":"2026-06-28","status":"active","summary":"Brief: Consolidate ADR Directories (decisions/ vs docs/adr/)","meta":{"type":"brief"}}
 {"file":"2026-06-28-brief-grad-div-curl-explanations.md","date":"2026-06-28","status":"active","summary":"Brief: Grad/Div/Curl Explanation Blocks for Chapter Math","meta":{"type":"brief"}}
 {"file":"2026-06-28-brief-math-rendering-pass.md","date":"2026-06-28","status":"active","summary":"Brief: Math Rendering Pass — Audit and Repair All KaTeX Notation","meta":{"type":"brief"}}
 {"file":"2026-06-28-brief-onboarding-grad-div-curl.md","date":"2026-06-28","status":"active","summary":"Brief: Onboarding Chapter — Grad, Div, Curl, and the Wet Towel","meta":{"type":"brief"}}
@@ -46,7 +47,7 @@
 {"file":"chapter-10-the-laminated-core.md","date":"2026-06-28","status":"active","summary":"Chapter 10: The Laminated Core","meta":{"type":"chapter"}}
 {"file":"chapter-11-the-kua-vault.md","date":"2026-06-28","status":"active","summary":"Chapter 11: The Kua Vault","meta":{"type":"chapter"}}
 {"file":"chapter-12-the-plantar-interface.md","date":"2026-06-28","status":"active","summary":"Chapter 12: The Plantar Interface","meta":{"type":"chapter"}}
-{"file":"chapter-13-the-pain-scale.md","date":"2026-06-28","status":"active","summary":"Chapter 13: The Pain Scale","meta":{"type":"chapter"}}
+{"file":"chapter-13-the-frontier-scale.md","date":"2026-06-28","status":"active","summary":"Chapter 13: The Frontier Scale","meta":{"type":"chapter"}}
 {"file":"chapter-14-the-asymmetric-constraint.md","date":"2026-06-28","status":"active","summary":"Chapter 14: The Asymmetric Constraint","meta":{"type":"chapter"}}
 {"file":"chapter-15-the-floor-datum.md","date":"2026-06-28","status":"active","summary":"Chapter 15: The Floor Datum (z = 0, v = 0)","meta":{"type":"chapter"}}
 {"file":"chapter-16-the-patellar-pulley.md","date":"2026-06-28","status":"active","summary":"Chapter 16: The Patellar Pulley","meta":{"type":"chapter"}}

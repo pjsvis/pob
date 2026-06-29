@@ -44,7 +44,7 @@ title: Table of Contents
 
 ## Part III: The Runtime Security Layer
 
-- **Chapter 13: The Pain Scale** — The 1–10 pain scale as dead data; the four-zone operational map (Green / Yellow / Orange / Red) as the governor's language of systemic permission. Pain as a boundary, not a volume.
+- **Chapter 13: The Frontier Scale** — The 1–10 pain scale as dead data; the four-zone Frontier Scale (Green / Yellow / Orange / Red) as the governor's language of systemic permission. Pain as a boundary, not a volume.
 - **Chapter 14: The Asymmetric Constraint** — Covariant tensor variance across non-uniform hemispheres. Unwinding chronic single-sided structural debt by expanding the local Green zone rather than pushing into the Red zone.
 - **Chapter 15: The Floor Datum (z = 0, v = 0)** — The cramp scam. Acute muscle cramping as a false alarm from sub-cortical protection loops; defusing the alarm via low-velocity approach and retreat.
 - **Chapter 16: The Patellar Pulley** — The belt friction equation ($T_{\text{out}} = T_{\text{in}} e^{\mu\beta}$). Seiza and reverse nordics as high-load static and eccentric displacement tests of the anterior tensile sling.

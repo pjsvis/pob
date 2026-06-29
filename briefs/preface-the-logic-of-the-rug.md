@@ -32,6 +32,8 @@ This is not an exercise book. There are no programmes, no sets and reps, no prog
 
 This is not a therapy book. It does not diagnose, prescribe, or correct. The word "corrective" is banned. The body is not broken; it is lost, and the floor gives it a reference to find itself. If you are looking for a fix, you will be disappointed.
 
+And one reframe to carry through the whole book: things do not hurt because they are broken. They hurt because they are being fixed — and that is a construction job that will take as long as it takes. The pain is the guard, not the fire. The ache at the boundary is the sensation of a map being redrawn, not the sound of something tearing. Read the signal as a process, not a verdict, and the prescription changes by itself: do not brace, do not withdraw, do not force. Attend, breathe, and let the governor do its work.
+
 This is not a self-help book. There is no transformation narrative, no before-and-after, no promise of enlightenment through suffering. The objective is not to achieve anything. The objective is to stop achieving, precisely enough that the system can run its own work. *Not achieving anything is the objective.* If you are looking for a guru, you will be disappointed.
 
 What this book offers is a vocabulary — the language of continuum mechanics applied to the living fabric — and a method — the floor datum, the idle state, the green-yellow boundary. The vocabulary lets you see what is happening. The method lets the body do something about it. Neither requires equipment, expertise, or belief. They require a floor and the willingness to lie on it without an agenda.
