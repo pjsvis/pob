@@ -14,7 +14,7 @@ Mainstream movement coaching tells you that to keep that fluid feeling, you must
 
 ---
 
-## The Mathematical Justification: Non-Affine Metric Ingestion
+## The Mathematical Model: Non-Affine Metric Ingestion
 When you stand up from the floor datum ($z=0$), your system transitions instantly from a state of zero-load relaxation back into the orthogonal gravity vector field ($\mathbf{g} = -g \mathbf{e}_z$).
 
 On the floor, your sub-cortical system successfully computed a clean, low-entropy reference metric tensor ($\tilde{g}_{ij}$) across the Green-Yellow boundary. But the moment you stand up, the system must transform that flat coordinate map back into a dynamic, three-dimensional moving frame. This is a problem of **Non-Affine Coordinate Deformation**.

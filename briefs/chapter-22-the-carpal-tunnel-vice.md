@@ -23,7 +23,7 @@ Your carpal tunnel didn’t magically shrink, and your tendons didn't spontaneou
 
 ---
 
-## The Mathematical Justification: Hydrostatic Tunnel Pressure and the Hovering Shear Vector
+## The Mathematical Model: Hydrostatic Tunnel Pressure and the Hovering Shear Vector
 The carpal tunnel is an architectural conduit—a rigid, U-shaped valley formed by the carpal bones, closed off by a tough, inextensible ligamentous roof known as the **flexor retinaculum**. Through this narrow tunnel pass nine independent flexor tendons and the highly sensitive median nerve.
 
 Mainstream ergonomics assumes that typing causes friction because the wrist joint is bent. They miss the true variable: **the pre-stress tension vector of the long tendons.**

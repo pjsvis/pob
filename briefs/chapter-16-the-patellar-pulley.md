@@ -33,7 +33,7 @@ The quadriceps are an illusion. They do not exist as four isolated muscle bellie
 
 If you attempt a Reverse Nordic while your waist is gripped or your sub-occipitals are locked, the top of the sling cannot feed data down into the leg. The line runs out of slack. The knee is forced to bear the entire mechanical deficit of a locked upper chassis.
 
-## The Mathematical Justification: The Cable-Pulley Friction Equation
+## The Mathematical Model: The Cable-Pulley Friction Equation
 
 We model the patella not as a structural lever bone, but as a floating mechanical pulley guiding a hyperelastic tendon sheet over a curved surface. The amplification of tension ($T$) across a curved friction surface is governed by the classic **Belt Friction Equation**:
 

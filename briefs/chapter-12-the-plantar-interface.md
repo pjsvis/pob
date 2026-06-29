@@ -27,7 +27,7 @@ Things don’t change overnight. You don't suddenly grow high arches. Mostly, th
 
 ---
 
-## The Mathematical Justification: Distributed Pressure Transducers and the Cauchy Surface Functional
+## The Mathematical Model: Distributed Pressure Transducers and the Cauchy Surface Functional
 Standard podiatric biomechanics models the human foot as a simple, passive three-arched stone bridge or a rigid triangular lever system. This 19th-century structural analogy completely misses the point: the foot is primarily a high-density, non-linear **Kinematic Information Transducer**.
 
 The plantar surface of the foot contains one of the densest mechanoreceptor arrays in the entire human continuum. When you stand, this interface maps the interaction between your internal mass and the unyielding $z=0$ hyperplane.

@@ -15,7 +15,7 @@ This chapter replaces that number with a frontier.
 
 ---
 
-## The Mathematical Justification: The Four Zones
+## The Mathematical Model: The Four Zones
 
 The body's protective system — the sub-cortical governor — does not rate pain on a one-to-ten scale. It maps **permission**. At every point in the body, at every moment, the governor holds a chart of where movement is permitted, where it needs to be mapped, where it is warning you off, and where it has locked the door entirely. Pain is the readout of that chart: not a volume, but a boundary. The useful question is not "how loud is the threat?" but "where is the frontier, and which side of it am I on?"
 

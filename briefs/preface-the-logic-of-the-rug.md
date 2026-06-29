@@ -54,7 +54,7 @@ If you remember nothing else from this preface, remember the fifth point. The bo
 
 Read the onboarding chapter (Chapter 0: The Vocabulary) before anything else. It teaches the three operators — gradient, divergence, curl — and the stress tensor, using a wet towel and a stretched t-shirt. If you read only one chapter's math, read that one's. It is the key that unlocks the rest.
 
-After that, read in order if you like, or read the chapters whose hooks land. Each chapter is self-contained — a Familiar Hook that opens with a sensation, a Mathematical Justification that formalises it, and a Hardware Smoke Test that lets you feel it on your own body. The arc is deliberate, but a chapter read alone should still make sense.
+After that, read in order if you like, or read the chapters whose hooks land. Each chapter is self-contained — a Familiar Hook that opens with a sensation, a Mathematical Model that formalises it, and a Hardware Smoke Test that lets you feel it on your own body. The arc is deliberate, but a chapter read alone should still make sense.
 
 Read slowly. The book is short and the chapters are brief, but the smoke tests ask you to spend time on the floor, attending to things you have been taught to ignore. The reading is the small part. The lying down is the work.
 

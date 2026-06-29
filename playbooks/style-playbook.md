@@ -68,7 +68,7 @@ A piece's track is chosen at the assimilation step (see `playbooks/curation-play
 
 | Track | Format scaffolding | Where it lives |
 |-------|-------------------|----------------|
-| **Book chapter** | Familiar Hook → Mathematical Justification → Hardware Smoke Test; self-contained; no byline/dek; integrates into the book's arc; cross-references inline | `briefs/chapter-*.md` |
+| **Book chapter** | Familiar Hook → Mathematical Model → Hardware Smoke Test; self-contained; no byline/dek; integrates into the book's arc; cross-references inline | `briefs/chapter-*.md` |
 | **Standalone essay** | Self-contained essay format (byline + dek allowed — see `self-contained-essay-playbook.md`); same register; stands outside the book's arc. The staved-finger essay and the Nessie syntheses are the existing models | `content/` |
 | **Series piece** | A sequence of standalone essays on one theme; each self-contained; linked by a stated thread | `content/` |
 | **Marketing** | Derivative, shorter, points at the book; *same register* — never a louder voice than the book. A dry, world-weary pitch that trusts the reader's curiosity is the book's voice applied to outreach | `content/` (or external) |
@@ -107,7 +107,7 @@ These are concrete rules for the editorial pass. They are not aspirational — t
 Every chapter follows this arc (though not necessarily these exact headings):
 
 1. **The Familiar Hook** — a sensation the reader recognises from their own body.
-2. **The Mathematical Justification** — the tensor algebra / continuum mechanics that formalises the sensation. Plain language first, then the equation.
+2. **The Mathematical Model** — the tensor algebra / continuum mechanics that formalises the sensation. Plain language first, then the equation.
 3. **The Hardware Smoke Test** (where applicable) — a conversational diagnostic the reader can run on themselves. Not a procedure. An invitation.
 
 The Popperian Falsification Protocols are in Appendix A. They do not appear in the main text.

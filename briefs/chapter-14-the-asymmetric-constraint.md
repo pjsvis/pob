@@ -18,7 +18,7 @@ True equalization requires a complete reversal of the symmetry myth. You don't f
 
 ---
 
-## The Mathematical Justification: Covariant Tensor Variance Across Asymmetric Manifolds
+## The Mathematical Model: Covariant Tensor Variance Across Asymmetric Manifolds
 Mainstream biomechanics treats structural asymmetry as a simple bilateral strength or length deficit. This linear view fails because it assumes the body's reference configuration is uniform across both hemispheres.
 
 In a continuous tensegrity matrix, an ancient injury or a decade of single-sided compensation modifies the local **Reference Configuration Metric** ($\mathbf{G}_0$) on one side of the body while leaving the other intact.

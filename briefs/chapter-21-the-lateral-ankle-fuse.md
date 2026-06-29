@@ -27,7 +27,7 @@ By wrapping that ankle in an un-yielding external cage, you aren't protecting yo
 
 ---
 
-## The Mathematical Justification: Torque Propagation and the Proximal Lever Arm
+## The Mathematical Model: Torque Propagation and the Proximal Lever Arm
 Standard sports medicine analyzes an ankle sprain as an isolated ligamentous insufficiency—specifically targeting the **Anterior talofibular ligament (ATFL)** and the **Calcaneofibular ligament (CFL)**.
 
 These lateral stabilizers are not heavy structural cables; they are relatively thin, highly innervated bands of dense regular connective tissue.

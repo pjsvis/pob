@@ -14,7 +14,7 @@ Neither you nor the cat had to think about it. The conscious control ego was com
 
 ---
 
-## The Mathematical Justification: Stress Invariants and the Divergence of Impact
+## The Mathematical Model: Stress Invariants and the Divergence of Impact
 When a living mass drops into the $z=0$ Euclidean plane (the floor or the rugby pitch), it generates a massive deceleration force. This environmental input is modeled as a boundary traction vector ($\mathbf{t}$).
 
 According to Cauchy’s stress theorem, this traction must be matched by the internal **Cauchy Stress Tensor** ($\boldsymbol{\sigma}$) at the boundary normal ($\mathbf{n}$):

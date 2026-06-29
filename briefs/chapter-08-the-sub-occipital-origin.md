@@ -16,7 +16,7 @@ You cannot stretch this restriction away because your neck muscles aren't tight 
 
 ---
 
-## The Mathematical Justification: The Oculomotor Origin and VOR Coordinate Synchronization
+## The Mathematical Model: The Oculomotor Origin and VOR Coordinate Synchronization
 Mainstream anatomy teaches that the small muscles at the back of the neck are there to extend and rotate the head. This linear interpretation misses their true functional identity: they are a high-density sensory junction designed to synchronize your visual system with your spinal engine.
 
 The cluster of tissues at the base of your skull—the **Obliquus capitis superior**, **Rectus capitis posterior major**, and **Obliquus capitis inferior**—retains one of the highest muscle-spindle densities in the entire human body, packing up to 100 times more sensory receptors per gram than your biceps. They function as a real-time, high-capacity sensory array.

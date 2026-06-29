@@ -29,7 +29,7 @@ In standard exercise protocols, pain is a damage report—the sound of a distort
 
 ---
 
-## The Mathematical Justification: Stochastic Drift on the State-Space Manifold
+## The Mathematical Model: Stochastic Drift on the State-Space Manifold
 Mainstream exercise science operates on a linear, high-effort model of adaptation: apply an external mechanical stressor ($S$), induce localized tissue micro-trauma, and rely on systemic inflammation to rebuild the lever. This approach completely fails to model the non-linear thermodynamic behavior of a pre-stressed viscoplastic continuum.
 
 We model the body's internal tissue configuration as a state-space manifold $\Omega$. The total structural noise—the wasted metabolic energy spent maintaining defensive muscular clamps against gravity—is represented by a global objective cost function $C(\mathbf{g})$, where $\mathbf{g}$ is the real-time metric tensor field.

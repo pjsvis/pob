@@ -27,7 +27,7 @@ This internal projection error doesn't just change how you walk; it distorts you
 
 ---
 
-## The Mathematical Justification: Gauss’s Theorema Egregium and Metric Distortion
+## The Mathematical Model: Gauss’s Theorema Egregium and Metric Distortion
 
 Mainstream ergonomics operates on the absurd premise that if you give a human a flat enough chair and a square enough desk, their posture will remain balanced. This represents a fundamental ignorance of differential geometry.
 

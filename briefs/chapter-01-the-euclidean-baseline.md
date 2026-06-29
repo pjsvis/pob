@@ -14,7 +14,7 @@ Mainstream physical therapy calls this "passive relaxation." That definition is 
 
 ---
 
-## The Mathematical Justification: The Boundary Conditions
+## The Mathematical Model: The Boundary Conditions
 The human body is not a loose collection of independent bone levers pulled by isolated muscle cables. It is a **bounded continuum**—a single, continuous, fluid-filled fascial envelope.
 
 When you are standing, your internal coordinate mapping engine is crushed by a constant mechanical demand. It has to constantly calculate a dynamic, non-linear parallel tensor network just to keep your skull stacked over your heels. The moment you drop to the floor, you radically alter the environmental boundary conditions of the system.

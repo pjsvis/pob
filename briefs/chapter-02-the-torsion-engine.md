@@ -14,7 +14,7 @@ Mainstream fitness looks at this counter-rotation and calls it "arm swing," trea
 
 ---
 
-## The Mathematical Justification: The Poynting Effect
+## The Mathematical Model: The Poynting Effect
 Standard 1D biomechanics models the human spine as a static, vertical pillar—a structural column designed to bear weight while independent muscle levers move the limbs. This interpretation is a geometric fiction that ignores the non-linear continuum mechanics of a pre-stressed hyperelastic cylinder.
 
 When you twist a standard, linear elastic rod, it simply shears. But when you apply a torsional load to a non-linear, hyperelastic material (like the laminated, cross-braced fascial sheets of the human torso), the material behaves radically differently. It executes a phenomenon known in finite strain theory as the **Poynting Effect**.

@@ -18,7 +18,7 @@ Mainstream fitness looks at the trunk and treats it as a rigid box made of strai
 
 ---
 
-## The Mathematical Justification: Hoop Stress and Laminated Shell Mechanics
+## The Mathematical Model: Hoop Stress and Laminated Shell Mechanics
 Standard 1D biomechanics treats the abdominal muscles as independent linear actuators—straps like the rectus abdominis pulling the ribs directly toward the pelvis. This represents a profound geometric misunderstanding of your actual container architecture.
 
 Your midsection is not a box; it is a pressurized, multi-layered, anisotropically laminated cylindrical shell enclosing a fluid-filled core.

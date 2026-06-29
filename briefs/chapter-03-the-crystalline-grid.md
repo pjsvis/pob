@@ -14,7 +14,7 @@ When you execute a true short-range impact correctly, the internal sensory telem
 
 ---
 
-## The Mathematical Justification: The Phase Change Matrix
+## The Mathematical Model: The Phase Change Matrix
 Standard Newtonian biomechanics attempts to analyze impact force using the Work-Energy Theorem ($W = \Delta K = F \cdot d$) or linear momentum ($p = mv$). They calculate the short runway ($d \to 0$), look at the mass of the arm, and conclude that a one-inch strike is mathematically incapable of producing high-velocity kinetic output. Their calculations are flawless, but their model is wrong: they are treating the arm as an isolated, rigid projectile flying through space.
 
 In non-linear continuum mechanics, the one-inch strike is not an acceleration problem; it is a **Topological Phase Change** problem.

@@ -16,7 +16,7 @@ Mainstream movement culture calls this "mindfulness" or "somatic awareness," bur
 
 ---
 
-## The Mathematical Justification: The Lie Derivative and the Updating Coordinate Map
+## The Mathematical Model: The Lie Derivative and the Updating Coordinate Map
 When you try to micro-manage your posture — telling yourself to "pull the shoulders back" or "suck the belly in" — you inject a crude, linear, static override into a dynamic, parallel field of tension. The autonomous governor is forced to accommodate this clumsy instruction by raising a secondary defensive clamp elsewhere to balance the artificial torque.
 
 To describe how the sub-cortical governor tracks and updates the geometry of the living continuum without conscious interference, the **Lie Derivative** is used of the metric tensor field.
