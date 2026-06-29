@@ -39,20 +39,35 @@ With a bounded plane:
 
 - A chapter or section that states the bounded-plane principle explicitly, in the book's voice, with the staved finger as the primary example and at least two other examples from the book's existing material.
 - Examples to include (not exhaustive — the author selects):
+
+### Visible bounded planes
+
   - **The steepled hand** (staved finger essay): the OKC → CKC transition, the holonomic constraint, the shared reference plane, the differential telemetry. This is the existing, proven example.
   - **The floor datum** (Ch01, Ch15): $z=0$ as the global bounded plane. Lying on the floor gives the body a reference against which all internal stresses are measured. Without the floor, the standing body is an unbounded chain in a gravity field — the signal is unscaled, the CNS clamps. With the floor, the signal is scaled against the datum, the CNS can release.
   - **The plantar interface** (Ch12): the foot on the ground is a bounded plane. In cushioned shoes, the normal vector is scrambled, the bounded plane is lost, the telemetry is unscaled, the CNS clamps the hip. Barefoot on the floor, the bounded plane is restored, the telemetry is scaled, the CNS releases the hip.
   - **The Kua vault** (Ch11): the hip joint in an open chain (walking with an ungrounded foot) vs a closed chain (the foot pinned on the floor, the femoral head measured against the acetabular reference). The bounded plane is what makes the femoral head's position a differential rather than an absolute.
+
+### The zero-gravity datum (the 90-day degradation)
+
+  - **The zero-gravity manifold** (Ch09): remove the bounded plane entirely — no floor, no gravity vector, no datum — and the body degrades significantly within ~90 days. The telemetry is not merely unscaled; it is *meaningless*, because the reference against which it would be scaled does not exist. The CNS clamps everything, the tissue atrophies, the bone density drops, the fluid redistribution wrecks the cardiovascular system. This is the reductio ad absurdum of the unbounded chain: not a single joint clamped, but the whole organism clamped, because the whole organism has lost its denominator. The 90-day figure is the empirical evidence that the bounded plane is not a convenience but a necessity.
+  - **The tardigrade** — the only entity that traverses space (the unbounded vacuum) and survives. The tardigrade's tun state is a phase change that removes the *need* for a bounded plane: it suspends the telemetry entirely, replacing the continuous-mechanics problem with a suspended-animation problem. The tardigrade does not solve the unbounded-chain problem; it opts out of it. Humans cannot opt out; we need the bounded plane, or we degrade. The tardigrade is the counter-example that proves the rule: the only organism that survives without a datum is the one that stops needing one.
+
+### Hidden bounded planes (the reader's question: "so what do fish do?")
+
+  - **The reader will ask**: if the bounded plane is necessary, how do animals that don't have a floor survive? Fish, birds, worms, trees — none of them lie on a $z=0$ hyperplane. The proposition seems to imply the bounded plane is always the floor, and the floor is not always visible.
+  - **The answer: bounded planes are not always visible, and they are not always the floor.** The bounded plane is *any* external reference that converts an absolute signal into a differential one. The floor is the most obvious one (for humans), but every organism has its bounded plane:
+    - **Fish**: the water itself. The fluid medium is the bounded plane — the fish's body is continuously bounded by the hydrostatic pressure of the water, which provides a uniform, omnidirectional reference. The fish's telemetry is scaled against the water's pressure gradient, not against a floor. The bounded plane is the medium.
+    - **Birds**: the air. The aerodynamic surface (the wing against the air) is the bounded plane — the bird's flight telemetry is scaled against the air's resistance and the wing's loading. A bird in flight is not unbounded; it is bounded by the air the way a fish is bounded by the water. The bounded plane is the fluid dynamic interface.
+    - **Worms**: the soil. The earthworm's body is bounded by the resistance of the soil it moves through. The soil is the bounded plane — the worm's propulsion telemetry is scaled against the soil's compression. The bounded plane is the medium the worm moves through.
+    - **Trees**: gravity itself. A tree's growth is bounded by the gravitational vector — the trunk grows against gravity, the roots grow with it. The tree's structural telemetry is scaled against the gravity vector, not against a surface. The bounded plane is the field, not the floor.
+  - **The generalisation**: the bounded plane is not a surface; it is a *reference*. For humans, the most salient reference is the floor ($z=0$), because we are terrestrial bipeds whose primary interface with the environment is the plantar surface against the ground. But the bounded plane can be a fluid (fish, birds), a medium (worms), or a field (trees, astronauts in a gravity gradient). The principle is: **every organism needs a reference against which to scale its telemetry, and the reference is not always visible — especially to an organism that has never been without one.**
+  - **The implication for humans**: we don't see our bounded plane because we've never been without it. The floor is so constant, so universal, so beneath our feet (literally) that it is invisible — the way water is invisible to a fish. The zero-gravity chapter makes it visible by removing it. The bounded-plane chapter makes it visible by naming it. The reader who asks "so what do fish do?" is asking the right question, and the answer is: fish have a bounded plane; it's just made of water, not rock.
 - The math: the holonomic constraint $\Phi(\mathbf{x}) = 0$, the constraint forces $\lambda$, the differential afferent signal. The staved finger essay has this; the chapter should restate it in the book's voice and generalise it.
 - Plain-language explanation: "telemetry without a bounded plane is unscaled, so it is treated as bad; telemetry with a bounded plane is scalable and can give accurate info." The user's framing is the through-line; the chapter elaborates it.
 
-## Placement (open — needs a call)
+## Placement
 
-1. **A new section in the onboarding chapter (Ch00: The Vocabulary).** The bounded-plane principle is foundational — it explains *why* the floor matters before the reader meets the floor in Ch01. But Ch00 is already the math-vocabulary chapter; adding the bounded-plane principle would expand its scope from "what the operators mean" to "why the datum matters."
-2. **A new section in Ch01 (The Euclidean Baseline).** Ch01 introduces $z=0$ as the floor datum; the bounded-plane principle is the *reason* the datum matters. The section would explain why the datum is not just a geometric convenience but the thing that makes telemetry scalable.
-3. **A standalone chapter in Part I (after Ch01, before Ch02).** The principle is significant enough to warrant its own chapter, and it generalises beyond the floor (it applies to the steepled hand, the plantar interface, the Kua vault). A standalone chapter would let each subsequent chapter reference it by concept rather than re-explaining it.
-
-**Recommendation: option 2** (a new section in Ch01). The principle is the *why* of Ch01's *what*, and folding it in keeps the foundational layer tight without a new chapter's renumbering cascade. The generalisation (it applies to the hand, the foot, the hip) can be stated briefly in Ch01 and referenced by the later chapters.
+**A standalone chapter in Part I, after Ch01 (The Euclidean Baseline).** The user concurred: the bounded-plane principle is foundational. It generalises beyond the floor (the steepled hand, the plantar interface, the Kua vault, the zero-gravity reductio, the hidden bounded planes of fish/birds/worms/trees), and a standalone chapter gives every subsequent chapter a concept to reference rather than a mechanism to re-explain. Renumbering Ch02–23 → Ch03–24 — the cascade is the cost of placing a foundational chapter in the right position, and the curation playbook says to pay it at a stopping point, which this is.
 
 ## Constraints
 
