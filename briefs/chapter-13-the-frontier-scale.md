@@ -19,7 +19,7 @@ This chapter replaces that number with a frontier.
 
 The body's protective system — the sub-cortical governor — does not rate pain on a one-to-ten scale. It maps **permission**. At every point in the body, at every moment, the governor holds a chart of where movement is permitted, where it needs to be mapped, where it is warning you off, and where it has locked the door entirely. Pain is the readout of that chart: not a volume, but a boundary. The useful question is not "how loud is the threat?" but "where is the frontier, and which side of it am I on?"
 
-We model the body's internal configuration as a state-space manifold $\Omega$, and the governor's permission map as a partition of that manifold into four zones. The zones are not levels of pain. They are states of the chart — what the governor knows, what it is exploring, what it is warning about, and what it has quarantined.
+The body's internal configuration is modelled as a state-space manifold $\Omega$, and the governor's permission map is a partition of that manifold into four zones. The zones are not levels of pain. They are states of the chart — what the governor knows, what it is exploring, what it is warning about, and what it has quarantined.
 
 ### The Green Zone — your current known range of motion
 
@@ -59,14 +59,14 @@ The distinction between Orange and Red is temporal: Orange is occasional, Red is
   Mapped, explore   Needs mapping        Back off (brief)     Back off (now)
   C ≤ C_green       C_green < C ≤ C_yellow  C_yellow < C ≤ C_red  C > C_red
        ▲
-       └── the Green-Yellow frontier: the only place we propose action
+       └── the Green-Yellow frontier: the only place action is proposed
 ```
 
 ### Why this is not the one-to-ten scale
 
 The Frontier Scale is not a refinement of the pain scale. It is a different kind of object entirely. The pain scale asks "how much"; the Frontier Scale asks "where is the frontier, and what is the governor doing about it." The pain scale produces a number; the Frontier Scale produces a boundary and an instruction. The pain scale is the same for a fresh injury and a chronic restriction; the Frontier Scale distinguishes them by whether the frontier is still updating (Yellow) or has gone dark (Red). The pain scale tells you to take a pill; the Frontier Scale tells you to find the frontier, lie on the floor, and let the governor re-chart.
 
-The one-to-ten scale compresses geometry into a volume and then discards the geometry. The Frontier Scale keeps the geometry, because the geometry — where the frontier is, which way it is moving, whether the signal is occasional or sustained — is the only thing the governor can act on. And the only place we propose action is at the Green-Yellow frontier. Everywhere else, the instruction is to listen.
+The one-to-ten scale compresses geometry into a volume and then discards the geometry. The Frontier Scale keeps the geometry, because the geometry — where the frontier is, which way it is moving, whether the signal is occasional or sustained — is the only thing the governor can act on. And the only place action is proposed is at the Green-Yellow frontier. Everywhere else, the instruction is to listen.
 
 ---
 

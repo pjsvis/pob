@@ -12,7 +12,7 @@ You attempt to sit on your heels in Seiza — the kneeling rest where your butto
 
 Mainstream fitness and physical therapy have completely hijacked these two positions, wrapping them in non-falsifiable marketing tropes like "knee bulletproofing," "eccentric quad remodeling," or "ancestral sitting."
 
-If we look at them through our **Operational Heuristic**, we don't see exercises or sitting postures. We see severe, high-load boundary conditions that test the structural continuity of the **Anterior Tensile Sling**.
+Seen through the **Operational Heuristic**, they are not exercises or sitting postures. severe, high-load boundary conditions that test the structural continuity of the **Anterior Tensile Sling**.
 
 ### The Mainstream Failure Mode
 

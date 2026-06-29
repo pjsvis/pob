@@ -8,9 +8,9 @@ You are walking down a cobblestone street, your mind elsewhere. You step off a s
 
 In a fraction of a second, your outer foot catches, your weight shifts over the edge, and your ankle folds completely sideways under your mass. You hear a sickening tear, collapse to the ground, and spend the next two weeks on crutches nursing a classic lateral ankle sprain.
 
-Our immediate cultural reaction to this event is a deep sense of structural shame. We curse our "weak ankles." We assume human anatomy is fundamentally flawed at its base.
+The immediate cultural reaction to this event is a deep sense of structural shame. The reaction is structural shame — cursing "weak ankles," assuming human anatomy is fundamentally flawed at its base.
 
-To prevent this "failure" from happening again, we buy stiff, high-top hiking boots, wrap our ankles in heavy athletic tape, or wear rigid plastic braces. We decide that if the joint is too weak to stay upright, we must encase it in an external iron cage.
+To prevent this "failure" from happening again, the response is to buy stiff, high-top hiking boots, wrap the ankles in heavy athletic tape, or wear rigid plastic braces. The logic is that if the joint is too weak to stay upright, it must be encased in an external iron cage.
 
 ```
  [ Traditional Orthopedics ] ──► Encose Ankle in Stiff Tape ──► Force Transfers Upward ──► Disintegrated Knee
@@ -32,7 +32,7 @@ Standard sports medicine analyzes an ankle sprain as an isolated ligamentous ins
 
 These lateral stabilizers are not heavy structural cables; they are relatively thin, highly innervated bands of dense regular connective tissue.
 
-To understand why these ligaments are calibrated to fail at a relatively low threshold, we must analyze the leg as a continuous kinetic transmission chain under an accidental lateral displacement vector ($\mathbf{F}_{\text{impact}}$).
+To understand why these ligaments are calibrated to fail at a relatively low threshold, the leg must be analyzed as a continuous kinetic transmission chain under an accidental lateral displacement vector ($\mathbf{F}_{\text{impact}}$).
 
 When your foot clips a cobblestone lip, it creates a lateral rotational force—a torque ($\boldsymbol{\tau}$) centered at the ankle joint. If the ankle joint is completely locked or artificially braced, it cannot rotate to dissipate this energy. The ankle functions as a fixed fulcrum, forcing the entire rotational torque to propagate upward through the long lever arm of the tibia and fibula ($\mathbf{r}$):
 

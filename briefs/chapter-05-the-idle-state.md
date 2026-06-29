@@ -8,7 +8,7 @@ To the outside world, you are a complete picture of non-productivity. You are si
 
 But inside your chassis, the exact opposite is happening. A dense, silent recalibration is running at full tilt.
 
-Once you comprehend this process, nothing changes outwardly, but everything changes structurally. You stop treating the floor as a passive rest station and begin to see it as an active practice. As you lie there, you notice that your internal sensory attention doesn't drift aimlessly; it operates like a stochastic border patrol, continuously tracking what we call the **Yellow Frontier**.
+Once you comprehend this process, nothing changes outwardly, but everything changes structurally. You stop treating the floor as a passive rest station and begin to see it as an active practice. As you lie there, you notice that your internal sensory attention doesn't drift aimlessly; it operates like a stochastic border patrol, continuously tracking what the book calls the **Yellow Frontier**.
 
 ```
  [ GREEN ZONE ] ──► [ YELLOW FRONTIER ] ──► [ RED ZONE ]

@@ -8,7 +8,7 @@ There is a highly specific, almost eerie sensation that occurs during undirected
 
 Suddenly, your system encounters a microscopic pocket of historical restriction. You don’t force it; you simply pause at the boundary and breathe.
 
-Then, it happens: a sudden, involuntary release that feels less like a muscle stretching and more like a heavy mechanical toggle switch snapping into a slot deep within your chassis. Your chest drops, your shoulders widen through what we call the *Oxter Effect*, and an instant, deep, unprompted sigh escapes your lungs.
+Then, it happens: a sudden, involuntary release that feels less like a muscle stretching and more like a heavy mechanical toggle switch snapping into a slot deep within your chassis. Your chest drops, your shoulders widen through what the book calls the *Oxter Effect*, and an instant, deep, unprompted sigh escapes your lungs.
 
 You didn't decide to take that deep breath. Your conscious mind didn't calculate the structural misalignment or draft a command to release the tissue. The system ran an autonomous adjustment entirely behind your back.
 
@@ -19,7 +19,7 @@ Mainstream movement culture calls this "mindfulness" or "somatic awareness," bur
 ## The Mathematical Justification: The Lie Derivative and the Updating Coordinate Map
 When you try to micro-manage your posture — telling yourself to "pull the shoulders back" or "suck the belly in" — you inject a crude, linear, static override into a dynamic, parallel field of tension. The autonomous governor is forced to accommodate this clumsy instruction by raising a secondary defensive clamp elsewhere to balance the artificial torque.
 
-To describe how the sub-cortical governor tracks and updates the geometry of the living continuum without conscious interference, we use the **Lie Derivative** of the metric tensor field.
+To describe how the sub-cortical governor tracks and updates the geometry of the living continuum without conscious interference, the **Lie Derivative** is used of the metric tensor field.
 
 The intrinsic geometry of your body's felt sense of space is governed by the covariant metric tensor $g_{ij}$. When you execute an undirected somatic movement, you introduce a localized velocity vector field $\mathbf{v}$. The rate of change of your body's internal spatial map along the flow of this movement field is calculated mathematically by the Lie Derivative:
 

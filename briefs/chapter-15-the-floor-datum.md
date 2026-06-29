@@ -6,7 +6,7 @@ title: "Chapter 15: The Floor Datum (z = 0, v = 0)"
 ## The Familiar Hook: The Identity of Nothing
 The hardest pill for the modern, achievement-addicted mind to swallow is that inside this sandbox, **success feels like absolutely nothing.**
 
-We have been deeply conditioned by an industrial fitness culture to demand measurable feedback from our physical investments. If we don't finish a session dripping in sweat, shaking with fatigue, or logging data points into an exercise tracker, our conscious control ego flags the time as wasted. We are hooked on the theater of "intervention."
+The modern mind has been deeply conditioned by an industrial fitness culture to demand measurable feedback from physical investments. Not finishing a session dripping in sweat, shaking with fatigue, or logging data points into an exercise tracker, the conscious ego flags the time as wasted. The culture is hooked on the theater of "intervention."
 
 The Operational Heuristic completely dismantles this efficiency framework. We are not fixing anything — because nothing is broken. Your sub-cortical system already holds the movement metric you were born with. It doesn't need a manual, top-down lecture from your conscious mind on how to manage its own tissue sheets. It simply needs you to get your stupid intent out of the way.
 
