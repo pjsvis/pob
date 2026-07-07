@@ -1,27 +1,28 @@
 {"file":"README.md","date":"2026-06-28","status":"active","summary":"Playbooks","meta":{"type":"document"}}
 {"file":"TEMPLATE.md","date":"YYYY-MM-DD","status":"active","summary":"[Title]","meta":{"type":"document"}}
-{"file":"authoring-playbook.md","date":"2026-06-28","status":"active","summary":"Authoring Playbook — Multi-Modal Content Conventions","meta":{"type":"document"}}
-{"file":"barnacle-playbook.md","date":"2026-06-28","status":"active","summary":"Barnacle Playbook — Identification and Removal Process","meta":{"type":"document"}}
+{"file":"authoring-playbook.md","date":"2026-06-28","status":"active","summary":"Authoring Playbook \u2014 Multi-Modal Content Conventions","meta":{"type":"document"}}
+{"file":"barnacle-playbook.md","date":"2026-06-28","status":"active","summary":"Barnacle Playbook \u2014 Identification and Removal Process","meta":{"type":"document"}}
 {"file":"briefs-playbook.md","date":"2026-06-28","status":"active","summary":"Briefs Playbook","meta":{"type":"document"}}
 {"file":"codegraph-playbook.md","date":"2026-06-28","status":"active","summary":"CodeGraph Navigation Playbook","meta":{"type":"document"}}
 {"file":"conventions-playbook.md","date":"2026-06-28","status":"active","summary":"Conventions Playbook","meta":{"type":"document"}}
 {"file":"css-architecture-blog-post.md","date":"2026-06-28","status":"active","summary":"A Minimalist CSS Architecture for Embedded Content","meta":{"type":"document"}}
 {"file":"css-architecture-playbook.md","date":"2026-06-28","status":"active","summary":"CSS Architecture Playbook","meta":{"type":"document"}}
-{"file":"curation-playbook.md","date":"2026-06-28","status":"active","summary":"Curation Playbook — Where Things Live","meta":{"type":"document"}}
+{"file":"curation-playbook.md","date":"2026-06-28","status":"active","summary":"Curation Playbook \u2014 Where Things Live","meta":{"type":"document"}}
 {"file":"debriefs-playbook.md","date":"2026-06-28","status":"active","summary":"Debriefs Playbook","meta":{"type":"document"}}
 {"file":"decisions-playbook.md","date":"2026-06-28","status":"active","summary":"Decisions Playbook","meta":{"type":"document"}}
 {"file":"diagram-infrastructure-playbook.md","date":"2026-06-28","status":"active","summary":"Diagram Infrastructure Playbook","meta":{"type":"document"}}
-{"file":"epic-hybrid-svg.md","date":"2026-06-28","status":"active","summary":"Epic: Hybrid ASCII‑→‑SVG Diagram Pipeline","meta":{"type":"document"}}
+{"file":"epic-hybrid-svg.md","date":"2026-06-28","status":"active","summary":"Epic: Hybrid ASCII\u2011\u2192\u2011SVG Diagram Pipeline","meta":{"type":"document"}}
 {"file":"git-workflow-playbook.md","date":"2026-06-28","status":"active","summary":"Playbook: Git Workflow","meta":{"type":"document"}}
-{"file":"herdr-playbook.md","date":"2026-06-28","status":"active","summary":"herdr Playbook — Monitoring pi Over SSH","meta":{"type":"document"}}
+{"file":"herdr-playbook.md","date":"2026-06-28","status":"active","summary":"herdr Playbook \u2014 Monitoring pi Over SSH","meta":{"type":"document"}}
 {"file":"init-playbook.md","date":"2026-06-28","status":"active","summary":"Repository Initialization Playbook","meta":{"type":"document"}}
 {"file":"just-playbook.md","date":"2026-06-28","status":"active","summary":"Just Playbook","meta":{"type":"document"}}
 {"file":"penrose-book-playbook.md","date":"2026-06-28","status":"active","summary":"Penrose-Style Book Playbook","meta":{"type":"document"}}
 {"file":"playbooks-playbook.md","date":"2026-06-28","status":"active","summary":"Playbook for Playbooks","meta":{"type":"document"}}
 {"file":"proof-reader-agent.md","date":"2026-06-28","status":"active","summary":"Proof-Reader Agent","meta":{"type":"document"}}
-{"file":"registry-playbook.md","date":"2026-06-28","status":"active","summary":"Registry Playbook — Document Index System","meta":{"type":"document"}}
+{"file":"registry-playbook.md","date":"2026-06-28","status":"active","summary":"Registry Playbook \u2014 Document Index System","meta":{"type":"document"}}
 {"file":"self-contained-essay-playbook.md","date":"2026-06-28","status":"active","summary":"Self-Contained Essay Playbook","meta":{"type":"document"}}
 {"file":"silo-playbook.md","date":"2026-06-28","status":"active","summary":"Silo Playbook","meta":{"type":"document"}}
-{"file":"style-playbook.md","date":"2026-06-28","status":"active","summary":"Style Playbook — Curating the Voice of the Book","meta":{"type":"document"}}
-{"file":"td-playbook.md","date":"2026-06-28","status":"active","summary":"TD Playbook — Solo Workflow","meta":{"type":"document"}}
+{"file":"style-playbook.md","date":"2026-06-28","status":"active","summary":"Style Playbook \u2014 Curating the Voice of the Book","meta":{"type":"document"}}
+{"file":"td-playbook.md","date":"2026-06-28","status":"active","summary":"TD Playbook \u2014 Solo Workflow","meta":{"type":"document"}}
 {"file":"tree-view-playbook.md","date":"2026-06-28","status":"active","summary":"Tree View Playbook","meta":{"type":"document"}}
+{"file":"michelangelo-protocol.md","date":"2026-07-07","status":"active","summary":"The Michelangelo Protocol \u2014 the figure is in the block; the work is subtraction, not addition. Precondition: low-entropy substrate. Kill criterion: stop when you can't tell figure from stone.","meta":{"type":"document","category":"discipline","siblings":"edinburgh-protocol, watt-test (defined in blog/l-inception-de-competence.md, not standalone playbooks)"}}
