@@ -26,6 +26,7 @@ The job is to find activities that pass both, and to be honest about which candi
 | **Load-carrying** (head-carry, portering, baby-wearing) | Loaded continuum + gait adaptation + stress-localization. "Where does the load go?" is the book's thesis in its purest form. | Invisible, universal, no cultural justification needed. The sharpest instance. |
 | **Massage / manual therapy** | The practitioner *is* a stress-field applicator. The book's clinical domain made explicit. | Low-status, contested (good for the skeptical voice), no cultural frame required. |
 | **Falling / impact** | Stress-wave propagation; injury as localization. The book's pathology story at its most literal. | Universal, invisible, the frame detonates it. |
+| **Standing / axial lengthening ("song", Alexander primary control, postural cues)** | The spine as a prestressed column under balanced axial boundary conditions (tailbone-crown bidirectional preload). The frame separates what's real (prestress adjustment via boundary cues) from the fascia-vs-muscle ideology and the inflated tensegrity claims. Self-applied prestress — the mirror of massage (other-applied). | Widely practiced under many names (Tai Chi song, Alexander, yoga, "fix your posture"), low-status, culturally independent. The dominant popular explanations are half-fantasy (borrowed tensegrity, mystical fascia) — the detonation is replacing the yap with the honest continuum frame. |
 
 ### Tier B — strong mechanics, but the activity is already high-status (additions, not detonations)
 
