@@ -110,6 +110,7 @@ The risk: incremental can tip into *no* formalisation if the trigger threshold i
 | Before | Read |
 |--------|------|
 | Any editorial pass | `playbooks/style-playbook.md` (the voice rules + the voice invariant) |
+| Bibliography / references | `playbooks/bibliography-playbook.md` (narrativised entries, the cap, the two-register structure) |
 | Handling new material | `playbooks/curation-playbook.md` (the loop, the tracks) |
 | Writing a standalone essay/blog | `playbooks/self-contained-essay-playbook.md` |
 | Diagram work | `playbooks/diagram-infrastructure-playbook.md` |
