@@ -45,6 +45,26 @@ This is the exact territory where ergodicity died — borrowing a precise term a
 
 The project's whole discipline — narrativised few-investigable references, the voice gate, the seam test, the floor test, Hume's Razor — is already calibrated to pass a coherence audit. That wasn't planned for the LLM age; it emerged from the anti-yap discipline. But the consequence is that the work is built for the moment it's in: in a flood of generated volume, the distinguishing signal is coherence-plus-investigability, and the project produces exactly that. The "how to read this" piece is where that becomes explicit — our identity stated as a reader protocol, not as a boast.
 
+## The hook: "Do your own research" (reclaimed)
+
+The COVID-era phrase "do your own research" became toxic because it meant *decide your own facts* — correspondence-checking performed by people with no instrument for correspondence, an authority-claim disguised as epistemic humility. Rightly mocked.
+
+The reclamation takes the phrase at its word and splits it along the Shannon boundary:
+- **The LLM does the research** — the coherence audit, citation-existence, the "is this worth reading" triage. Below the Shannon line: syntactic, structural, delegable. The agent is the research assistant, and there is now an instrument that can do this at scale.
+- **You do the judgement** — the correspondence check, the "is the novel frame true," the sustained critical reading. Above the line: semantic, world-facing, cannot be delegated. The agent flags; you decide.
+
+The reclaimed phrase is the two-step reader protocol wearing a memorable handle. It's a stronger "who are we" stance than "how to read this stuff": outward (a protocol for anything, with our work as the example that passes), and it takes a cultural wound and offers a repair. Probable title: *Do your own research*. The parenthetical "(properly, this time)" may not survive the voice pass — slightly smug; a drafting decision.
+
+## The refute mode — a stronger coherence probe, same boundary
+
+The audit asks "is this consistent?" The refute mode asks the LLM to construct the counter: steelman the opposite, find the weakest link, pressure the text from the adversary's side. It's a stronger coherence probe — a piece that survives refutation has a stronger coherence claim than one that passes a neutral audit, because the adversary surfaces claims the author would prefer unexamined.
+
+But it is still coherence, still below the Shannon line:
+- The LLM's refutation works with the text, not the world — it cannot establish the counter-claim's *truth*, only its plausibility against the text's internal structure.
+- A failure to refute is not a verdict for the piece — the LLM may lack the world-knowledge to find the real weakness, or may simply be bad at adversarial framing.
+
+Audit and refute are the two directions of coherence pressure. Both stop at the Shannon line. Both are valid, neither is conclusive. The honest framing: these are tools for deciding whether a piece is worth your sustained critical reading — which is the judgement you cannot delegate.
+
 ## The quiet through-line (do not force)
 
 The coherence audit is a *context* operation (non-local attention over the full text — the tension network); citation-veracity is a *retrieval* operation (database lookups). The reader protocol itself illustrates the context-vs-database distinction from the shelved ergodicity/LLM-substrate idea, without needing to name ergodicity. Don't force that connection into the piece — it'll show itself if it belongs.
