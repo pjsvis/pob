@@ -65,6 +65,14 @@ But it is still coherence, still below the Shannon line:
 
 Audit and refute are the two directions of coherence pressure. Both stop at the Shannon line. Both are valid, neither is conclusive. The honest framing: these are tools for deciding whether a piece is worth your sustained critical reading — which is the judgement you cannot delegate.
 
+## The fiction extension — coherence is the entire bar
+
+For factual writing, coherence (LLM, below the line) and correspondence (human, above) are both needed. Fiction has no correspondence: it doesn't claim to match the world, it builds one. So the quality question collapses to *does the text agree with itself* — which is exactly what the LLM can audit, with no undelegable remainder. The protocol is more complete for fiction, not weaker. The three steps hold (triage, refute, read), but the third step is aesthetic judgement, not truth-correspondence — still human, still above the line, a different above-the-line work.
+
+This reframes the LLM-as-threat discourse via the project's own distinction. The LLM does the coherence layer (continuity, timeline, geography, who-knows-what, foreshadowing/payoff) — laborious, mechanical, beneath the author's real work. The author does the semantic layer (world-creation, meaning, voice, choice) — above the line, untouchable. The continuity editor is the research assistant is the yap. The author is the voice. (See `blog/the-yap-and-the-voice.md`.) Far from a threat, the LLM is the instrument for the job that was always laborious and always below the author's pay grade — GRRM's continuity editor, mechanised and available to any author with a context window.
+
+Precision: fiction's coherence is relative to the author's self-established rules (the magic system, geography, timeline — the author's "world physics"), not external reality. The LLM's continuity check is only as good as its grasp of those rules, which live in the text. That's a context operation — non-local attention over the full body of work — not a retrieval operation. A novel series is a long context; the LLM's advantage is holding the whole world in attention and flagging the seam across books. This is the context-vs-database distinction from the shelved ergodicity idea, showing itself in a concrete use without needing the ergodicity frame. Don't force the connection in the piece; note it lives here.
+
 ## The quiet through-line (do not force)
 
 The coherence audit is a *context* operation (non-local attention over the full text — the tension network); citation-veracity is a *retrieval* operation (database lookups). The reader protocol itself illustrates the context-vs-database distinction from the shelved ergodicity/LLM-substrate idea, without needing to name ergodicity. Don't force that connection into the piece — it'll show itself if it belongs.
