@@ -24,7 +24,7 @@ The job is to find activities that pass both, and to be honest about which candi
 | Activity | The frame gives | Why it passes the floor test |
 |----------|----------------|------------------------------|
 | **Load-carrying** (head-carry, portering, baby-wearing) | Loaded continuum + gait adaptation + stress-localization. "Where does the load go?" is the book's thesis in its purest form. | Invisible, universal, no cultural justification needed. The sharpest instance. |
-| **Massage / manual therapy** | The practitioner *is* a stress-field applicator. The book's clinical domain made explicit. | Low-status, contested (good for the skeptical voice), no cultural frame required. |
+| **Massage / manual therapy (incl. Thai massage)** | The practitioner is a boundary condition / reference frame for the recipient's stress field — the datum the deformation is measured against. On Earth the role is shared with floor + gravity; in Thai massage the practitioner is a moving base plane supplementing the floor. The book's clinical domain made explicit. | Low-status, contested (good for the skeptical voice), no cultural frame required. |
 | **Falling / impact** | Stress-wave propagation; injury as localization. The book's pathology story at its most literal. | Universal, invisible, the frame detonates it. |
 | **Standing / axial lengthening ("song", Alexander primary control, postural cues)** | The spine as a prestressed column under balanced axial boundary conditions (tailbone-crown bidirectional preload). The frame separates what's real (prestress adjustment via boundary cues) from the fascia-vs-muscle ideology and the inflated tensegrity claims. Self-applied prestress — the mirror of massage (other-applied). | Widely practiced under many names (Tai Chi song, Alexander, yoga, "fix your posture"), low-status, culturally independent. The dominant popular explanations are half-fantasy (borrowed tensegrity, mystical fascia) — the detonation is replacing the yap with the honest continuum frame. |
 
@@ -78,6 +78,14 @@ For each Tier A candidate, and for the Tier B candidates if placement is contest
 - The placement recommendation covers every candidate (book / blog / set down) with a reason.
 - The walking-songs findings (`assets/walking-songs-poynting-findings.md`) are referenced, not re-done.
 - No manuscript chapter or essay is drafted from this brief — that is a later brief, per placement.
+
+## The zero-g extension — massage morphs to grappling
+
+Chapter 09 defines zero-g as the deletion of the 1g vector and the floor datum; the body rebalances around its own center of mass as a closed toroidal tension matrix. The zero-g Thai massage thought experiment has a real consequence: on Earth the practitioner supplements the floor; in zero-g the practitioner IS the floor — the only external reference. But the practitioner can't lean on gravity to apply compression, so they must brace against the recipient. Practitioner and recipient become a closed two-body tension structure — a mutual bracing loop where the boundary conditions are a property of the coupled pair, not a single external agent. Same topology as Chapter 09's toroidal matrix, one level up.
+
+This morphs naturally into zero-g wrestling and grappling: once the pair is a closed tension structure, the line between "massage" and "grappling" is a matter of intent and force magnitude, not mechanism. The interesting practical question: anchor the participants to the capsule walls with elastics and multiple cables, adding external force vectors. Does that produce a beneficial grappling session at low risk? The hypothesis: with elastic tethers supplying restore forces and no gravity-driven impact loading, the stress regime is bounded — high enough for musculoskeletal benefit, low enough that the worst case is a tether catching you, not a floor stopping your fall. The continuum frame: the tethers are distributed boundary conditions on a two-body viscoelastic system; the benefit is stress cycling across the fascial network without the localization that gravity-driven impact produces.
+
+**Epistemic status:** model, not measurement — nobody has grappled in orbit. Same status as Chapter 09's toroidal matrix, so consistent, but the "state measured vs modelled" constraint applies. The low-risk claim is a hypothesis from the mechanics, not a tested result. The thought experiment earns its place by being mechanically coherent and by generalising an existing chapter.
 
 ## Related
 
