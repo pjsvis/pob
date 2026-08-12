@@ -175,6 +175,21 @@ function postProcessHTML(html: string): string {
 export const DISPLAY_MATH_RE = /\$\$([\s\S]+?)\$\$/g;
 export const INLINE_MATH_RE = /\$([^\$\n]+?)\$/g;
 
+/**
+ * Project math macros — shorthands for the continuum-mechanics operators.
+ * Available for new writing; existing chapters keep their longhand \nabla
+ * forms (perturbation protocol: no blanket rewrite). Additive only.
+ *
+ * Note: divergence is `\divergence`, not `\div` — `\div` is the KaTeX/LaTeX
+ * ÷ builtin, and shadowing a standard command is a silent semantic break
+ * waiting to happen. See briefs/2026-07-31-brief-katex-pipeline-hardening.md item 1.
+ */
+const MACROS: Record<string, string> = {
+  "\\grad": "\\nabla",
+  "\\curl": "\\nabla\\times",
+  "\\divergence": "\\nabla\\cdot",
+};
+
 export type MathKind = "display" | "inline";
 export interface MathSpan {
   latex: string;
@@ -219,7 +234,7 @@ export function validateMath(file: string, text: string): MathError[] {
   const errors: MathError[] = [];
   for (const s of extractMath(text)) {
     try {
-      katex.renderToString(s.latex, { displayMode: s.kind === "display", throwOnError: true });
+      katex.renderToString(s.latex, { displayMode: s.kind === "display", throwOnError: true, macros: MACROS });
     } catch (e) {
       errors.push({ file, line: s.line, kind: s.kind, latex: s.latex, message: (e as Error).message });
     }
@@ -232,7 +247,7 @@ function renderKaTeX(text: string): string {
   // Display math: $$...$$
   text = text.replace(DISPLAY_MATH_RE, (_match, math) => {
     try {
-      return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false });
+      return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false, macros: MACROS });
     } catch {
       return `<span class="katex-error">${math}</span>`;
     }
@@ -241,7 +256,7 @@ function renderKaTeX(text: string): string {
   // Inline math: $...$
   text = text.replace(INLINE_MATH_RE, (_match, math) => {
     try {
-      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false });
+      return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false, macros: MACROS });
     } catch {
       return `<span class="katex-error">${math}</span>`;
     }
