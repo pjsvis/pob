@@ -16,7 +16,7 @@ td usage -q              # after first read, quiet the instructions
 
 - **Bun is the sole runtime.** `bun install`, `just build`, `just preview` (opens `http://localhost:3000/`).
 - **Python is WeasyPrint-only** (PDF export via `.venv/`). All text-processing utilities in `scripts/` are TypeScript (`bun run scripts/<name>.ts`).
-- The build scans `content/` and `briefs/chapter-*.md` + `briefs/appendix-*.md`. **Nothing else renders.** `assets/`, `blog/`, `playbooks/`, `debriefs/`, `decisions/` are build-ignored.
+- The build scans `content/` and **all of `briefs/`**. The manuscript is `content/` + `briefs/chapter-*.md` + `briefs/appendix-*.md`; everything else in `briefs/` (working documents: briefs, session notes, debriefs) *also* renders, under the index's two-section split (reader-facing vs "Other Documents"). *(Whether working documents should render on a published site is an open question — flagged, not decided; for now they do.)* `assets/`, `blog/`, `playbooks/`, `debriefs/`, `decisions/` are build-ignored.
 
 ## 3. The directory map (where things live)
 
