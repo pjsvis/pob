@@ -37,6 +37,24 @@ function collectMarkdownFiles(): { file: string; dir: string }[] {
   return out;
 }
 
+/**
+ * Is this file part of the reader-facing manuscript?
+ *   - all of content/ (front matter, part dividers, demos, essays)
+ *   - briefs/chapter-*.md and briefs/appendix-*.md (the book proper)
+ * Working documents (other briefs, session notes, debriefs) are rendered into
+ * the index's "Other Documents" section but are NOT gated: they legitimately
+ * show `$$` examples inside prose and code fences. The gate protects the
+ * reader; the reader reads the manuscript. Matches AGENTS.md §2.
+ */
+function isManuscript(file: string, dir: string): boolean {
+  if (dir === resolve("./content")) return true;
+  if (dir === resolve("./briefs")) {
+    const f = file.toLowerCase();
+    return f.startsWith("chapter-") || f.startsWith("appendix-");
+  }
+  return false;
+}
+
 // === Pre-processors ===
 
 // Strip YAML frontmatter
@@ -146,22 +164,85 @@ function postProcessHTML(html: string): string {
   return html;
 }
 
-// === KaTeX Pre-processing ===
+// === KaTeX math extraction (shared) ===
+// Single source of truth for "what is a math span." Consumed by:
+//   - renderKaTeX   (renders, throwOnError:false — resilient)
+//   - validateMath  (build-time gate, throwOnError:true — fails the build)
+//   - scripts/extract-display-equations.ts (inventory)
+// Keeping the patterns in one place means render and validate cannot disagree
+// on what counts as math. See decisions/011-math-rendering-and-verification.md.
+
+export const DISPLAY_MATH_RE = /\$\$([\s\S]+?)\$\$/g;
+export const INLINE_MATH_RE = /\$([^\$\n]+?)\$/g;
+
+export type MathKind = "display" | "inline";
+export interface MathSpan {
+  latex: string;
+  kind: MathKind;
+  /** 1-indexed line of the opening delimiter in the source text. */
+  line: number;
+}
+export interface MathError {
+  file: string;
+  line: number;
+  kind: MathKind;
+  latex: string;
+  message: string;
+}
+
+/** Extract every math span from text, each with its 1-indexed source line. */
+export function extractMath(text: string): MathSpan[] {
+  const spans: MathSpan[] = [];
+  const lineOf = (i: number) => text.slice(0, i).split("\n").length;
+
+  // Display first: the inline regex's negated class means it cannot match
+  // inside a $$ pair, so display is naturally excluded from inline results.
+  for (const m of text.matchAll(DISPLAY_MATH_RE)) {
+    spans.push({ latex: m[1].trim(), kind: "display", line: lineOf(m.index!) });
+  }
+  for (const m of text.matchAll(INLINE_MATH_RE)) {
+    const start = m.index!;
+    // Belt-and-braces: skip a $ that is the boundary of a $$ delimiter.
+    if (text[start - 1] === "$") continue;
+    if (text[start + m[0].length] === "$") continue;
+    spans.push({ latex: m[1].trim(), kind: "inline", line: lineOf(start) });
+  }
+  return spans;
+}
+
+/**
+ * Validate every math span parses under throwOnError:true. Returns one entry
+ * per failure. The renderer keeps throwOnError:false (resilient); this is the
+ * build-time gate ensuring a broken equation never ships silently.
+ */
+export function validateMath(file: string, text: string): MathError[] {
+  const errors: MathError[] = [];
+  for (const s of extractMath(text)) {
+    try {
+      katex.renderToString(s.latex, { displayMode: s.kind === "display", throwOnError: true });
+    } catch (e) {
+      errors.push({ file, line: s.line, kind: s.kind, latex: s.latex, message: (e as Error).message });
+    }
+  }
+  return errors;
+}
+
+// === KaTeX rendering ===
 function renderKaTeX(text: string): string {
   // Display math: $$...$$
-  text = text.replace(/\$\$([\s\S]+?)\$\$/g, (_, math) => {
+  text = text.replace(DISPLAY_MATH_RE, (_match, math) => {
     try {
       return katex.renderToString(math.trim(), { displayMode: true, throwOnError: false });
-    } catch (e) {
+    } catch {
       return `<span class="katex-error">${math}</span>`;
     }
   });
 
   // Inline math: $...$
-  text = text.replace(/\$([^\$\n]+?)\$/g, (_, math) => {
+  text = text.replace(INLINE_MATH_RE, (_match, math) => {
     try {
       return katex.renderToString(math.trim(), { displayMode: false, throwOnError: false });
-    } catch (e) {
+    } catch {
       return `<span class="katex-error">${math}</span>`;
     }
   });
@@ -385,6 +466,8 @@ export async function build(opts: { clean?: boolean } = {}) {
   console.log("📚 Processing content...");
   const files = collectMarkdownFiles();
 
+  const mathErrors: MathError[] = [];
+
   for (const { file, dir } of files) {
     const inputPath = join(dir, file);
     const stat = statSync(inputPath);
@@ -402,6 +485,14 @@ export async function build(opts: { clean?: boolean } = {}) {
     // Process diagrams (ASCII art, Mermaid) before markdown parsing
     const { content: diagramContent, diagrams } = await processDiagrams(step1);
     
+    // 3a. Validate math — gate the build on zero KaTeX parse errors. Runs on
+    //     the exact text renderKaTeX sees (diagramContent), so the gate and
+    //     the renderer cannot disagree on what counts as math. Scoped to the
+    //     manuscript: working docs legitimately show $$ in prose and code.
+    if (isManuscript(file, dir)) {
+      mathErrors.push(...validateMath(file, diagramContent));
+    }
+
     // 3. Render KaTeX math (before markdown parsing so $...$ patterns exist)
     const step2 = renderKaTeX(diagramContent);
     
@@ -431,6 +522,19 @@ export async function build(opts: { clean?: boolean } = {}) {
     writeFileSync(join(DIST_DIR, outputName), output);
   }
   
+  // Math validation gate — fail the build (non-zero exit) if any KaTeX
+  // expression failed to parse. The renderer still ran with throwOnError:false
+  // (resilient); this is a well-formedness gate, not a correctness gate.
+  if (mathErrors.length > 0) {
+    console.error(`\n⛔ KaTeX validation failed — ${mathErrors.length} invalid expression(s):`);
+    for (const e of mathErrors) {
+      console.error(`  ${e.file}:${e.line} [${e.kind}] ${e.latex}`);
+      console.error(`      → ${e.message.split("\n")[0]}`);
+    }
+    console.error("\nFix the LaTeX above (decisions/011-math-rendering-and-verification.md).");
+    process.exit(1);
+  }
+
   // Build the root index.html: take the rendered index-page.html (title +
   // intro, authored in content/index-page.md) and inject the auto-generated
   // two-section link listing before the closing pob-content div.

@@ -231,12 +231,13 @@ $$\delta^\mu_\nu = \begin{cases} 1 & \text{if } \mu = \nu \\ 0 & \text{otherwise
 
 ---
 
-## 16. Error Test Cases
+## 16. Malformed Math
 
-This should render as error (invalid syntax):
-$$\mathcal{\invalid}$$
+Malformed LaTeX now fails the build (see `decisions/011-math-rendering-and-verification.md`):
+the renderer still degrades an unfinished expression to an error span while you edit,
+but the build gate rejects any expression that does not parse. This page therefore
+ships only well-formed math:
 
-This should render normally:
 $$\mathcal{L}$$
 
 ---
