@@ -2,6 +2,7 @@
 title: The Palimpsest and the Plot
 dek: A palimpsest is layers of inconsistent voices, none of them the final one. It happens to books, to agent sessions, and to anyone trying to hold two ideas at once in a dynamic thinking environment. Here is what we learned about not losing the plot.
 date: 2026-06-28
+todo: weave in the memory-as-context-injection angle — why memory drifts (compression is a lossy reconstruction, not a retrieval), so the closer lands as a conclusion rather than an assertion.
 ---
 
 # The Palimpsest and the Plot

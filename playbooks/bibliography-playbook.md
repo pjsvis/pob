@@ -51,6 +51,35 @@ The back-of-book register is NOT the yap pile the in-text discipline prevents. T
 
 This split serves the applecart principle: the narrative reader's body stays in the room because the text isn't cluttered, and the researcher gets what they need at the back. Two readers, two registers, one voice.
 
+### The two registers distinguished
+
+The in-chapter and end-of-book bibliographies are not the same list in two places. They serve different readers and carry different narrative obligations. The distinction is load-bearing — a reader who encounters the back-of-book bibliography expects a different kind of sentence than a reader who encounters a citation in the chapter text.
+
+**In-chapter bibliography (the narrative reader):**
+
+- The sources the argument genuinely uses — cited because a specific claim, equation, or experimental result depends on them.
+- The narrative sentence answers: *what does this source do in the argument?* It explains the contribution — the reason the citation is here, at this point in the text.
+- The entry is a working reference: the reader could find it, read it, and check whether it does what the narrative sentence says.
+- Subject to the cap: 5–8 per chapter, each earning its place.
+- These are *evidential* references — sources the argument stands on.
+
+**End-of-book bibliography (the researcher and the methodological reader):**
+
+- Three categories, each with its own inclusion narrative:
+
+  1. **Wider field:** sources in the field but not in the text. The narrative sentence answers: *why is this in the field but excluded from the argument?* This is the editorial audit trail — the selection made visible. The reader sees what was considered and not used, and why.
+
+  2. **Wider context:** sources that are in the text, placed in their wider intellectual context. The narrative sentence answers: *where does this sit in the literature?* This gives the researcher the map the in-text entry doesn't need.
+
+  3. **Methodological influences:** sources that shape how the book makes claims, not what the book claims. The narrative sentence answers: *what is this book's standard for its own assertions, and where does that standard come from?* These are not cited for any biomechanics claim; they are cited as precedent for the epistemic register — the floor (the worst-case standard the book accepts) and the ceiling (the best-case standard the book aspires to). Jaynes and Penrose are the first entries in this category.
+
+- The methodological-influences category makes the book's epistemic register auditable. A reader who wants to know "what is this book's standard for its own claims?" can read this section and find the floor and the ceiling named explicitly. This is distinct from credentials display: the entries do not say "we stand on the shoulders of giants." They say "this is the worst case we accept, and this is the best case we aspire to, and here are the books that define each."
+- Subject to the same narrativisation and voice gate as the in-chapter bibliography. No bare citations, even at the back.
+- Not subject to the per-chapter cap (it is the back of the book, not a chapter), but subject to the same anti-yap discipline: every entry carries a narrative sentence, and if the sentence can't be written, the entry is cut.
+- These are *methodological and contextual* references — sources that frame the book's stance, not sources the argument stands on.
+
+The two registers are distinguishable by the question the narrative sentence answers. In-chapter: *what does this source do in the argument?* End-of-book: *why is this source in the field, in the context, or in the methodology — and what is its relationship to the text?* If an end-of-book entry answers the in-chapter question, it belongs in the chapter. If an in-chapter entry answers the end-of-book question, it belongs in the back. The narrative sentence is the sorting criterion.
+
 ## The research-vs-published distinction
 
 Research priors (the scratchpad, the assets) can and should hold more references — the point of research is to find the field, and the field may be wide. The narrativisation and the cap apply at the selection stage, when research becomes published text.
@@ -67,6 +96,8 @@ The narrativised entries are prose, and prose is voice. The bibliography passes 
 - [ ] The reference count is within the cap (5–8 chapter, 2–4 essay), or every excess entry has justified its place.
 - [ ] Each reference is investigable by a reader in an afternoon (findable, readable).
 - [ ] The back-of-book expanded bibliography (book only) carries inclusion/exclusion narrative, not just a longer list.
+- [ ] The end-of-book bibliography distinguishes its three categories (wider field, wider context, methodological influences) and each entry's narrative sentence answers the end-of-book question, not the in-chapter question.
+- [ ] Methodological-influences entries state the epistemic standard (floor or ceiling), not a credential. They make the book's stance auditable, not authoritative.
 - [ ] The bibliography passes the single-voice gate — the entries read in the same register as the text.
 - [ ] The research scratchpad is not published as the bibliography; selection has happened.
 

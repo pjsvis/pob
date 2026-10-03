@@ -1,82 +1,110 @@
 # Brief: Grad/Div/Curl Commentary Woven Through the Book
 
-**Date:** 2026-06-28
-**Status:** Open
+**Date:** 2026-06-28 (revised 2026-06-29)
+**Status:** Open — thinking phase, parked for revisit. Commentaries drafted in `scratchpad/`; not yet perturbed into chapters.
 **Related tasks:** td-785e7b (Grad/Div/Curl explanation convention — partially satisfied by Ch00 + the style-playbook convention), the bounded-plane brief (same date)
 
 ## Objective
 
-Weave a grad/div/curl commentary through every chapter that contains an equation. Each equation's Mathematical Justification section should name the operator at work and the bounded plane it is measured against, in one plain-language sentence, before the equation. The combination — operator + bounded plane — is what reveals the truth of the equation to the reader who does not compute.
+Weave grad/div/curl into the book as a connective medium — the vocabulary Ch00 teaches once, recursed through the chapters so it deepens rather than dies. Two surfaces carry the recurrence: the **equation groundings** (under each load-bearing display equation) and the **narrative commentary** (woven into the Familiar Hook and prose).
 
 ## Context
 
-Ch00 (The Vocabulary) teaches the three operators once: gradient (which way is up), divergence (where the water comes out), curl (the twist). That is the vocabulary. But vocabulary taught once and never used is vocabulary forgotten. The operators need to recur — each chapter that has an equation should name which operator is at work, in plain language, so the reader hears the vocabulary in context and the meaning deepens with each encounter.
+Ch00 (The Vocabulary) teaches the three operators once: gradient (which way is up), divergence (where the water comes out), curl (the twist). Vocabulary taught once and never used is vocabulary forgotten. The operators need to recur — not as labels ("this is the divergence") but as the medium that relates an equation's things to the body's things.
 
-The bounded-plane brief (same date) establishes that every equation in the book is defined on a bounded domain, and the bounded domain is what makes the measurement a measurement rather than noise. The operator measures the field; the bounded plane scales the measurement; the combination is the truth. Teaching the operator alone gives the reader a definition. Teaching the operator on the bounded plane gives the reader an insight.
+The bounded-plane brief (same date) establishes that many equations are defined on a bounded domain, and the bounded domain is what makes the measurement a measurement rather than noise. Where a real bounded domain is doing work, the commentary names it. Where it is not, the commentary is silent — padding in a math section is worse than no commentary, because it teaches the reader to skip the prose.
 
-### The Penrose diagram replacement
+### The precondition, stated once, reminded by contrast
 
-This brief also proposes retiring the Penrose-diagram framing from the book. The original plan used Penrose diagrams as a "shortcut for reasoning about the equations." But the book is not reasoning *about* the equations — it is reasoning *from* them. The equations are scaffolding, not the headline; the prose does the explaining. A Penrose diagram is a compression device for reasoning about spacetime geometry (Penrose's own use); the grad/div/curl commentary is a compression device for reasoning from the equations to the body. The latter is the book's actual move. The Penrose diagram is a metaphor that imports someone else's project; the grad/div/curl commentary is a method that is native to this book's math.
+With a physical reference plane and an orthogonal 1g vector field, things happen; without them, not much does. Stated once where the floor datum is introduced (Ch01). Reminded thereafter by **contrast** — the floor shown by what the space station or the moon deletes — not by restatement. Deployed only where the 1g-plus-datum is the real precondition; the bounded containers (thorax, tunnel, state-space) bound in zero-g too, so the contrast would be decoration there.
 
-The Penrose Parallel section in Ch00 (The Vocabulary) should be revised: the parallel is not "Penrose diagrams and operators are both compression devices" but "the operators, measured against the bounded plane, are how this book reasons from the equations." The compression is not a shortcut for reasoning about the math; it is the route from the math to the body. If the Penrose citation stays, it stays as a historical parallel (someone else compressed infinity to a finite boundary; we compress a field to a felt sense), not as the book's method.
+## Two surfaces, two forms
+
+The commentary lives on two surfaces, and the form differs because the medium differs:
+
+### Equation grounding (under the equation)
+
+The equation is already the formal object in view; the grounding **translates** it. Form: *technical clause first (picking up the equation's content), physical consequence second (carrying it to the body).* Example shape: "the divergence goes to zero, the force leaves the muscle and runs into the fascia." No Ch00 mini-gloss repeated — Ch00 teaches the definitions once; the grounding recurs, it does not re-teach.
+
+### Narrative commentary (in the prose)
+
+No equation sits above the narrative; it earns the **felt-sense lead**. The operator appears as a thread in the story ("you feel the wringing... this is the twist you wrung into the towel"), the technical term lands once tied to Ch00's towel/t-shirt, and the felt verbs Ch00 generates ("bleeds," "spreads," "funnels," "leaks") carry the divergence in plain English. No coinage ("sourcing" was tried and retired — it didn't self-explain).
+
+The operator appears **once or twice per chapter** in the narrative, never every paragraph. A thread, not a coating.
+
+## The grounding checklist
+
+Each equation grounding is judged against three tests:
+
+1. **Operator named?** Gradient, divergence, curl — or what the equation does if it is not an operator equation (yield criterion, friction law, invariant).
+2. **Bounded plane named where real?** The floor datum, the thorax, the sole — where the measurement depends on it; silent where not.
+3. **Physical consequence in one clause?** What the equation is doing to the body.
+
+The narrative commentary is judged by whether the operator recurs in felt terms, once or twice, tied to Ch00, without becoming jargon.
+
+## Scope
+
+### In scope: load-bearing display equations + narrative where the operator is the medium
+
+Not every `$$...$$` — the load-bearing ones (intermediate steps inherit). Not every chapter's prose — only the chapters where an operator is genuinely the narrative medium (Ch02 curl, Ch03 divergence+curl, Ch05 gradient, Ch20 divergence; Ch07 and Ch13 drafted as candidates, not yet written).
+
+### Out of scope: the heading swap and the Penrose retirement
+
+- **The "Mathematical Justification" heading swap** is a separate open brief (`briefs/2026-06-28-brief-replacing-justification.md`). The commentary gives the math section its spine; the heading labels the spine afterward.
+- **The Penrose Parallel retirement** is deferred to a separate brief, written after the commentary pass exists. Retiring it against a hypothetical is premature.
 
 ## Deliverables
 
-### 1. A cross-cutting commentary pass across all chapters with equations
+### 1. The equation inventory (done)
 
-For each chapter's Mathematical Justification section, add (or revise) the sentence that introduces the equation to:
+Every load-bearing display equation across 22 chapters (Ch00 excluded), with operator family and bounded-plane/contrast flag. Held in `scratchpad/grad-div-curl-groundings.md` Part E.
 
-- **Name the operator**: "The divergence of the stress tensor..." / "The gradient of the cost function..." / "The curl of the deformation field..."
-- **Name the bounded plane**: "...measured against the floor datum..." / "...on the bounded continuum of the torso..." / "...relative to the steepled hand's shared reference plane..."
-- **Give the physical meaning in one clause**: "...is zero where the tissue is in equilibrium" / "...points in the direction the frontier is steepening" / "...is the rotational load the cylinder is being wrung with"
+### 2. The equation grounding set (drafted, in review)
 
-The pattern: **[operator] of [field], measured against [bounded plane], is [physical meaning].** One sentence. The equation follows, anchored.
+One grounding per load-bearing equation, kept apart from the chapters. Held in `scratchpad/grad-div-curl-groundings.md` Parts A–C. Reviewed for consistency (same operator named the same way across chapters), voice (dry, no "we"), plane discipline (named only where real), and form (technical-first, no template).
 
-Examples of the pattern applied to existing chapters:
+### 3. The narrative commentary set (drafted, in review)
 
-- **Ch02 (Torsion Engine)**: The curl of the twist field — the rotational load being applied to the torso, measured against the cylinder's longitudinal axis — produces an axial extension through the Poynting effect. $$E_{zz} = \frac{1}{2}R^2\alpha^2$$
-- **Ch13 (Frontier Scale)**: The gradient of the cost function — the direction of greatest increase in the governor's threat level, measured against the floor datum — defines the zone boundaries. $$\Omega_{\text{green}} = \{\mathbf{x} \in \Omega : C(\mathbf{g}(\mathbf{x})) \le C_{\text{green}}\}$$
-- **Ch18 (Two Faces of Amnesia)**: The divergence of the stress tensor — the internal force density, measured against the bounded continuum of the tissue — is undefined where the map has gone dark. $$g_{ij}(\mathbf{x}) \to \text{undefined} \quad \text{for } \mathbf{x} \in \Omega_{\text{unmapped}}$$
-- **Ch20 (Clavicular Fuse)**: The divergence of the impact stress — where the force is being sourced inside the body, measured against the $z=0$ boundary — determines whether the load disperses (feline) or funnels (human). $$\nabla \cdot \boldsymbol{\sigma} = \mathbf{0}$$
+Proposed revisions/insertions for four chapters (Ch02, Ch03, Ch05, Ch20), kept apart from the chapters. Held in `scratchpad/narrative-commentary.md`. Reviewed for felt-sense lead, term placement, density, and whether the form generalises (Ch07, Ch13 drafted as candidates).
 
-### 2. Revise Ch00's Penrose Parallel section
+### 4. The perturbation (separate, after review)
 
-Replace the "Penrose diagrams and operators are both compression devices" framing with "the operators, measured against the bounded plane, are how this book reasons from the equations to the body." Keep the Penrose citation as a historical parallel (conformal compression brought infinity to a finite boundary; the bounded plane brings a field to a felt sense), not as the book's method. The book's method is the operator + bounded plane, not the diagram.
+Once both sets are approved, perturb per-chapter: touch, build, read against the staved-finger benchmark, keep or revert. Small touches, one at a time. The single-voice gate and the proof reader apply. The perturbation protocol gates this — note, investigate, brief, think, then touch.
 
-### 3. Retire the Penrose-diagram aspiration from the book's documentation
+## Current state (2026-06-29)
 
-Update `playbooks/diagram-infrastructure-playbook.md` and ADR-002/ADR-003 to note that the Penrose-diagram pipeline is retained for tensor-network diagrams (if any future chapter needs them) but the book's primary math-explanation method is the grad/div/curl commentary on the bounded plane, not diagrams. The book reasons from equations, not about them.
+Both commentaries are drafted and read well — "sounds obvious as we read it" is the signal that the shape has stopped fighting the material. Parked for revisit rather than pushed, because:
+
+- **Open questions are the author's to call** — the one-inch punch's loading (twist vs compression), term placement in the hook (term in vs withheld to math section), density (one operator per chapter vs two where genuine), and the one loaded phrase ("the boundary face of the divergence" in Ch12).
+- **Two narrative chapters are candidates, not written** — Ch07 (oxter, divergence equilibrium), Ch13 (frontier scale, gradient zones). Doing them would confirm the form generalises or surface a case that breaks it.
+- **The perturbation protocol hasn't run.** The commentaries are the thinking; the touching is separate and gated.
+
+The scratchpad files are the living documents; this brief points to them and catches up at the stopping point.
 
 ## Constraints
 
-- **One sentence per equation.** The commentary is a naming, not an explanation. The explanation is in Ch00; the commentary is the recurrence. If the commentary needs more than one sentence, the equation needs an `:::explanation` block, not a longer commentary.
-- **The perturbation process applies.** Small touches, in the book's voice, against the bounded plane of the benchmark. Do not rewrite the Mathematical Justification sections; add or revise the one naming sentence.
-- **The single-voice gate applies.** The commentary is written in the book's voice (dry, second-person where possible, no "we"). The proof reader should check the commentary sentences for the editorial "we" and the seminar register.
-- **Preserve all KaTeX.** The commentary is prose around the equations; the equations themselves are untouched (the math rendering pass already fixed them).
-- **Self-contained.** Each chapter's commentary should name the operator in a way that is legible even if the reader skipped Ch00 (the naming is a mini-gloss), but should not re-teach the operator (that is Ch00's job).
-
-## Approach
-
-1. **Inventory the equations.** List every `$$...$$` display equation across all chapters, with the operator it uses (gradient, divergence, curl, or other) and the bounded plane it is measured against. Some equations are not operator equations (e.g., the Belt Friction Equation in Ch16, the yield criterion) — those get a different framing (the equation's own physical meaning, still on the bounded plane, but not an operator naming).
-2. **Draft the naming sentence for each.** One sentence per equation, following the pattern: [operator] of [field], measured against [bounded plane], is [physical meaning].
-3. **Perturb each chapter.** Add or revise the sentence, build, read the chapter against the benchmark, keep or revert. Small touches, one at a time.
-4. **Revise Ch00's Penrose Parallel.** One section, rewritten to reframe the parallel.
-5. **Run the proof reader.** Check the commentary sentences for voice, "we", jargon, and applecart upsets.
-6. **Update the diagram playbook and ADRs.** Note the retirement of the Penrose-diagram aspiration as the primary math-explanation method.
+- **One grounding per load-bearing equation** (intermediate steps inherit); **one or two operator mentions per chapter** in the narrative.
+- **The checklist, not a template.** The equation grounding varies; the three tests hold.
+- **The perturbation process applies.** Commentaries first (the thinking); chapter touches second (the touching). Do not touch a chapter until the commentaries are approved.
+- **The single-voice gate applies.** Commentary in the book's voice. The proof reader checks for "we" and seminar register.
+- **Preserve all KaTeX.** Commentary is prose; the equations are untouched.
+- **Self-contained.** The equation grounding names the operator without re-teaching it (Ch00's job); the narrative ties the term to Ch00's felt sense once, then uses plain verbs.
 
 ## Verification
 
-- Every display equation in the book has a naming sentence that names the operator and the bounded plane.
-- The naming sentences are in the book's voice (proof reader clean).
-- Ch00's Penrose Parallel is revised to reframe the parallel.
-- The diagram playbook and ADRs note the retirement.
+- Every load-bearing display equation has a grounding passing the three checklist tests.
+- The narrative carries each operator once or twice, in felt terms, tied to Ch00.
+- Both sets, read as wholes, are consistent in voice and varied in shape.
+- Bounded planes and floor-contrasts are named only where real.
 - `just build` succeeds; KaTeX renders; no jargon.
-- The reader who reads only one chapter's math section can identify which operator is at work and what bounded plane it is measured against, without having read Ch00.
+- The reader who reads only one chapter's math section can identify which operator is at work, without having read Ch00.
 
 ## Related
 
-- `briefs/2026-06-28-brief-the-bounded-plane.md` — the bounded-plane principle (the reference the operators are measured against)
+- **`scratchpad/grad-div-curl-groundings.md`** — the equation commentary (inventory + groundings, Parts A–E)
+- **`scratchpad/narrative-commentary.md`** — the narrative commentary (Ch02, Ch03, Ch05, Ch20; Ch07, Ch13 as candidates)
+- `briefs/2026-06-28-brief-the-bounded-plane.md` — the bounded-plane principle
 - `briefs/chapter-00-the-vocabulary.md` — the onboarding chapter that teaches the operators
+- `briefs/2026-06-28-brief-replacing-justification.md` — the heading swap, deferred to after this pass
 - `playbooks/style-playbook.md` § "Explaining Math In-Chapter" — the `:::explanation` convention
-- `playbooks/authoring-playbook.md` — the four representation modes
-- `conceptual-lexicon.jsonl` — terms: floor-datum, governor, green-yellow-frontier, operational-heuristic, perturbation-process
+- `conceptual-lexicon.jsonl` — terms: floor-datum, governor, perturbation-process

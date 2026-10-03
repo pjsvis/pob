@@ -35,7 +35,7 @@ An asset can feed one of four tracks. The track is chosen at the assimilation st
 | Track | Scaffolding | Lives in |
 |-------|-------------|----------|
 | **Book chapter** | Familiar Hook → Math → Smoke Test; self-contained; no byline/dek; integrates into the arc | `briefs/chapter-*.md` |
-| **Standalone essay** | Self-contained essay format (byline + dek allowed); same register; outside the book's arc | `content/` |
+| **Standalone essay** | Self-contained essay format (byline + dek allowed); same register; outside the book's arc | `briefs/YYYY-MM-DD-slug.md` — canonical source, PDF to `pdf/` (`self-contained-essay-playbook.md`). Some earlier pieces sit in `content/` |
 | **Series piece** | A sequence of standalone essays on one theme, linked by a stated thread | `content/` |
 | **Marketing** | Derivative, shorter, points at the book; *same register, never louder* | `content/` or external |
 
